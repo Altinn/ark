@@ -36,9 +36,11 @@ Gå til https://altinn.github.io/ark
 #### Åpne modellen i Archi
 * Velg Collaboration-> Import remote model to workspace
 * Fyll ut som følger
+![Add Remote Model](/images/Add_Remote_Model.png)
+
   * URL: `https://github.com/Altinn/ark.git`
   * Trykk OK
-![Add Remote Model](/images/Add_Remote_Model.png)
+
 Du skal nå finne modellen i Models-vinduet ditt.
 
 
