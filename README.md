@@ -2,6 +2,9 @@
 
 :construction:
 
+## Dersom du vil se på modellen i en nettleser
+Gå til https://altinn.github.io/ark
+
 ## Spørsmål som vi ønsker å besvare med arkitekturen
 * Hvilke applikasjoner har vi?
 * Hvordan snakker applikasjonene sammen?
@@ -20,3 +23,6 @@ Inkludert begrepskatalog.
 Fokus på integrasjonsmekanismer- og meldings-formater
 ### Technology usage
 Belyse teknisk plattform
+
+
+## Dersom du vil bidra til utvikling av modellen sjekk [dette dokumentet](./CONTRIBUTING.md)
