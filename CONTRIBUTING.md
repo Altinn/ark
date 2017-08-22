@@ -7,21 +7,32 @@
 * Last ned og installer [Archi's Model Repository Collaboration Plugin](https://www.archimatetool.com/plugins)
 
 ### Åpne modellen i Archi
-* Velg Collaboration-> Import remote model to workspace
-* Fyll ut som følger
-![Add Remote Model](/images/Add_Remote_Model.png)
-
+1. Velg Collaboration-> Import remote model to workspace
+2. Fyll ut som følger
+![Add Remote Model](/screenshots/Add_Remote_Model.png)
   * URL: `https://github.com/Altinn/ark.git`
+  * User Name: `<ditt brukernavn på Github>`
+  * Password: `<ditt passord på Github>`
   * Trykk OK
-
 Du skal nå finne modellen i Models-vinduet ditt.
 
+### Hente ny versjon av modellen fra Github
+Om du ikke har gjort lokale endringer i modellen, er det enkelt å hente inn nye endringer andre har gjort i modellen.
+1. Velg Collaboration->Refresh Model
 ### Jobbe med modellen i Archi
 Inn til videre er det ikke støtte for branching i Archi, dermed må du gjøre følgende når du skal oppdatere modellen
+
+#### Commit
 1. Etter at du har gjort endringer, lagre disse på vanlig måte i Archi, feks CTLR+s
 2. Velg Collaboration->Commit Changes.
 3. Fyll ut feltene, bruk en fornuftig Commit message
-![Add Remote Model](/images/Commit.png)
+![Add Remote Model](/screenshots/Commit.png)
+4. Trykk Ok
+
+#### Publisere endringer til Github
+1. Etter at du har committet endringene, vil du publisere disse til Github
+2. Velg Collaboration->Publish Changes
+Endringen blir da publisert på Github.
 
 ### Hvilke standarder og metoder har vi benyttet
 * Metodikk er basert på [TOGAF 9](http://pubs.opengroup.org/architecture/togaf9-doc/arch/)
