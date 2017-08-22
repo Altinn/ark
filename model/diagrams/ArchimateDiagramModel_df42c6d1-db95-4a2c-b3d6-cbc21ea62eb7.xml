@@ -2,7 +2,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Altinn i kontekst"
-    id="df42c6d1-db95-4a2c-b3d6-cbc21ea62eb7">
+    id="df42c6d1-db95-4a2c-b3d6-cbc21ea62eb7"
+    documentation="TODO: Legg til forklaring til viewpoint.">
   <children
       xsi:type="archimate:DiagramModelGroup"
       id="16362c85-a8fd-4b4f-ab12-8bca260c5d01"
