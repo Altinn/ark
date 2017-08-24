@@ -2,5 +2,5 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Baseline"
     id="70ff1122-82b9-4d13-a15c-6cdc858dd4b3"
-    purpose="Nåsituasjonsbeskrivelse av virksomhetsarkitekturen i Altinn&#xA;&#xA;* Hvilke applikasjoner har vi?&#xA;* Hvordan snakker applikasjonene sammen?&#xA;* Hvilke tjenster tilbyr vi til brukerne våre (sluttbruker og tjenesteeier)&#xA;* Hva består den tekniske plattformen av?&#xA;* Hvilken teknologi (teknisk plattform) er applikasjonen avhengig av?&#xA;* Hvilke informasjonselementer er vi master for?&#xA;* Hva er meningen til de ulike informasjonselementene?"
+    purpose="Nåsituasjonsbeskrivelse av virksomhetsarkitekturen i Altinn&#xA;&#xA;* Hvilke applikasjoner har vi?&#xA;* Hvordan snakker applikasjonene sammen?&#xA;* Hvilke tjenster tilbyr vi til brukerne våre (sluttbruker og tjenesteeier)&#xA;* Hva består den tekniske plattformen av?&#xA;* Hvilken teknologi (teknisk plattform) er applikasjonen avhengig av?&#xA;* Hvilke informasjonselementer er vi master for?&#xA;* Hva er meningen til de ulike informasjonselementene?&#xA;&#xA;Dersom du vil jobbe med modellen i modelleringsverktøyet Archi, sjekk hvordan på https://github.com/Altinn/ark"
     version="4.0.0"/>
