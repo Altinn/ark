@@ -1,0 +1,17 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Sanntidsoppslag vs Meldingsutveksling"
+    id="5194355e-72cd-43f1-a0a2-b67261241488">
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="4b5ea580-6c8a-46ee-913a-9513324ee71d"
+      textAlignment="1"
+      content="Skissere patterns som viser signifkante forskjeller mellom sanntids-oppslag (via API) og meldingsbasert informasjonsutveksling">
+    <bounds
+        x="36"
+        y="24"
+        width="256"
+        height="120"/>
+  </children>
+</archimate:ArchimateDiagramModel>
