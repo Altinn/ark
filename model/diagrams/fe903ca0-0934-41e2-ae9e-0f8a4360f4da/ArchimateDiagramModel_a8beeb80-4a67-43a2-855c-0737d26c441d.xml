@@ -26,8 +26,8 @@
           href="RealizationRelationship_d62aa46f-b2c5-4639-a466-c67b8141333c.xml#d62aa46f-b2c5-4639-a466-c67b8141333c"/>
     </sourceConnections>
     <bounds
-        x="570"
-        y="276"
+        x="156"
+        y="252"
         width="138"
         height="55"/>
     <archimateElement
@@ -39,8 +39,8 @@
       id="30e2c600-85bb-43ad-a9fb-f4e482efdce2"
       targetConnections="e07f7583-34a8-4541-846b-90c8211645ee">
     <bounds
-        x="579"
-        y="184"
+        x="165"
+        y="160"
         width="120"
         height="55"/>
     <archimateElement
@@ -52,8 +52,8 @@
       id="a9bdaeb0-a4d0-4d48-8069-1ed4ca4b90f4"
       targetConnections="9c767e5f-5db3-4ea2-8f5f-41afef369a65">
     <bounds
-        x="756"
-        y="276"
+        x="342"
+        y="252"
         width="120"
         height="55"/>
     <archimateElement
