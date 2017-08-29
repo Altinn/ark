@@ -1,7 +1,7 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="TOGAF ADM faser og ArchiMate elementer"
+    name="Strategi og tiltak"
     id="f081813a-c494-4fc7-9fee-cfebb0d89068">
   <children
       xsi:type="archimate:DiagramModelGroup"
@@ -177,6 +177,62 @@
           xsi:type="archimate:Goal"
           href="Goal_54d5bbb4-6153-4bbf-9c5a-753d2011df6f.xml#54d5bbb4-6153-4bbf-9c5a-753d2011df6f"/>
     </children>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="c1c1d270-2186-489c-a0be-58fea24292ed"
+      targetConnections="4107fb5c-55cb-4766-a02f-1d039c9c009f">
+    <bounds
+        x="996"
+        y="72"
+        width="120"
+        height="55"/>
+    <archimateElement
+        xsi:type="archimate:Goal"
+        href="Goal_3ffdab3e-071f-49f8-94e7-fb6c256cc75d.xml#3ffdab3e-071f-49f8-94e7-fb6c256cc75d"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="38b0ec74-5272-4c42-840e-4dc3ae555200"
+      targetConnections="0d68d91b-b3d3-4971-9029-e5af084cbebf">
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="4107fb5c-55cb-4766-a02f-1d039c9c009f"
+        source="38b0ec74-5272-4c42-840e-4dc3ae555200"
+        target="c1c1d270-2186-489c-a0be-58fea24292ed">
+      <archimateRelationship
+          xsi:type="archimate:RealizationRelationship"
+          href="RealizationRelationship_af518abc-e7c1-4555-adb5-b4e6cdfc3343.xml#af518abc-e7c1-4555-adb5-b4e6cdfc3343"/>
+    </sourceConnections>
+    <bounds
+        x="996"
+        y="167"
+        width="120"
+        height="55"/>
+    <archimateElement
+        xsi:type="archimate:Capability"
+        href="Capability_d00c9e87-fc82-40db-b8c3-5f31e25eb18d.xml#d00c9e87-fc82-40db-b8c3-5f31e25eb18d"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="3a38a583-5aef-4780-8a38-ac4298c001e5">
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="0d68d91b-b3d3-4971-9029-e5af084cbebf"
+        source="3a38a583-5aef-4780-8a38-ac4298c001e5"
+        target="38b0ec74-5272-4c42-840e-4dc3ae555200">
+      <archimateRelationship
+          xsi:type="archimate:AssignmentRelationship"
+          href="AssignmentRelationship_5f851264-aadf-4550-bf64-3da3697cf008.xml#5f851264-aadf-4550-bf64-3da3697cf008"/>
+    </sourceConnections>
+    <bounds
+        x="996"
+        y="287"
+        width="120"
+        height="55"/>
+    <archimateElement
+        xsi:type="archimate:Resource"
+        href="Resource_df8b1a5f-27d7-4335-80b3-16556a41869c.xml#df8b1a5f-27d7-4335-80b3-16556a41869c"/>
   </children>
   <children
       xsi:type="archimate:DiagramModelGroup"
