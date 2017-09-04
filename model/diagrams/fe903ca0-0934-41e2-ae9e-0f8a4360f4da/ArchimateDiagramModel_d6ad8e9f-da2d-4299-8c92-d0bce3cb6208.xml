@@ -190,7 +190,7 @@
       <children
           xsi:type="archimate:DiagramModelArchimateObject"
           id="825b051f-9f67-460c-b764-23f42b58ffe0"
-          targetConnections="0cda591b-2406-4511-9e72-9577c91749c9 38b8c051-8d5d-4da1-b37b-8feca1635d52">
+          targetConnections="38b8c051-8d5d-4da1-b37b-8feca1635d52 ad998662-ce34-49b8-9f9c-b96754d1d25e">
         <sourceConnections
             xsi:type="archimate:DiagramModelArchimateConnection"
             id="9c8c4f03-d7f4-474a-bc85-005a30dc04b0"
@@ -231,7 +231,7 @@
     <bounds
         x="36"
         y="516"
-        width="1261"
+        width="1405"
         height="469"/>
     <children
         xsi:type="archimate:DiagramModelGroup"
@@ -252,29 +252,8 @@
       <bounds
           x="204"
           y="36"
-          width="865"
+          width="1009"
           height="205"/>
-      <children
-          xsi:type="archimate:DiagramModelArchimateObject"
-          id="a466b273-f973-4492-8d92-8a41fb39a40c">
-        <sourceConnections
-            xsi:type="archimate:DiagramModelArchimateConnection"
-            id="0cda591b-2406-4511-9e72-9577c91749c9"
-            source="a466b273-f973-4492-8d92-8a41fb39a40c"
-            target="825b051f-9f67-460c-b764-23f42b58ffe0">
-          <archimateRelationship
-              xsi:type="archimate:RealizationRelationship"
-              href="RealizationRelationship_57b29623-df8d-4198-bbb0-fe8a462aaa67.xml#57b29623-df8d-4198-bbb0-fe8a462aaa67"/>
-        </sourceConnections>
-        <bounds
-            x="12"
-            y="36"
-            width="120"
-            height="55"/>
-        <archimateElement
-            xsi:type="archimate:Capability"
-            href="Capability_c6c35a07-3934-491d-a286-147cd1800de6.xml#c6c35a07-3934-491d-a286-147cd1800de6"/>
-      </children>
       <children
           xsi:type="archimate:DiagramModelArchimateObject"
           id="65ae0523-1910-4c8e-9c19-16dd69a33a20">
@@ -320,6 +299,27 @@
             xsi:type="archimate:Capability"
             href="Capability_efd702d9-a116-44b5-9754-6e97176531b7.xml#efd702d9-a116-44b5-9754-6e97176531b7"/>
       </children>
+      <children
+          xsi:type="archimate:DiagramModelArchimateObject"
+          id="235c18d5-2df2-4964-8535-1baefc464fe4">
+        <sourceConnections
+            xsi:type="archimate:DiagramModelArchimateConnection"
+            id="ad998662-ce34-49b8-9f9c-b96754d1d25e"
+            source="235c18d5-2df2-4964-8535-1baefc464fe4"
+            target="825b051f-9f67-460c-b764-23f42b58ffe0">
+          <archimateRelationship
+              xsi:type="archimate:RealizationRelationship"
+              href="RealizationRelationship_51609d3c-7fbe-4fb9-8e90-f2c1ee8eda4e.xml#51609d3c-7fbe-4fb9-8e90-f2c1ee8eda4e"/>
+        </sourceConnections>
+        <bounds
+            x="24"
+            y="36"
+            width="120"
+            height="55"/>
+        <archimateElement
+            xsi:type="archimate:Capability"
+            href="Capability_04bc3c90-d49d-4066-ad61-268c4b8d3027.xml#04bc3c90-d49d-4066-ad61-268c4b8d3027"/>
+      </children>
     </children>
     <children
         xsi:type="archimate:DiagramModelGroup"
@@ -327,7 +327,7 @@
         name="Styring"
         textAlignment="1">
       <bounds
-          x="1080"
+          x="1224"
           y="36"
           width="169"
           height="421"/>
@@ -372,7 +372,7 @@
         xsi:type="archimate:DiagramModelArchimateObject"
         id="3c19c3a0-d628-4c75-9e60-3417862e369b">
       <bounds
-          x="828"
+          x="960"
           y="264"
           width="120"
           height="138"/>
@@ -384,8 +384,8 @@
         xsi:type="archimate:DiagramModelArchimateObject"
         id="05dc3573-1c58-4767-a11c-f05633d56c3b">
       <bounds
-          x="972"
-          y="264"
+          x="1116"
+          y="262"
           width="97"
           height="138"/>
       <archimateElement
@@ -396,7 +396,7 @@
         xsi:type="archimate:DiagramModelArchimateObject"
         id="c8ce3f59-8595-4681-8eea-f1a3e6fe4d09">
       <bounds
-          x="492"
+          x="528"
           y="264"
           width="145"
           height="138"/>
@@ -408,7 +408,7 @@
         xsi:type="archimate:DiagramModelArchimateObject"
         id="61a04760-a58a-4c6c-b299-d3d24c4fccc4">
       <bounds
-          x="660"
+          x="732"
           y="264"
           width="145"
           height="134"/>
@@ -425,7 +425,84 @@
     <bounds
         x="769"
         y="60"
-        width="528"
+        width="672"
         height="437"/>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="a2a631f8-5b0d-40e5-95d7-ed4d3708f5e4"
+        name="Måloppnåelse"
+        textAlignment="1">
+      <bounds
+          x="12"
+          y="36"
+          width="109"
+          height="385"/>
+    </children>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="18a3dd4d-885f-4966-b7b7-291d17958446"
+        name="Kostnader og finansiering"
+        textAlignment="1">
+      <bounds
+          x="552"
+          y="36"
+          width="109"
+          height="385"/>
+    </children>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="48fa3b6b-6108-4966-b8d6-5a66f6727b80"
+        name="Verdikjeder"
+        textAlignment="1">
+      <bounds
+          x="132"
+          y="281"
+          width="409"
+          height="140"/>
+    </children>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="04ec5126-7255-4c10-9256-0e0a11fac2b3"
+        name="Personer og virksomheter"
+        textAlignment="1">
+      <bounds
+          x="132"
+          y="36"
+          width="105"
+          height="229"/>
+    </children>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="66b9be52-fa8b-4f21-88a6-e5ed573876ba"
+        name="Oppdragsgivere"
+        textAlignment="1">
+      <bounds
+          x="436"
+          y="36"
+          width="105"
+          height="229"/>
+    </children>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="31d5ffe1-7542-4767-abe1-9d438ded9558"
+        name="Samfunnsoppdrag"
+        textAlignment="1">
+      <bounds
+          x="246"
+          y="36"
+          width="181"
+          height="121"/>
+    </children>
+    <children
+        xsi:type="archimate:DiagramModelGroup"
+        id="83ae2fac-a96d-41bc-a6f5-634eea5d2e33"
+        name="Prinsipper for utvikling"
+        textAlignment="1">
+      <bounds
+          x="246"
+          y="173"
+          width="181"
+          height="92"/>
+    </children>
   </children>
 </archimate:ArchimateDiagramModel>
