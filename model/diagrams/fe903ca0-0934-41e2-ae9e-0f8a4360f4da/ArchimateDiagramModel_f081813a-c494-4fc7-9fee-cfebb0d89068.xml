@@ -9,7 +9,7 @@
       name="Porteføljestyring (F,G)"
       textAlignment="1">
     <bounds
-        x="588"
+        x="696"
         y="24"
         width="325"
         height="457"/>
@@ -219,7 +219,7 @@
       name="Tjenesteutvikling (B,C,D, E)"
       textAlignment="1">
     <bounds
-        x="288"
+        x="336"
         y="24"
         width="289"
         height="457"/>
