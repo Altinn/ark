@@ -34,10 +34,19 @@
             xsi:type="archimate:RealizationRelationship"
             href="RealizationRelationship_7d22e8c1-2a9d-4334-b64c-1e6eb8867950.xml#7d22e8c1-2a9d-4334-b64c-1e6eb8867950"/>
       </sourceConnections>
+      <sourceConnections
+          xsi:type="archimate:DiagramModelArchimateConnection"
+          id="4fe50a48-3418-4922-addc-ac06f4f3e9a8"
+          source="5beb0ba5-3f62-45fb-a7e5-ced9495c2bf3"
+          target="0db78c6f-2578-439e-b68e-66daaf85ce05">
+        <archimateRelationship
+            xsi:type="archimate:AggregationRelationship"
+            href="AggregationRelationship_9e444127-cb07-48d2-8fcf-c7f99963eb73.xml#9e444127-cb07-48d2-8fcf-c7f99963eb73"/>
+      </sourceConnections>
       <bounds
           x="12"
           y="36"
-          width="289"
+          width="433"
           height="118"/>
       <children
           xsi:type="archimate:DiagramModelArchimateObject"
@@ -64,6 +73,19 @@
         <archimateElement
             xsi:type="archimate:BusinessInterface"
             href="BusinessInterface_33be630e-c083-4945-a80d-3527da10cbd7.xml#33be630e-c083-4945-a80d-3527da10cbd7"/>
+      </children>
+      <children
+          xsi:type="archimate:DiagramModelArchimateObject"
+          id="0db78c6f-2578-439e-b68e-66daaf85ce05"
+          targetConnections="4fe50a48-3418-4922-addc-ac06f4f3e9a8">
+        <bounds
+            x="300"
+            y="48"
+            width="120"
+            height="55"/>
+        <archimateElement
+            xsi:type="archimate:BusinessService"
+            href="BusinessService_4a978318-677b-46b2-bea1-adf5e821fcd4.xml#4a978318-677b-46b2-bea1-adf5e821fcd4"/>
       </children>
       <archimateElement
           xsi:type="archimate:Product"
@@ -716,7 +738,7 @@
             href="RealizationRelationship_f6640e09-ca16-4e4e-a926-b39fda1896a8.xml#f6640e09-ca16-4e4e-a926-b39fda1896a8"/>
       </sourceConnections>
       <bounds
-          x="312"
+          x="456"
           y="36"
           width="277"
           height="118"/>
@@ -781,7 +803,7 @@
             href="RealizationRelationship_d9ffe8cf-8a78-4144-8d98-f418265f8ceb.xml#d9ffe8cf-8a78-4144-8d98-f418265f8ceb"/>
       </sourceConnections>
       <bounds
-          x="600"
+          x="744"
           y="36"
           width="409"
           height="118"/>
