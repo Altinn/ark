@@ -11,7 +11,7 @@
     <bounds
         x="1068"
         y="44"
-        width="265"
+        width="205"
         height="749"/>
     <children
         xsi:type="archimate:DiagramModelArchimateObject"
@@ -35,9 +35,9 @@
             href="FlowRelationship_ecdfd5c6-4792-455e-9b8c-f7c20a1aa514.xml#ecdfd5c6-4792-455e-9b8c-f7c20a1aa514"/>
       </sourceConnections>
       <bounds
-          x="48"
-          y="492"
-          width="157"
+          x="60"
+          y="516"
+          width="121"
           height="55"/>
       <archimateElement
           xsi:type="archimate:ApplicationComponent"
@@ -48,9 +48,9 @@
         id="62404e76-25f7-4003-bc02-1d3f8418cb1a"
         targetConnections="1e5e2451-47c8-42b1-856e-d445c7667ca5">
       <bounds
-          x="48"
-          y="576"
-          width="157"
+          x="60"
+          y="600"
+          width="121"
           height="55"/>
       <archimateElement
           xsi:type="archimate:ApplicationComponent"
@@ -89,9 +89,9 @@
             href="AccessRelationship_aba01b01-a530-438a-8aeb-31db244aa8f2.xml#aba01b01-a530-438a-8aeb-31db244aa8f2"/>
       </sourceConnections>
       <bounds
-          x="48"
-          y="420"
-          width="157"
+          x="60"
+          y="444"
+          width="121"
           height="55"/>
       <archimateElement
           xsi:type="archimate:ApplicationComponent"
@@ -168,7 +168,7 @@
       <bounds
           x="36"
           y="276"
-          width="190"
+          width="157"
           height="55"/>
       <archimateElement
           xsi:type="archimate:BusinessService"
