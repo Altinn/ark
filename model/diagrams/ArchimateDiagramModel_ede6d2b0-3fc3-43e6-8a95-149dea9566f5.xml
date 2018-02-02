@@ -92,6 +92,15 @@
           xsi:type="archimate:DiagramModelArchimateObject"
           id="7fdd3d74-d68f-497b-a42d-b3aaa7fd3c39"
           targetConnections="8730a2eb-a06b-4859-9bf2-eeada9342999">
+        <sourceConnections
+            xsi:type="archimate:DiagramModelArchimateConnection"
+            id="e7458c34-ef46-4fba-ba3b-bc0a645b8ee5"
+            source="7fdd3d74-d68f-497b-a42d-b3aaa7fd3c39"
+            target="e4f18442-3c75-486a-9af7-816c9728c6e0">
+          <archimateRelationship
+              xsi:type="archimate:AssociationRelationship"
+              href="AssociationRelationship_1cf64906-417a-4b82-afa5-8221cdcb9b45.xml#1cf64906-417a-4b82-afa5-8221cdcb9b45"/>
+        </sourceConnections>
         <bounds
             x="240"
             y="48"
@@ -104,7 +113,7 @@
       <children
           xsi:type="archimate:DiagramModelArchimateObject"
           id="e4f18442-3c75-486a-9af7-816c9728c6e0"
-          targetConnections="f31196c8-e0d1-4a69-a06a-4e4fe29045e0">
+          targetConnections="f31196c8-e0d1-4a69-a06a-4e4fe29045e0 e7458c34-ef46-4fba-ba3b-bc0a645b8ee5">
         <bounds
             x="348"
             y="144"
@@ -1648,15 +1657,25 @@
           source="9f8e0fc5-27af-4a0c-8f35-66e0a470d993"
           target="865f6f35-3874-47ce-8fc3-939551fbb57b">
         <bendpoints
-            startX="-49"
-            startY="-111"
-            endX="180"
-            endY="309"/>
+            startX="-61"
+            startY="-159"
+            endX="259"
+            endY="261"/>
         <bendpoints
             startX="-265"
-            startY="-111"
-            endX="-36"
-            endY="309"/>
+            startY="-159"
+            endX="55"
+            endY="261"/>
+        <bendpoints
+            startX="-265"
+            startY="-279"
+            endX="55"
+            endY="141"/>
+        <bendpoints
+            startX="-301"
+            startY="-279"
+            endX="19"
+            endY="141"/>
         <archimateRelationship
             xsi:type="archimate:ServingRelationship"
             href="ServingRelationship_9a64de5f-e4a5-4dfa-b88c-9fd95a16203c.xml#9a64de5f-e4a5-4dfa-b88c-9fd95a16203c"/>
