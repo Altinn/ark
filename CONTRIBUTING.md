@@ -25,7 +25,7 @@ Inn til videre er det ikke støtte for branching i Archi, dermed må du gjøre f
 #### Oppdatere HTML-rapporten
 Når du har gjort vesentlige endringer i modellen, må du oppdatere HTML-rapporten. (Dette er en read-only html-versjon av modellen, som interessenter kan klikke rundt i.)
 1. Velg File->Report->HTML...
-2. Velg docs-mappa i prosjektet. Den vil se omtrent slik ut:
+2. Velg docs-mappa i prosjektet (typisk sti for PC: C:\Users\brukernavn\AppData\Roaming\Archi4\model-repository\navn_på_repository\docs. Den vil se omtrent slik ut:
 ![Add Remote Model](/screenshots/Report.png)
 3. Trykk OK
 #### Commit
