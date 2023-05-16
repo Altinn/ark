@@ -376,7 +376,8 @@
     </children>
     <children
         xsi:type="archimate:DiagramModelArchimateObject"
-        id="7ffaee32-444b-4b6c-9ce1-aae119611188">
+        id="7ffaee32-444b-4b6c-9ce1-aae119611188"
+        type="1">
       <sourceConnections
           xsi:type="archimate:DiagramModelArchimateConnection"
           id="e0910d03-f537-4469-8c1d-b3d73988b761"
