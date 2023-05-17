@@ -13,6 +13,7 @@ Gå til <https://altinn.github.io/ark>
 *   Hvilken teknologi (teknisk plattform) er applikasjonen avhengig av?
 *   Hvilke informasjonselementer er vi master for?
 *   Hva er meningen til de ulike informasjonselementene?
+*   Hva er mengen med livet?
 
 
 ## Dersom du vil bidra til utvikling av modellen sjekk [dette dokumentet](./CONTRIBUTING.md)
