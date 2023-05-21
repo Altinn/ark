@@ -11,7 +11,7 @@ Arkitekturmodellene er primært laget i verkøyet Archi og støtter Archimate-st
 
 
 ## Dersom du vil se på archimate-modellene i en nettleser
-Gå til <https://altinn.github.io/ark/models/archi>
+Gå til <https://altinn.github.io/ark/models/archi-all>
 
 
 ## Dersom du vil bidra til utvikling av modellen sjekk [dette dokumentet](./CONTRIBUTING.md)
