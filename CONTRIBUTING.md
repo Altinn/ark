@@ -1,5 +1,13 @@
 # Bidra til Altinn arkitektur
 
+##Kortversjon (2023)
+
+Det er lagt opp til at flere skal kunne samarbeide om innholdsproduksjonen. Dette kan gjøres på to måter:
+
+1.Ta utgangspunkt i en eksport av hele eller deler av Archi-modellen (mastermodellen). Endringer og tillegg kan importeres tilbake  til mastermodellen, basert på gjenkjenning av globalt unike identifikatorer for alle objekter, Dette gjøres av noen med spesielt ansvar for å vedlikeholde mastermodellen. Ved import kan/bør det sjekkes og ryddes opp i duplikater, dvs. objekter med ulik ID, men samme navn. Det er ønskelig at navning av objekter er konsistent, slik at ikke flere ulike konsepter har samme navn. En kan eventuelt merke innhold med namespace. 
+
+2. Collaboration-plugin i Archi. Anbefales inntil videre ikke, fordi det erfaringsmessig er vanskelig å få til å fungere godt med flere brukere (bugs, rettighetsstyring). Kanskje rundt neste sving?
+
 ## Instruksjoner (2018)
 
 ### Installasjon av programvare
