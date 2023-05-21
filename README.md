@@ -3,9 +3,9 @@
 :construction:
 
 ## Dersom du vil se på modellen i en nettleser
-Gå til <https://altinn.github.io/ark>
+Gå til <https://altinn.github.io/ark/models/archi>
 
-## Spørsmål som vi ønsker å besvare med arkitekturen
+## Spørsmål som vi ønsker å besvare med arkitekturen (2018)
 *   Hvilke applikasjoner har vi?
 *   Hvordan snakker applikasjonene sammen?
 *   Hvilke tjenster tilbyr vi til brukerne våre (sluttbruker og tjenesteeier)

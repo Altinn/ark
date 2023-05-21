@@ -1,6 +1,6 @@
 # Bidra til Altinn arkitektur
 
-## Instruksjoner
+## Instruksjoner (2018)
 
 ### Installasjon av programvare
 *   Last ned og installer [Archi](http://archimatetool.com/download) for din plattform
