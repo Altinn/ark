@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Arbeidsflyt tjeneste</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Arbeidsflyt tjeneste</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definere arbeidsflyt for en tjeneste. M&#229; v&#230;re MYE kraftigere og mer fleksibel enn det som finnes i dagens l&#248;sning. M&#229;lsettingen er &#229; muliggj&#248;re at vi kan fjerne de ulike tjenestetypene i dagens l&#248;sning.
+
+Tanken er at hvis man b&#229;de kan gj&#248;re henting av data (innsyn) og ta i mot meldinger, og gj&#248;re en eller flere arkivering, s&#229; faller behovet for tjenestetyper bort. Behovet for samhandlingstjenesten forsvinner ogs&#229;.
+
+En annen veldig spennende tanke er at dette ogs&#229; &#229;pner opp for &#229; &#8220;koble sammen&#8221; dialogen for brukeren, siden det da per. def ikke er noe &#229; koble sammen. Hele dialogen er bare ulike steg i den samme tjenesten, og siden man ogs&#229; kan legge til API&#8217;er p&#229; en 3.0-tjeneste, s&#229; &#229;pner det opp for at tjenesteeier modellerer flyten istedenfor at den m&#229; passe inn i et m&#248;nster som er bestemt av Altinn.
+
+Stegene i en arbeidsflyt skal ogs&#229; v&#230;re del av selve tjenesten som deployes, og ikke kj&#248;re i plattformen slik som i dag. Dette &#229;pner opp for stor grad av tilpasninger, gj&#248;r at hele flyten kan enhetstestes, og gj&#248;r at tjenesten i st&#248;rre grad blir immun mot p&#229;virkning fra endringer i plattformen. En naturlig vei &#229; g&#229; vil v&#230;re &#229; benytte de samme mekanismene for &#229; kunne gjenbruke og (re)definere arbeidsflyt og GUI per steg, som for GUI for tjenestene. Og da er vi veldig n&#230;rme det at arbeidsflyt ikke er noe eget, det er det samme som flyten internt i et skjema.
+
+Eksempler p&#229; steg:
+
+Signering
+Hente prefill, gj&#248;re oppslag mot eksterne data
+Gj&#248;re eksterne valideringer via API
+Motta melding via API
+Gj&#248;re ekstern signering
+Egendefinerte steg, med UX</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>difi:namespace</td><td class="convertlinks no-margin" style="white-space:pre-wrap">altinn-2018-target-2020</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

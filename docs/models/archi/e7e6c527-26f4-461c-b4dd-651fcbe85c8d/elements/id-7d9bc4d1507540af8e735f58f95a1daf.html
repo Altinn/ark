@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Binary Stream</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Binary Stream</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-SystemSoftware"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-SystemSoftware" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">A binary stream refers to a continuous sequence of binary data (composed of bits, which are either 0 or 1) that is transmitted or processed by a computer system. Binary streams are often used for reading or writing binary data, such as images, audio files, video files, or other types of non-text data, from or to files, networks, or other data sources.
+
+In the context of programming languages and libraries, a binary stream is typically represented as an object or an interface that allows developers to read or write binary data to a specified source, such as a file or a network socket. The binary stream provides methods for reading and writing individual bytes or sequences of bytes, enabling the manipulation of binary data within a program.
+
+For example, in the .NET Framework, the Stream class is a base class for various types of binary streams, such as FileStream (for reading and writing data to a file) and NetworkStream (for reading and writing data over a network connection). In Java, the InputStream and OutputStream classes serve as base classes for different types of binary streams.
+
+Working with binary streams allows developers to handle binary data efficiently, as the data is processed in its native format without the need for additional encoding or decoding, such as converting the binary data to a text-based format like Base64. This can lead to improved performance and reduced memory usage when working with large binary files or streaming data.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

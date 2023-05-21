@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Omfang og avgrensing</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Omfang og avgrensing</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Representation"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Representation" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">include::ra-datax-references:partial$references.adoc[]
+
+Dette er et sv&#230;rt omfattende tema. Det har ingen hensikt &#229; lage en komplett l&#230;rebok her - det finnes allerede mange, og det finnes et virvar av ulike artikler fra akademia og produktleverand&#248;rer. Utfordringen er &#229; gripe fatt i en essens som gir nytte for &#229; bygge samhandlingsevne p&#229; tvers.
+
+I boka {Enterprise-Integration-Patterns}, skilles det mellom f&#248;lgende grunnleggende intragrasjonsstiler (her med en kortfattet omskriving av betydningen):
+
+1. *Messaging. Asynkron meldingsutveksling.*
+2. *Remote Procedure Invocation. Synkrone API-kall.*
+3.  File transfer. Filoverf&#248;ring. F.eks. via FTP.
+4. Shared database integration. F.eks. via en datasj&#248;. 
+
+Her avgrenses omfanget til de to f&#248;rste av disse intragrasjonsstilene. Begrunnelsen for dette er:
+
+* Filoverf&#248;ring betraktes her som en l&#248;sning for meldingsforsendelse. 
+* _Shared database_ dekkes inntil videre gjennom &#229; se dette som en genuin datatilbyder, heller enn en del av infrastrukturen for datautveksling.   Det kan tenkes &#229; v&#230;re s&#230;rskilte juridiske eller avtalemessige  problemstillinger i tilknytning til dette som en type m&#248;nster, men tilsvarende problemstillinger finnes ogs&#229; f.eks. i m&#248;nstre for datautveksling gjennom persistente meldingsk&#248;er eller hendelseslister.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>modelx:antora_component</td><td class="convertlinks no-margin" style="white-space:pre-wrap">drafts</td></tr><tr><td>modelx:antora_version</td><td class="convertlinks no-margin" style="white-space:pre-wrap">master</td></tr><tr><td>modelx:antora_module</td><td class="convertlinks no-margin" style="white-space:pre-wrap">ra-datax-introduction</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">modelx:section</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Publisering via en hendelsesliste (event streaming)</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Publisering via en hendelsesliste (event streaming)</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessInteraction"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessInteraction" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Dette m&#248;nsteret tilsvarer "Publisering fra en til flere ukjente abonnementer (pub-sub)". Forskjeller: 
+
+Konsumentene beh&#248;ver ikke &#229; sette opp abonnement, men kan kople seg direkte p&#229; en hendelsesstr&#248;m via en hendelsesliste som kan navigeres og leses fra &#248;nsket sted i hendelsesstr&#248;mmen. Hendelsesstr&#248;mmen er "durable" og hendelsene er "immutable".
+
+Dette m&#248;nsteret er n&#230;rmere beskrevet under https://nasjonal-arkitektur.github.io/architecture-repository/publish-subscribe/book-publish-subscribe.html[Publisering og konsumering av hendelsesstr&#248;mmer] i https://nasjonal-arkitektur.github.io/architecture-repository/index.html[arkitekturverkstedet].
+
+xref:drafts:ra-datax-patterns:event-streaming-12m-one-log.adoc[Videre detaljer]</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>drill down</td><td class="convertlinks no-margin" style="white-space:pre-wrap">id-23c0c55e15ff4d1f94755c18e53fa1bf</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

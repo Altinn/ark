@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Praktisk størrelsesbegrensing på  ca. 1GB meldinger </title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Praktisk st&#248;rrelsesbegrensing p&#229;  ca. 1GB meldinger </b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Assessment"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Assessment" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Working with binary streams allows developers to handle binary data efficiently, as the data is processed in its native format without the need for additional encoding or decoding, such as converting the binary data to a text-based format like Base64. This can lead to improved performance and reduced memory usage when working with large binary files or streaming data.
+
+###
+
+MTOM (Message Transmission Optimization Mechanism) itself does not impose specific size limits on binary attachments. However, the size limits for MTOM attachments may be influenced by various factors, including the web service implementation, the application server, and the network infrastructure. Some common factors that may impact the size limits for MTOM attachments are:
+
+Web service and application server configurations: Different web service frameworks and application servers may have their own default settings or configurable limits on the size of SOAP messages, including MTOM attachments. These limits can usually be adjusted in the server or framework configuration files.
+
+Network constraints: Network infrastructure, including routers, switches, and firewalls, may impose limits on the size of data packets that can be transmitted. This could affect the maximum size of MTOM attachments that can be sent without encountering network-related issues.
+
+Client and server resources: The resources available on the client and server, such as memory and processing power, can impact the handling of large MTOM attachments. Insufficient resources may lead to performance issues or failures when processing large attachments.
+
+Intermediary systems: In some cases, SOAP messages with MTOM attachments may pass through intermediary systems, such as proxy servers, which could impose their own size limits on message attachments.
+
+###
+
+To mitigate these potential issues, you may consider:
+
+Adjusting server and client configurations to handle larger messages, such as increasing memory allocation, modifying timeout settings, and configuring maximum message size limits.
+
+Using streaming techniques when available, which can allow you to process and transmit large MTOM attachments as a stream of smaller chunks, reducing memory usage and improving overall performance.
+
+Compressing the binary attachments before transmitting them to reduce their size and minimize the impact on bandwidth usage.
+
+Splitting large binary attachments into smaller parts and sending them as separate MTOM messages, which can help circumvent size limitations and improve processing efficiency.
+
+In summary, MTOM messages larger than approximately 1GB can cause problems due to memory usage, processing time, network limitations, and interoperability issues. It's crucial to consider these factors when designing and configuring your web services to handle large MTOM messages effectively.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
