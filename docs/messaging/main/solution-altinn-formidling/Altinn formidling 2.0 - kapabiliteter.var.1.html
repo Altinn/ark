@@ -418,7 +418,7 @@
 </div>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="https://solutions-no.github.io/models/archi/?view=id-a22442d94a3f4e0cb92c4399fabcfec3"><img src="_images/Altinn%20formidling%202.0%20-%20kapabiliteter.png" alt="Altinn formidling 2.0 - kapabiliteter image"></a>
+<a class="image" href="https://altinn.github.io/ark/models/archi/?view=id-a22442d94a3f4e0cb92c4399fabcfec3"><img src="_images/Altinn%20formidling%202.0%20-%20kapabiliteter.png" alt="Altinn formidling 2.0 - kapabiliteter image"></a>
 </div>
 <div class="title">Figure 1. Altinn formidling 2.0 - kapabiliteter</div>
 </div>
@@ -493,7 +493,7 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Støtte for meldingsmønster en-til-mange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Støtte for meldingsmønstre en-til-mange (pub-sub, multicast)</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
@@ -527,12 +527,6 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Logging</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Erik: Mer spesifikt - hva logges??</p>
-</div></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identitetsforvaltning</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
@@ -547,14 +541,22 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Adressering</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Uvidet adressering (interne organisasjonsenheter)</p>
+</li>
+<li>
+<p>Oppslagstjeneste for å finne aktuelle mottakere (direkte adressering)</p>
+</li>
+<li>
+<p>Rettighetsregister for å sjekk hvem som har lov til å motta (pub-sub, events)</p>
+</li>
+</ul>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Etablere avtaler mellom avsendere og mottakere</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autentisering</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
@@ -567,6 +569,14 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unntakshåndtering</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autentisere samhandlingsaktør</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Logging</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
@@ -648,6 +658,32 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datakonsument</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Den som innhenter eller mottar data fra andre aktører.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delegere rettigheter og gi fullmakter (tilbyder)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Evne til å delegere en rettighet til en annen aktør feks. en driftslevereandør på en slik måte at dette kan etterprøves.
+Registrering og kontroll av representasjonsforhold. Trenger ikke være begrenset til virksomheter men også omfatter f.eks. foreldre-barn relasjon, vergemål, bobestyrer osv.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delegere rettigheter til databehandler</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Evnen til å delegere rettigheter til databehandler som utfører oppgaver på vegne av behandlingsansvarlig.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delegere rettigheter til databehandler</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Evnen til å delegere rettigheter til databehandler som utfører oppgaver på vegne av behandlingsansvarlig.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delegere rettigheter og gi fullmakter konsument</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Evne til å delegere en rettighet til en annen aktør feks. en driftslevereandør på en slik måte at dette kan etterprøves.
+Registrering og kontroll av representasjonsforhold. Trenger ikke være begrenset til virksomheter men også omfatter f.eks. foreldre-barn relasjon, vergemål, bobestyrer osv.</p>
 </div></div></td>
 </tr>
 </tbody>
