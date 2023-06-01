@@ -1,6 +1,6 @@
 # Bidra til Altinn arkitektur
 
-##Kortversjon (2023)
+## Kortversjon (2023)
 
 Det er lagt opp til at flere skal kunne samarbeide om innholdsproduksjonen. Dette kan gjøres på to måter:
 
