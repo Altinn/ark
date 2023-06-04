@@ -2,20 +2,20 @@
 echo "Updating component messaging..."
 echo "=========================="
 cd /c/Users/eha/OneDrive/antora/altinn/ark/wiki/components/messaging
-git checkout main
+git checkout master
 git add .
 git commit -m "Dev"
-git push origin main
+git push origin master
 echo ""
 echo ""
 echo ""
 echo "Updating playbook..."
 echo "===================="
 cd /c/Users/eha/OneDrive/antora/altinn/ark/wiki/playbook
-git checkout main
+git checkout master
 git add .
 git commit -m "Dev"
-git push origin main
+git push origin master
 echo ""
 echo ""
 echo "Running Antora..."
