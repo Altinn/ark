@@ -1,0 +1,22 @@
+= Mønstre
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:messaging-appendixes:page$Samhandlingsmønstre - de viktigste.adoc[]
+include::main@messaging:messaging-appendixes:page$Samhandlingsmønstre og meldingstyper.adoc[]
+include::main@messaging:messaging-appendixes:page$Utvekslingsmønstre.adoc[]
+include::main@messaging:messaging-appendixes:page$Utvekslingsmønstre - oversikt (canvas).adoc[]
+include::main@messaging:messaging-appendixes:page$Map utvekslingsmønstre til samhandlingsmønstre.adoc[]
+:leveloffset: -1

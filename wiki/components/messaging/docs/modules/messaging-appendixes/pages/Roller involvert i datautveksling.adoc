@@ -1,0 +1,24 @@
+= Roller involvert i datautveksling
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Roller involvert i datautveksling
+image::{imagepath}Roller involvert i datautveksling.png[alt=Roller involvert i datautveksling image, link=https://altinn.github.io/ark/models/archi-all?view=57aad106-404d-44a7-8981-532cd6538cdb]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Roller involvert i datautveksling.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

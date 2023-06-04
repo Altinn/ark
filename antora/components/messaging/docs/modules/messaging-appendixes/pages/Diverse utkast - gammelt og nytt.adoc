@@ -1,0 +1,26 @@
+= Diverse utkast - gammelt og nytt
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:messaging-appendixes:page$Fellesløsninger - oversikt og sammenheng.adoc[]
+include::main@messaging:messaging-appendixes:page$Mønstre (Erik, 2021).adoc[]
+include::main@messaging:messaging-appendixes:page$Referansearkitektur for datautveksling (Erik, 2019).adoc[]
+include::main@messaging:messaging-appendixes:page$Deling av data (Erik, 2019).adoc[]
+include::main@messaging:messaging-appendixes:page$Sammenhengende tjenester Erik, 2019).adoc[]
+include::main@messaging:messaging-appendixes:page$Saksbehandling RA (Erik, 2021).adoc[]
+include::main@messaging:messaging-appendixes:page$Modelleringskonvensjoner Erik, 2019).adoc[]
+include::main@messaging:messaging-appendixes:page$Felles økosystem.adoc[]
+include::main@messaging:messaging-appendixes:page$EU-arkitektur.adoc[]
+:leveloffset: -1

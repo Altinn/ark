@@ -1,0 +1,8 @@
+name: messaging
+title: Meldingsutveksling
+version: main
+start_page: ROOT:index.adoc 
+nav:
+- modules/ROOT/nav.adoc
+
+

@@ -1,0 +1,25 @@
+= Utvekslingsmønstre - oversikt (canvas)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+#Merk: Denne oversikten er i arbeid.#
+
+
+
+
+
+.Utvekslingsmønstre - oversikt (canvas)
+image::{imagepath}Utvekslingsmønstre - oversikt (canvas).png[alt=Utvekslingsmønstre - oversikt (canvas) image, link=https://altinn.github.io/ark/models/archi-all?view=id-4e5b57c6dff243a18b415e6efcf2e717]
+
+
+
+

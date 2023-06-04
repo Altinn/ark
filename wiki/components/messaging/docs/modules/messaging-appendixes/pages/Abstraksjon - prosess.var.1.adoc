@@ -1,0 +1,65 @@
+= Abstraksjon - prosess
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Abstraksjon - prosess
+image::{imagepath}Abstraksjon - prosess.png[alt=Abstraksjon - prosess image, link=https://altinn.github.io/ark/models/archi-all?view=2445346e-ac47-4153-a7a8-ea4da6d211be]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Abstraksjon - prosess
+|===
+
+| Element
+| Beskrivelse
+
+| Business Process ABB
+a| Business Process Pattern
+
+| Business Process SBB
+a| Business Process Solution
+
+| Business Process INSTANCE
+a| 
+
+| Application Process ABB
+a| 
+
+| Application Process SBB
+a| 
+
+| Application Process INSTANCE
+a| 
+
+| Technology Process ABB
+a| 
+
+| Technology Process SBB
+a| 
+
+| Technology Process SBB INSTANCE
+a| 
+
+| Value Stream
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

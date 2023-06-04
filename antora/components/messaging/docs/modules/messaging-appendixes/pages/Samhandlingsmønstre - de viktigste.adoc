@@ -1,0 +1,21 @@
+= Samhandlingsmønstre - de viktigste
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+Steinar: Kommando mangler
+
+.Samhandlingsmønstre - de viktigste
+image::{imagepath}Samhandlingsmønstre - de viktigste.png[alt=Samhandlingsmønstre - de viktigste image, link=https://altinn.github.io/ark/models/archi-all?view=id-1e91f86ae41540be88a596919cc59ae6]
+
+
+
+

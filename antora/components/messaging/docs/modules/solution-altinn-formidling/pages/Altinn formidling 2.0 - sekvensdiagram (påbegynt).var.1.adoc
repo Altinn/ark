@@ -1,0 +1,47 @@
+= Altinn formidling 2.0 - sekvensdiagram (påbegynt)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn formidling 2.0 - sekvensdiagram (påbegynt)
+image::{imagepath}Altinn formidling 2.0 - sekvensdiagram (påbegynt).png[alt=Altinn formidling 2.0 - sekvensdiagram (påbegynt) image, link=https://altinn.github.io/ark/models/archi-all?view=id-d6362f6e46a34f1497cd6a5f0e40384c]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Altinn formidling 2.0 - sekvensdiagram (påbegynt)
+|===
+
+| Element
+| Beskrivelse
+
+| Avsender 
+a| Den som sender en elektronisk melding eller tilsvarende.
+
+| Mottaker
+a| Den som mottar en elektronisk melding eller tilsvarende.
+
+| Altinn Formidling
+a| 
+
+| Broker DB
+a| Liste over alle meldinger i en stor Altinn SQL Server, 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

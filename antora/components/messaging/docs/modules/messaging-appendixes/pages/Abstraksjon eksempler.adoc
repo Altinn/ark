@@ -1,0 +1,21 @@
+= Abstraksjon eksempler
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Abstraksjon eksempler
+image::{imagepath}Abstraksjon eksempler.png[alt=Abstraksjon eksempler image, link=https://altinn.github.io/ark/models/archi-all?view=3ea547a0-89f4-4e48-b068-4008ca824656]
+
+
+
+

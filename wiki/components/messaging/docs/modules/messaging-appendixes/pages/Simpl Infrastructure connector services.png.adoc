@@ -1,0 +1,21 @@
+= Simpl Infrastructure connector services.png
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Simpl Infrastructure connector services.png
+image::{imagepath}Simpl Infrastructure connector services.png.png[alt=Simpl Infrastructure connector services.png image, link=https://altinn.github.io/ark/models/archi-all?view=id-4e9c668e394c4a93a2aa48919dce79b4]
+
+
+
+

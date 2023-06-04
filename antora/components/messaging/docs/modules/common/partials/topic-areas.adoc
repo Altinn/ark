@@ -1,0 +1,21 @@
+ifeval::["{lang}" == "no"]
+//************************
+:topic-seamless-services: Sammenhengende tjenester
+:topic-data-sharing: Datadeling
+:topic-data-excnange: Datautveksling
+:topic-data-provenence: Dataproveniens
+
+
+//
+:difi-contenttype-caption: Innholdstype
+endif::[]
+//************************
+ifeval::["{lang}" == "en"]
+//************************
+:topic-seamless-services: Seamless sevices
+:topic-data-sharing: Data Sharing
+:topic-data-excnange: Data Exchange
+:topic-data-provenence: Data Provenence
+
+//************************
+endif::[]

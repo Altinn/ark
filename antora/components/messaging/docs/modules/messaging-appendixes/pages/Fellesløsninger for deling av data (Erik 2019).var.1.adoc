@@ -1,0 +1,238 @@
+= Fellesløsninger for deling av data (Erik 2019)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Fellesløsninger for deling av data (Erik 2019)
+image::{imagepath}Fellesløsninger for deling av data (Erik 2019).png[alt=Fellesløsninger for deling av data (Erik 2019) image, link=https://altinn.github.io/ark/models/archi-all?view=id-1a324e684b2e4db4a840bf8d62747a46]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Fellesløsninger for deling av data (Erik 2019)
+|===
+
+| Element
+| Beskrivelse
+
+| Felles Datakatalog
+a| Felles Datakatalog gir en oversikt over hvilke data de ulike offentlige virksomhetene har, hvordan de henger sammen og hva de betyr. Videre tilbyr den en registeringsløsning for datasett, begreper og API.
+
+Oversikt over datasett øker organisatorisk og juridisk samhandlingsevne ved at datasett som finnes tilgjengeliggjøres og juridiske aspekter ved datasettene beskrives.
+
+Oversikt over informasjonsmodeller øker organisatorisk og semantisk samhandlingsevne ved at
+informasjonsmodeller tilgjengeliggjøres og at data som utveksles beskrives med informasjonsmodeller.
+
+Oversikt over begreper øker semantisk samhandlingsevne ved at felles begrepsbruk og
+definisjoner er lett tilgjengelige.
+
+Oversikt over APIer øker teknisk samhandlingsevne og muliggjør maskinell utveksling av data.
+
+Mer om Felles datakatalog:
+https://data.norge.no/
+
+| Digitalarkivet
+a| Digitalarkivet og Arkivportalen gir en oversikt over hvilke historiske data de ulike bevaringsinstitusjonen i Norge forvalter, og hva slags skjermingshjemler som
+er knyttet til datasettene. En slik oversikt over datasett og hjemler øker organisatorisk og juridisk
+samhandlingsevne ved at det blir lettere å finne datasett og opplysninger om hvem som har tilgang til dem.
+
+Digitalarkivet og Arkivportalen inneholder arkivbeskrivelser og standardiserte metadata som
+understøtter semantisk interoperabilitet. I tillegg kan Digitalarkivet og Arkivportalen brukes for å få tilgang til historiske data, noe som understøtter teknisk interoperabilitet.
+
+Ny løsning for Digitalarkivet er under utvikling (2020).
+
+Mer om Digitalarkivet og Arkivportalen:
+https://www.digitalarkivet.no/
+https://www.arkivportalen.no/
+
+| Arkivportalen
+a| Digitalarkivet og Arkivportalen gir en oversikt over hvilke historiske data de ulike bevaringsinstitusjonen i Norge forvalter, og hva slags skjermingshjemler som
+er knyttet til datasettene. En slik oversikt over datasett og hjemler øker organisatorisk og juridisk
+samhandlingsevne ved at det blir lettere å finne datasett og opplysninger om hvem som har tilgang til dem.
+
+Digitalarkivet og Arkivportalen inneholder arkivbeskrivelser og standardiserte metadata som
+understøtter semantisk interoperabilitet. I tillegg kan Digitalarkivet og Arkivportalen brukes for å få tilgang til historiske data, noe som understøtter teknisk interoperabilitet.
+
+Ny løsning for Digitalarkivet er under utvikling (2020).
+
+Mer om Digitalarkivet og Arkivportalen:
+https://www.digitalarkivet.no/
+https://www.arkivportalen.no/
+
+| FINT
+a| FINT skal sørge for bedre integrasjoner og dataflyt i fylkeskommunene innen alle tjenesteområder, gjennom en kombinasjon av en standardisert informasjonsmodell og tilgjengeliggjøring av informasjon over åpne programmerbare grensesnitt
+(API). 
+
+FINT gir semantisk og teknologisk samhandlingsevne.
+
+Mer om FINT:
+https://www.fintlabs.no/#/
+
+| eInnsyn​
+a| eInnsyn gir juridisk samhandlingsevne ved at innbyggere kan søke og be om innsyn i dokumenter/postjournaler fra alle statlige, kommunale og fylkeskommunale organ som er publisert med eInnsyn.
+
+Mer om eInnsyn:
+https://www.digdir.no/digitale-felleslosninger/einnsyn/783
+https://samarbeid.difi.no/felleslosninger/einnsyn/einnsyn-ny-rettleiar-innhaldsleverandorar-til-einnsyn
+
+| Datahotellet
+a| Datahotellet gir teknisk samhandlingsevne tilbyder kan distribuere åpne datasett og API. Konsument kan benytte åpne datasett og APIer.
+
+Mer om datahotellet:
+https://hotell.difi.no/
+
+| Data.altinn.no
+a| Data.altinn.no bidrar til teknisk samhandlingsevne og er en løsning for utveksling og deling av data. Data.altinn.no tilbyr en sikker, autorisert og tilgjengelig mekanisme for å dele data
+med næringsliv og innbyggere, eller en kanal for å hente informasjon fra offentlige virksomheter.
+Med data.altinn.no kan man be om data som det offentlige allerede har, tilknyttet definerte sett med data fra ulike registre. Datasettene kan enkelt minimeres eller kombineres etter konsumentenes behov og gis separate autentiserings- og autorisasjonskrav.
+
+Løsningen er laget for å kunne forenkle utveksling av data med et formål om å gjenbruke informasjon som det offentlige allerede har (“once only”) ved å tilby oppdaterte data direkte fra datatilbyder. Maskinlesbare data muliggjør gjenbruk og maskinell validering av informasjon, det trengs mindre kontroll av dokumentene som mottas, og det blir vanskeligere å forfalske data – siden det alltid hentes sanntidsdata direkte fra datatilbyder.
+
+Mer om data.altinn.no:
+https://www.altinndigital.no/produkter/data.altinn/
+
+| Maskinporten
+a| Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.
+
+Mer om Maskinporten:
+https://www.digdir.no/digitale-felleslosninger/maskinporten/869
+
+| ID-porten
+a| ID-porten gir teknisk samhandlingsevne den gjør det mulig for brukere å logge seg inn på offentlige tjenester med elektronisk ID.
+
+Mer om ID-porten:
+https://www.digdir.no/digitale-felleslosninger/id-porten/864
+
+| Altinn autorisasjon
+a| [Torget]
+Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
+Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.
+
+[Verktøykasse for deling av data]
+Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
+autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.
+
+Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.
+
+Mer om Altinn autorisasjon:
+https://www.altinndigital.no/produkter/styring-av-tilgang/
+
+| Altinn samtykke
+a| Altinn samtykke gir juridisk samhandlingsevne ved brukerstyrt samtykke. Innbygger samtykker til at data som er avgitt til én offentlig myndighet kan deles med andre aktører, også private. Samtykke brukes når virksomheten ikke har hjemmel til å innhente opplysningene.
+
+Altinn samtykke muliggjør teknisk samhandlingsevne ved at datatilbyder, etter et samtykke fra sluttbruker, kan autorisere datakonsument og overføre aktuelle data.
+
+Mer om Altinn samtykke:
+https://www.altinndigital.no/produkter/samtykke/
+https://altinn.github.io/docs/utviklingsguider/samtykke/
+
+| eSignering
+a| eSignering gir juridisk samhandlingsevne ved at virksomheter får sikker, praktisk og effektiv håndtering av dokumenter som krever signatur fra innbyggere.
+
+Den digitale prosessen ved eSignering gjør at virksomhetene slipper manuell håndtering ved
+utlevering og innhenting av dokumenter som skal signeres. Ved eSignering av dokumenter gjennomføres selve signeringen med elektronisk ID.
+
+Mer om eSignering:
+https://www.digdir.no/digitale-felleslosninger/esignering/789
+https://samarbeid.difi.no/felleslosninger/esignering/dokumentasjon
+
+| Elektronisk mottakerregister (ELMA)
+a| ELMA er et register som inneholder aksesspunktadresser til virksomhetenes og hvilke
+dokumenttyper, som elektroniske fakturaer, ordre, kataloger m.fl. mottakersystemet kan ta imot.
+
+Aksesspunktet formidler meldinger til og fra andre aksesspunkter og til og fra avsender/mottaker maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevene.
+
+Mer om ELMA:
+https://www.digdir.no/digitale-felleslosninger/elektronisk-mottakerregisterelma/784
+
+| Kontakt- og reservasjonsregisteret​ for innbyggere (KRR)
+a| KRR inneholder oversikt over mobilnummer og e-post, hvilken digital postkasse og eventuelle reservasjoner mot digital kommunikasjon innbyggerne i Norge har. Dette gir teknisk og  organisatorisk samhandlingsevne ved at virksomheter kan sende post og varslinger digitalt.
+
+Mer om Kontakt- og reservasjonsregisteret:
+https://www.digdir.no/digitale-felleslosninger/kontakt-ogreservasjonsregisteret-krr/865
+
+| FIKS
+a| Samlebetegnelse på de ulike komponentene som inngår i eller kjører på FIKS-plattformen.
+
+| FIKS-plattformen
+a| Fiks-plattformen tilbyr tjenester for deling av data mellom virksomheter. 
+
+Teknisk er Fiks-plattformen en asynkron integrasjonsplattform mellom maskin-til-maskin
+eller maskin-til-menneske via et nettlesergrensesnitt. 
+
+Semantisk forholder Fiksplattformen seg til metadata som registreres om
+dokumenter som deles. 
+
+Juridisk er det satt opp et avtaleverk med et sett av dokumenter som sikrer driftsstabilitet og at krav til informasjonssikkerhet og personvern er ivaretatt. 
+
+Organisatorisk er det opp til virksomhetene som benytter Fiks-plattformen, å sette tjenestene inn i de rette arbeidsprosessene og tjenestene. Fiks-plattformen tilrettelegger tjenester for sømløs integrasjon f.eks. DigiSos mellom Nav og kommunene. 
+
+Sikkerhet er en sentral del av Fiks-plattformen hvor tiltak innenfor bruk, informasjonsinnhold, teknologi, drift og kvalitetssikring vurderes løpende. ROS-vurderinger og DPIA leveres med alle tjenestene.
+
+Samtlige kommuner benytter Fiks-plattformen, som har integrasjon med 140 fagsystemer fordelt på 70 leverandører.
+
+Mer om FIKS-plattformen:
+https://ks-no.github.io/fiks-plattform/
+
+| FIKS IO
+a| FIKS IO er en tjeneste for sikker maskin-til-maskin integrasjon. Tjenesten kan benyttes for å bygge prosesser på tvers av systemer og organisasjoner, for eksempel når et fagsystem skal arkivere et dokument i et arkivsystem eller spørre om informasjon som er lagret i et annet system.
+
+
+| FIKS Minside
+a| Minside er en portal for de innbyggerrettede tjenestene på Fiks-plattformen. Eksempel på slike tjenester er post fra kommunen.
+
+| FIKS Konfigurasjon
+a| Selvbetjent konfigurasjon for å sette opp tjenester som kommunene benytter på Fiks-plattformen.
+
+| FIKS SvarUt/SvarInn
+a| Tjenestene SvarUt og SvarInn benyttes for utgående og innkommet post. SvarUt tjenesten formidler post gjennom den kanalen brukeren selv ønsker.
+
+| FIKS Dokumentlager
+a| Dokumentlager-tjenesten lar kommunen og andre Fiks-organisasjoner laste opp dokumenter. Ved opplasting autoriseres en eller flere personer og/eller organisasjoner for tilgang til dokumentet. Det er også mulig å laste opp dokumenter med en begrenset levetid, slik at det blir gjort utilgjengelig når denne tiden utløper.
+
+| FIKS Folkeregister
+a| KS vil tilby det nye Folkeregisteret (FREG) via Fiksplattformen.
+
+| eFormidling
+a| eFormidling er en løsning for sikker og effektiv meldingsutveksling i offentlig sektor. Hovedkomponentene i løsningen er et integrasjonspunkt som installeres lokalt hos
+virksomhetene og et adresseregister som driftes av digitaliseringsdirektoratet. eFormidling gjør det mulig å kommunisere på en enkel og sikker måte, uten å måtte ta hensyn til om mottakeren er privat eller offentlig virksomhet, eller innbygger. Dette gir teknisk og organisatorisk samhandlingsevne.
+
+Mer om eFormidling:
+https://www.digdir.no/digitale-felleslosninger/eformidling/782
+
+| Digital postkasse til innbyggere (DPI)
+a| Digital postkasse gir teknisk samhandlingsevne ved at virksomheter kan sende digital post sikkert til innbyggerne, uavhengig av om innbygger har valgt e-Boks eller Digipost for mottak.
+
+Mer om Digital postkasse til innbygger:
+https://www.digdir.no/digitale-felleslosninger/digital-postkasse-tilinnbyggere/
+775
+
+| Tenor testdatasøk
+a| Tenor testdatasøk gir teknisk og semantisk samhandlingsevne. Løsningen gir mulighet til å teste
+løsninger med testdatasett. 
+
+Mer om Tenor testdatasøk:
+https://www.digdir.no/digitale-felleslosninger/tenor-testdatasok/1284
+
+| FIKS
+a| Samlebetegnelse på de ulike komponentene som inngår i eller kjører på FIKS-plattformen.
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

@@ -1,0 +1,25 @@
+= EU-arkitektur
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:messaging-appendixes:page$OPEN DEI Building Blocks (2021).adoc[]
+include::main@messaging:messaging-appendixes:page$OPEN DEI Building Blocks (2022).adoc[]
+include::main@messaging:messaging-appendixes:page$Gaia-X .adoc[]
+include::main@messaging:messaging-appendixes:page$Promoteheus-X Building blocks (2022).adoc[]
+include::main@messaging:messaging-appendixes:page$Simple building blocks level 1.adoc[]
+include::main@messaging:messaging-appendixes:page$Simpl Data Services.adoc[]
+include::main@messaging:messaging-appendixes:page$Simpl Infrastructure connector services.png.adoc[]
+include::main@messaging:messaging-appendixes:page$Simpl Administration Services.adoc[]
+:leveloffset: -1

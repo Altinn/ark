@@ -1,0 +1,21 @@
+= Brukerbehov
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-to-be:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:messaging-solutions-to-be:page$Use cases for meldingsutveksling.adoc[]
+include::main@messaging:messaging-solutions-to-be:page$Tjenestekvalitet.adoc[]
+include::main@messaging:messaging-solutions-to-be:page$Epics og user stories.adoc[]
+include::main@messaging:messaging-solutions-to-be:page$Kundespesifikke krav.adoc[]
+:leveloffset: -1

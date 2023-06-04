@@ -1,0 +1,72 @@
+= Tjenestekvalitet
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-to-be:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+= Juridiske forhold			
+	* Gjeldende lovpålagte krav. Eksempel: GDPR med krav til dataminimering mv.	
+		** Langtidslaging (arkivering)	
+		** Dokumentasjon av etterlevelse	
+		** Sporing av data -  dataproveniens	
+
+= Egenskaper relatert til organisatorisk samhandling			
+	* Type forretningsprosess. Eksempler: Bilateral prosess mellom to kjente parter (herunder spørring og forhåndsavtalt, periodisk distriusjon); Tverrgående prosess mellom faste parter; Tverrgående prosess mellom dynamiske oppdagete parter.	
+	** Antall samhandlingsparter		
+		*** En-til-en, en-til-mange, mange-til-mange, mange-til-en	
+	** Kjente eller ukjente mottakere		
+	** Fast eller dynamisk gruppe med samhandlingsparter		
+	** Prosessens levetid. Relevant for feilhåndtering: Kortlevde prosesser med innebygd transaksjonssikkerhet kan tilbakerulles gjennom generelle mekanismer, f.eks. slik dette støttes av rollback i relasjonsdatabaser. Langlevde prosesser krever skreddersydde kompensasjonsaksjoner.	
+	** Roler og ansvar. Hvem skal ha ansvar for hva? Hvem sier om du får tilgang til opplysninger eller ikke?	
+
+= Egenskaper relatert til semantisk interoperabilitet			
+	* Støtte for felles datamodeller (core vocabularies)		
+	* Støtte for aktuelle utvekslingsformater		
+	* Støtte for lenking av data		
+
+= Egenskaper relatert til teknisk samhandling			
+	* Utvekslingsprotokoller		
+		** Synkron eller asynkron kommunikasjon	
+		** Støtte for utveklsingsprotokoller som f.eks. SOAP og REST	
+	* Tjenestekvalitet (QoS  refers to the maintenance of the session once established and covers aspects such as throughput, error recovery/detection)		
+		** Meldingsstørrelse	
+			*** Størrelse på enkeltvedlegg vs. samlede vedlegg?
+		** Leveringstid for meldinger. Mål: Mikrosekunder, millisekunder, sekunder, timer, dager
+			*** Garantert leveringstid vs. krav til leveringstid
+		
+		** Responstid for spørringer. Mål: Mikrosekunder, millisekunder, sekunder, timer, dager
+			*** Garantert responstid vs. krav til responstid
+			
+		** Leveringssikkerhet. Mål: Prosentvis sannsynlighet for vellykket levering og mottak
+			*** Grad av garantert levering (uten behov for tilbakemelding på applikasjonslaget)
+			
+		** Lagringstid for data og logger	
+	
+* Tjenestegrad - GoS refers to the ability to access and establish services and includes the time required to establish sessions, system reliability (assessment of mean time before failure (MTBF) and meant time to repair (MTTR) for example) and recovery and system resilience (i.e. how it degrades).		
+		** Service establishment time	
+		** System reliability	
+		** System MTBF	
+		** System MTTR	
+	** Nettverkskvalitet		
+
+= Andre egenskaper			
+	* Føringer		
+		** Prinsipper. sempel Digdirs overordnede arkitekturprinsipper
+		** Standarder. 	Eksempel: Standarder i Referansekatalogen
+		** Avtaler	
+	* Kompetanse		
+	 * Kompleksitet		
+	* Kostnader		
+	 * Informasjonssikkerhet og personvern	
+		** Risikoanalyser	
+		** Kvalitetskrav for konfidensialitet, integritet og tilgjengelighet	
+		** Mekanismer for autentisering, autorisasjon, kryptering, ikke-benektelse, mv.	
+
+

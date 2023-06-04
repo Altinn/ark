@@ -1,0 +1,20 @@
+= Saksbehandling RA (Erik, 2021)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:messaging-appendixes:page$Overordnet verdistrøm (RA saksbehandling).adoc[]
+include::main@messaging:messaging-appendixes:page$Forvaltningsmessige evner.adoc[]
+include::main@messaging:messaging-appendixes:page$Operative evner.adoc[]
+:leveloffset: -1

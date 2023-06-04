@@ -1,0 +1,23 @@
+= Altinn Formidling As-Is
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:toc: left
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:solution-altinn-formidling:page$Altinn Formidling 2.0 - Roller.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - kapabiliteter.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling - applikasjonstjenester - flow.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - applikasjonstjenester - service usage.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - applikasjonstjenester og API-er.adoc[]
+:leveloffset: -1

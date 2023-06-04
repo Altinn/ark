@@ -1,0 +1,43 @@
+= Introduksjon til Data Spaces
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:toc: left
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+View dok:
+
+Konseptet for Data Spaces kan oppsummeres slik: Et europeisk dataområde er en form for økosystem med aktører som utveksler data og tjenester over en felles infrastruktur i henhold til regler og standarder innen området. Ulike områder knyttes sammen med felles regler og standarder på tvers.
+Dette kan godt sammenliknes med konseptet for Felles Økosystem, med deling av data og sammenhengende tjenester på tvers av sektorer. Samtidig er det noen spesifikke elementer i den europeiske tilnærmingen som det kan være gode grunner til å ta hensyn til i den videre utviklingen i Norge.
+
+
+.Introduksjon til Data Spaces
+image::{imagepath}Introduksjon til Data Spaces.png[alt=Introduksjon til Data Spaces image, link=https://solutions-no.github.io/models/archi/?view=id-bb544871a2154639b983f20b067db3e4]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Introduksjon til Data Spaces
+|===
+
+| Element
+| Beskrivelse
+
+| Grouping
+a| Image dok 1
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

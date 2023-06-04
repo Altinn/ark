@@ -1,0 +1,6 @@
+// Per des. 2020, asciidoc editors like e.g. AsciidocFX still doesn't support Antora's way of addressing components and modules. Here, a few modifications is made to support editing mode
+:imagesdir: ./images
+:toc: left
+:sectnums:
+:toclevels: 4
+:sectnumlevels: 10

@@ -1,0 +1,89 @@
+= Altinn Broker As-Is
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-as-is:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn Broker As-Is
+image::{imagepath}Altinn Broker As-Is.png[alt=Altinn Broker As-Is image, link=https://solutions-no.github.io/models/archi/?view=id-5f539b90fb4040a1ba3996009545e3c9]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Altinn Broker As-Is
+|===
+
+| Element
+| Beskrivelse
+
+| Altinn Broker As-Is
+a| 
+
+| Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell)
+a| 
+
+| Altinn Formidling 2.0 - eksisterende løsningsskisse
+a| 
+
+| Føringer - lovverk og standarder (påtenkt)
+a| 
+
+| Atlinn 2.0 formidling - applikasjoner og teknologier
+a| 
+
+| Altinn formidling - applikasjonstjenester - flow
+a| 
+
+| Altinn Formidling 2.0 - Roller
+a| Se også: https://solutions-no.github.io/models/?view=id-93f0fbf8f57a4b1485ba7da425bdbc7a[Archi view (Altinn Formidling 2.0 - Roller)]
+ 
+
+| Altinn formidling 2.0 - applikasjonstjenester og API-er
+a| 
+
+| Altinn formidling 2.0 - kapabiliteter
+a| Se også: https://solutions-no.github.io/models/?view=id-a22442d94a3f4e0cb92c4399fabcfec3[Archi view (Altinn Formidling 2.0 - kapabiliteter)]
+
+| Altinn formidling 2.0 - informasjonsmodell (påbegynt)
+a| 
+
+| Altinn formidling 2.0 - applikasjonstjenester - service usage
+a| 
+
+| Altinn formidling 2.0 - sekvensdiagram (påbegynt)
+a| 
+
+| Altinn 2.0 formidling - assessment
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+
+:leveloffset: +1
+include::main@messaging:solution-altinn-formidling:page$Føringer - lovverk og standarder (påtenkt).adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - kapabiliteter.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn Formidling 2.0 - Roller.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling - applikasjonstjenester - flow.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - applikasjonstjenester - service usage.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - applikasjonstjenester og API-er.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell).adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - sekvensdiagram (påbegynt).adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - informasjonsmodell (påbegynt).adoc[]
+include::main@messaging:solution-altinn-formidling:page$Atlinn 2.0 formidling - applikasjoner og teknologier.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn Formidling 2.0 - eksisterende løsningsskisse.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn 2.0 formidling - assessment.adoc[]
+:leveloffset: -1

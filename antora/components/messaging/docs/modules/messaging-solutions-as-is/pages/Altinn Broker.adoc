@@ -1,0 +1,24 @@
+= Altinn Broker
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-as-is:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn Broker
+image::{imagepath}Altinn Broker.png[alt=Altinn Broker image, link=https://solutions-no.github.io/models/archi/?view=id-a2785368fbea435aad43459bd0e06acf]
+
+
+****
+xref:main@messaging:messaging-solutions-as-is:page$Altinn Broker.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

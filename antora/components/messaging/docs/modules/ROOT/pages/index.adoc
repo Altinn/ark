@@ -1,0 +1,41 @@
+= Arkitekturverksted
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: ROOT:
+endif::[]
+:toc: left
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 9
+
+:under-construction-image: image:messaging:common:under-construction.png[width=40]
+//:under-construction-image: image::under-construction.png[width=40,float="left"]
+
+
+{under-construction-image}
+
+//image::under-construction.png[width=40,float="left"] 
+//I arbeid
+
+== Velkommen!
+
+Velkommen! Dette er en wiki som i utgangspunktet er opprettet som en prosjektwiki for arkitekturdokumentasjon i et migreringsprosjekt for Altinn Melding (Altinn Correspondance) og Altinn Formidling (Altinn Broker), med oppstart våren 2023.
+
+== Om denne wiki-løsningen
+Selve Wiki-løsningen er inntil videre å oppfatte som et eksperiment. Løsningen bygger på link:https://antora.org/[Antora], som benytter Asciidoc-formatet. Asciidoc likner Markdown, men inneholder noen mer avanserte muligheter som kan være nyttige i større bøker eller samarbeidsprosjekter.
+
+Mye av innholdet i denne wiki-en er generert via script i arkitekturverktøyet Archi, men løsningen tillater også manuell innholdsproduksjon i andre verktøy.
+    
+Se også link:https://altinn.github.io/ark/models/archi-all[publiserte Archi-modeller (html)] og link:https://github.com/Altinn/ark/blob/master/docs/models/archi-all/Altinn%20modellbibliotek%20(Archi).archimate[nedlastbar Archi-modell (master)]. Du kan gjøre endringer og tillegg i din versjon av Archi-modellen, og spille dette tilbake som forslag til oppdatering av mastermodellen. 
+
+
+== Samarbeid om innholdsproduksjon i Archi
+Det er lagt opp til at flere skal kunne samarbeide om innholdsproduksjonen. Dette kan gjøres på to måter:
+
+1. Ta utgangspunkt i en eksport av hele eller deler av Archi-modellen (mastermodellen). Endringer og tillegg kan importeres tilbake  til mastermodellen, basert på gjenkjenning av globalt unike identifikatorer for alle objekter, Dette gjøres av noen med spesielt ansvar for å vedlikeholde mastermodellen. Ved import kan/bør det sjekkes og ryddes opp i duplikater, dvs. objekter med ulik ID, men samme navn. Det er ønskelig at navning av objekter er konsistent, slik at ikke flere ulike konsepter har samme navn. En kan eventuelt merke innhold med namespace.
+
+
+2. Collaboration-plugin i Archi. Anbefales inntil videre ikke, fordi det erfaringsmessig er vanskelig å få til å fungere godt med flere brukere (bugs, rettighetsstyring). Kanskje rundt neste sving?

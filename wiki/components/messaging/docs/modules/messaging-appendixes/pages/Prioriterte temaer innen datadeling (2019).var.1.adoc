@@ -1,0 +1,95 @@
+= Prioriterte temaer innen datadeling (2019)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Prioriterte temaer innen datadeling (2019)
+image::{imagepath}Prioriterte temaer innen datadeling (2019).png[alt=Prioriterte temaer innen datadeling (2019) image, link=https://altinn.github.io/ark/models/archi-all?view=f76132f1-7845-4248-9c00-9040a63eabb1]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Prioriterte temaer innen datadeling (2019)
+|===
+
+| Element
+| Beskrivelse
+
+| Temaer innen datadeling (utvalg)
+a| 
+
+| Orden i eget hus
+a| Orden i eget hus...
+
+| Datalagring og arkivering
+a| 
+
+| Masterdatahåndtering
+a| Husk: Duplikatdeteksjon, deduplisering.
+
+| Innhenting og preparering av data for analyse
+a| Sammenstilling, datavask,...
+
+| Avtaleforvaltning
+a| Inkl. fellesskapsforvaltning
+
+| Dataoppdagelse
+a| Dataoppdagelse...
+
+| Etterlevelse av lover og regler
+a| Etterlevelse av lover, regler og andre føringer, slik som felles referansearkitekturer og arkitekturprinsspper.
+
+| Roller og ansvar
+a| 
+
+| Informasjonssikkerhet, tillit og personvern
+a| 
+
+| Informasjonsarkitektur
+a| Felles datamodeller, metadata,kontrollerte vokabularer (kodelister).
+
+| Infrastruktur for datautveklsing
+a| 
+
+| Digitaliseringsvennlig regelverk
+a| 
+
+| Datakvalitet
+a| 
+
+| Intensivordninger og finansiering
+a| 
+
+| Unik identifisering av  dataressurser
+a| 
+
+| Basismønstre for datautveksling
+a| 
+
+| Sporing
+a| - Sporing av dataaksess
+- Sporing av kilder 
+- Sporing for etterlevelse
+- Sporing for dokumentasjon tilknyttet vedtak etc.
+
+| Datavirtualisering
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

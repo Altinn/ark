@@ -1,0 +1,24 @@
+= Promoteheus-X Building blocks (2022)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Promoteheus-X Building blocks (2022)
+image::{imagepath}Promoteheus-X Building blocks (2022).png[alt=Promoteheus-X Building blocks (2022) image, link=https://altinn.github.io/ark/models/archi-all?view=id-498990adba0d4bcbb55429d5c1b199f1]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Promoteheus-X Building blocks (2022).var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

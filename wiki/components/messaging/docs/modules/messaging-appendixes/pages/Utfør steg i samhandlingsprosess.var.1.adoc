@@ -1,0 +1,183 @@
+= Utfør steg i samhandlingsprosess
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+Figuren nedenfor viser en generisk prosess for operativ databehandling, der datautveksling inngår. 
+
+Oppsummering:
+
+* Enhver databehandling krever data som input og vil resultere i output av data. 
+
+* Input kan være alt fra en notifikasjon uten videre innhold til komplette meldinger. Om tilleggsdata må innhentes, gjøres dette f.eks. ved å forespørre  aktuelle datakilde eller ved å vente på ytterligere input initiert av andre.
+
+* Output vil være lagrede data for bevis og gjenbruk, samt videresendte data til påfølgende ledd i behandlingskjeden, der det er aktuelt. 
+
+* Det er ikke direkte vist i dette enkle prosessdiagrammet, men videresendte data kan her inkludere svar til avsender av mottatte data, i tillegg til en eller flere andre samhandlingsaktører.
+
+* For behandling av personopplysninger må det finnes et dokumentert behandlingsgrunnlag, enten i form av hjemmel eller samtykke. Dette vil være del av det totale datagrunnlaget for databehandlingen. 
+
+De viktigste kapabilitetene som behøves er indikert for hvert prosessteg. TBD?
+
+
+
+.Utfør steg i samhandlingsprosess
+image::{imagepath}Utfør steg i samhandlingsprosess.png[alt=Utfør steg i samhandlingsprosess image, link=https://altinn.github.io/ark/models/archi-all?view=3c9586f5-3098-4147-a9cc-eaf8594f626f]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Utfør steg i samhandlingsprosess
+|===
+
+| Element
+| Beskrivelse
+
+| Utfør steg i samhandlingsprosess
+a| 
+
+| Detekter triggerhendelse
+a| 
+
+| Etabler datagrunnlag
+a| 
+
+| Prosesser datagrunnlag
+a| 
+
+| Avgi utgående hendelser
+a| 
+
+| Svar på forespørsel om datagrunnlag og etterlevelse
+a| 
+
+| Detektere triggerhendelse
+a| 
+
+| Motta forespørsler
+a| 
+
+| Motta notifikasjoner
+a| 
+
+| Analysere hendelsesstrømmer
+a| 
+
+| Etablere datagrunnlag
+a| 
+
+| Identifisere styrende lover og regler
+a| 
+
+| Minimere innhenting av  persondata
+a| 
+
+| Oppdage data og datakilder
+a| Engelsk: Data discovery is the collection and analysis of data from various sources to gain insight from hidden patterns and trends. It is the first step in fully harnessing an organization's data to inform critical business decisions.
+
+| Innhente data
+a| Evnen til å innhente data fra en annen aktør.
+
+| Prosessere data
+a| 
+
+| Dokumentere etterlevelse
+a| 
+
+| Unntakshåndtering
+a| 
+
+| Opprette og endre datasett
+a| 
+
+| Dokumentere dataproviniens
+a| 
+
+| Avgi utgående hendelser
+a| 
+
+| Notifisere kjente samhandlingsparter
+a| 
+
+| Svare på forespørsler
+a| 
+
+| Publisere notifikasjoner
+a| 
+
+| Strømme hendelser
+a| 
+
+| Svare på forespørsler om datagrunnlag og etterlevelse
+a| 
+
+| Redegjøre for datagrunnlag
+a| 
+
+| Redegjøre for etterlevelse
+a| 
+
+| Redegjøre for dataproviniens
+a| 
+
+| Redegjøre for  juridisk grunnlag
+a| 
+
+| Tverrrgående kapabiliteter
+a| 
+
+| Sørge for informasjonssikkerhet, tilllit og personvern
+a| 
+
+| Ha "orden i eget hus "
+a| Orden i eget hus...
+
+| Sørge for datakvalitet
+a| 
+
+| Utveksle data
+a| 
+
+| Dele data
+a| 
+
+| Lagre og arkivere data
+a| 
+
+| ...
+a| 
+
+| Interoperabilitet i samhandlingsprosesser
+a| 
+
+| Innebygget arkiv
+a| 
+
+| Innebygget dokumentasjon av etterlevelse
+a| 
+
+| Krav ved anskaffelser og plattformutvikling
+a| 
+
+| Innebygget data proviniens
+a| 
+
+| Sammenhengende tjenester
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

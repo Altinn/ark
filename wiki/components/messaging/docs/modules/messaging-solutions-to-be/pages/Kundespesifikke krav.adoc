@@ -1,0 +1,19 @@
+= Kundespesifikke krav
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-to-be:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+...
+
+:leveloffset: +1
+include::main@messaging:messaging-solutions-to-be:page$Spek. fra Helse Møre og Romsdal.adoc[]
+include::main@messaging:messaging-solutions-to-be:page$Krav fra NHN.adoc[]
+:leveloffset: -1

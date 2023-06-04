@@ -1,0 +1,51 @@
+= Sammenhengende tjenester - Overordnede verdistrømmer
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Sammenhengende tjenester - Overordnede verdistrømmer
+image::{imagepath}Sammenhengende tjenester - Overordnede verdistrømmer.png[alt=Sammenhengende tjenester - Overordnede verdistrømmer image, link=https://altinn.github.io/ark/models/archi-all?view=9653a484-5cee-46dd-b66d-e2f2869e29b7]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Sammenhengende tjenester - Overordnede verdistrømmer
+|===
+
+| Element
+| Beskrivelse
+
+| Del data
+a| "Del data (operativt)" handler om utveksling av data gjennom etablerte kanaler og iht. avtaler. Dette forutsetter også håndtering av avvik og ikke-tilsiktede hendelser.
+
+
+| Innhent data
+a| 
+
+| Analyser data
+a| 
+
+| Samhandle i tverrgående prosesser
+a| 
+
+| Hold orden i egen virksomhet
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

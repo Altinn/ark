@@ -1,0 +1,119 @@
+= Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell)
+image::{imagepath}Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell).png[alt=Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell) image, link=https://altinn.github.io/ark/models/archi-all?view=id-dcdde3ecb0654af888c4325eebdafd78]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell)
+|===
+
+| Element
+| Beskrivelse
+
+| Altinn Formidling
+a| 
+
+| Avsenderkonto
+a| 
+
+| Digital post
+a| 
+
+| Brukerstøtte
+a| 
+
+| Betaling
+a| 
+
+| Statistikk
+a| 
+
+| Onboarding avsender
+a| 
+
+| Ta imot post
+a| 
+
+| Formidle post
+a| 
+
+| Gi tilgang til formidlingsstjeneste
+a| 
+
+| Registrere formidlingstjeneste
+a| Selbetjent, 
+
+| Formidlingstjeneste
+a| 
+
+| Delegere tilgang til formidlingstjeneste
+a| 
+
+| Ta imot post
+a| 
+
+| Tilgjengeliggjøring
+a| 
+
+| Mottatt post
+a| 
+
+| Formidle post
+a| 
+
+| Tilgangskontroll
+a| 
+
+| Formidle post
+a| 
+
+| Forespørsel om post
+a| 
+
+| Onboarding avsender
+a| 
+
+| Opprette konto
+a| 
+
+| Formidle tilgang
+a| 
+
+| Aktivere konto
+a| 
+
+| Mottatt signert kontrakt
+a| 
+
+| Registrere formidlingstjeneste
+a| 
+
+| Gi tilgang til formidlingstjeneste
+a| 
+
+| Delegere tilgang til formidlingstjeneste
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

@@ -1,0 +1,22 @@
+= Generiske Use cases
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:toc: left
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+View dok, Geneiske use cases
+
+.Generiske Use cases
+image::{imagepath}Generiske Use cases.png[alt=Generiske Use cases image, link=https://solutions-no.github.io/models/archi/?view=id-3dbf070102174bb9aaca24d85a6d6005]
+
+
+
+

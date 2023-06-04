@@ -1,0 +1,21 @@
+= Altinn Formidling 2.0 - eksisterende løsningsskisse
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn Formidling 2.0 - eksisterende løsningsskisse
+image::{imagepath}Altinn Formidling 2.0 - eksisterende løsningsskisse.png[alt=Altinn Formidling 2.0 - eksisterende løsningsskisse image, link=https://altinn.github.io/ark/models/archi-all?view=id-ff19adb0f9644c38a1acbb4f7e035c90]
+
+
+
+

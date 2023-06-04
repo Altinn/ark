@@ -1,0 +1,21 @@
+= Samhandlingsmønstre
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Samhandlingsmønstre
+image::{imagepath}Samhandlingsmønstre.png[alt=Samhandlingsmønstre image, link=https://solutions-no.github.io/models/archi/?view=id-f10fd95d9d1644b9ac31d7ac3891b364]
+
+
+
+

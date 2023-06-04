@@ -1,0 +1,21 @@
+= Use cases for meldingsutveksling
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-to-be:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+View dok, Geneiske use cases
+
+.Use cases for meldingsutveksling
+image::{imagepath}Use cases for meldingsutveksling.png[alt=Use cases for meldingsutveksling image, link=https://altinn.github.io/ark/models/archi-all?view=id-3dbf070102174bb9aaca24d85a6d6005]
+
+
+
+

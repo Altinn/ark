@@ -1,0 +1,24 @@
+= OPEN DEI Building Blocks (2022)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.OPEN DEI Building Blocks (2022)
+image::{imagepath}OPEN DEI Building Blocks (2022).png[alt=OPEN DEI Building Blocks (2022) image, link=https://altinn.github.io/ark/models/archi-all?view=id-63dee2b19f3b433ca1e35385ad4a9f46]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$OPEN DEI Building Blocks (2022).var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

@@ -1,0 +1,21 @@
+= Føringer - lovverk og standarder (påtenkt)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+...
+
+.Føringer - lovverk og standarder (påtenkt)
+image::{imagepath}Føringer - lovverk og standarder (påtenkt).png[alt=Føringer - lovverk og standarder (påtenkt) image, link=https://solutions-no.github.io/models/archi/?view=id-c82d03087cc948a0bca5eacb97dc416f]
+
+
+
+

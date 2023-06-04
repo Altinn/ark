@@ -1,0 +1,176 @@
+= Atlinn 2.0 formidling - applikasjoner og teknologier
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Atlinn 2.0 formidling - applikasjoner og teknologier
+image::{imagepath}Atlinn 2.0 formidling - applikasjoner og teknologier.png[alt=Atlinn 2.0 formidling - applikasjoner og teknologier image, link=https://altinn.github.io/ark/models/archi-all?view=id-f4e10234d7524361867e0fb55b0497be]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Atlinn 2.0 formidling - applikasjoner og teknologier
+|===
+
+| Element
+| Beskrivelse
+
+| Altinn Formidling
+a| 
+
+| Broker DB
+a| Liste over alle meldinger i en stor Altinn SQL Server, 
+
+| Broker Fileshare (clustered)
+a| 
+
+| Tjenesteeierstyrt rettighetsregster (SRR)
+a| https://altinn.github.io/docs/api/tjenesteeiere/rest/tjenesteeierstyrte-rettigheter/
+
+Tjenesteeierstyrt rettighetsregster lar tjenesteeier kontrollere hvilke aktører/avgivere som får lov til å benytte en tjeneste
+
+- Om tjenesten
+
+Tjenesteeier kan gjennom SRR styre to typer modus: consent og reportee.
+
+* Consent-mode, brukes kun for samtykketjenester, og regulerer hvem som kan motta en delegering (være coveredby)
+
+* Reportee-mode, kan brukes for alle andre tjenestetyper og regulerer hvilke aktør/avgiver som kan delegere en rettighet til andre på egne vegne (se autorisasjonsmodell for ytterligere forklaring). For disse gjøres det en opprydding av alle delegeringer som er utført av en gitt avigerreportee-en hvis SRR-regelen i etterkant fjernes.
+
+| Altinn Auth?
+a| Bruker standard Altinn 2 felleskomponenter​
+
+«Sluttbrukersystembruker» / EndUserSystem User (EUS)​
+
+SOAP: ?? %​
+
+Basic (usr/pwd) ?%​
+
+EC (Enterprise Certificate) 88%​
+
+X509 Virksomhetssertifikat iht. SEID-standarden​
+
+Problematisk å implementere, spesielt for en del Java-rammeverk.​
+
+MP (Maskinporten Token) 0%​
+
+POC utført i Januar 2021, men ikke prodsatt, fokus flyttet til REST-implementering.​
+
+REST:​
+
+BASIC​
+
+EC​
+
+MP (Maskinporten Token).
+
+| MTOM
+a| Message Transmission Optimization Mechanism (MTOM) is a method for efficiently sending large binary attachments, such as images, videos, or files, within a SOAP (Simple Object Access Protocol) message over the internet. SOAP is an XML-based messaging protocol used for exchanging structured information in the implementation of web services in computer networks.
+
+In a typical SOAP message, binary data is encoded using Base64 encoding, which increases the size of the message by approximately 33%. This can lead to performance issues and increased network bandwidth usage, especially when dealing with large binary attachments.
+
+MTOM addresses this problem by optimizing the transmission of binary data in SOAP messages. Instead of embedding the binary data directly within the XML message using Base64 encoding, MTOM uses XOP (XML-binary Optimized Packaging) to package the binary data separately from the XML message. The binary data is sent as-is, without Base64 encoding, alongside the XML message as a MIME (Multipurpose Internet Mail Extensions) attachment.
+
+This approach reduces the overall message size and improves the efficiency of transmitting binary data in SOAP messages. The recipient can still process the XML message and access the binary attachment seamlessly, without any significant changes to the web service implementation.
+
+In summary, MTOM is an optimization mechanism for transmitting large binary attachments within SOAP messages. It reduces message size and network bandwidth usage by sending binary data as MIME attachments rather than embedding them in the XML message using Base64 encoding.
+
+MTOM (Message Transmission Optimization Mechanism) itself does not impose specific size limits on binary attachments. However, the size limits for MTOM attachments may be influenced by various factors, including the web service implementation, the application server, and the network infrastructure. Some common factors that may impact the size limits for MTOM attachments are:
+
+Web service and application server configurations: Different web service frameworks and application servers may have their own default settings or configurable limits on the size of SOAP messages, including MTOM attachments. These limits can usually be adjusted in the server or framework configuration files.
+
+Network constraints: Network infrastructure, including routers, switches, and firewalls, may impose limits on the size of data packets that can be transmitted. This could affect the maximum size of MTOM attachments that can be sent without encountering network-related issues.
+
+Client and server resources: The resources available on the client and server, such as memory and processing power, can impact the handling of large MTOM attachments. Insufficient resources may lead to performance issues or failures when processing large attachments.
+
+Intermediary systems: In some cases, SOAP messages with MTOM attachments may pass through intermediary systems, such as proxy servers, which could impose their own size limits on message attachments.
+
+The size limits for MTOM attachments may vary depending on the specific environment and configuration. It is essential to review the relevant documentation for the web service framework, application server, and network infrastructure to determine any size limitations and configure them appropriately to support the desired attachment sizes.
+
+| SOAP
+a| 
+
+| REST
+a| 
+
+| SMB Share
+a| An SMB (Server Message Block) Share is a network file sharing protocol that enables applications to read, write, and request file and print services on remote computers or servers over a local area network (LAN) or the internet. SMB is commonly used for sharing files, printers, and other resources among multiple users or devices within a network.
+
+SMB Share allows users to access files and folders on remote servers as if they were on their local machines, enabling collaboration, data sharing, and centralized file storage. The protocol supports various operating systems, including Windows, macOS, and Linux, which makes it versatile and widely used in various network environments.
+
+SMB has evolved over time, and different versions of the protocol have been developed. The latest version, SMB 3.x, comes with enhanced security, performance, and reliability features compared to earlier versions.
+
+In summary, an SMB Share is a way to share files and resources across a network using the Server Message Block protocol, facilitating collaboration and centralized data storage in multi-user environments.
+
+SMB Shares can handle large files, but the actual file size limit depends on the version of the SMB protocol being used and the file system of the shared storage.
+
+For SMB 2.x and SMB 3.x, the maximum file size limit is 16 exabytes (EB) minus 64 kilobytes (KB). However, this theoretical limit is usually not reached in practice because the underlying file system itself imposes its own file size limits. For example:
+
+NTFS (New Technology File System) – used in modern Windows systems – supports a maximum file size of 16 terabytes (TB) minus 64 KB.
+HFS+ (Hierarchical File System Plus) – used in macOS – supports a maximum file size of 8 exabytes (EB) minus 1 byte.
+ext4 (Fourth Extended Filesystem) – commonly used in Linux – supports a maximum file size of 16 terabytes (TB) to 1 exabyte (EB), depending on the specific configuration.
+In general, SMB Shares are capable of handling very large files, with the actual limit typically determined by the file system on the shared storage rather than the SMB protocol itself.
+
+| WCF
+a| WCF stands for Windows Communication Foundation. It is a framework developed by Microsoft as part of the .NET Framework to build and support service-oriented applications. WCF enables developers to create distributed applications by providing a unified programming model for building service-oriented, secure, and reliable services that can communicate across various platforms and protocols.
+
+WCF supports multiple communication patterns, including one-way messaging, request-reply, and duplex communication, as well as multiple transport protocols such as HTTP, HTTPS, TCP, and Named Pipes. This makes WCF a versatile and powerful tool for creating services that can be consumed by clients built on various technologies.
+
+WCF services can expose different types of endpoints, including SOAP-based endpoints and RESTful endpoints. While REST is an architectural style used for designing networked applications, WCF is a framework that can be used to implement RESTful services along with other communication patterns and protocols.
+
+| Binary Stream
+a| A binary stream refers to a continuous sequence of binary data (composed of bits, which are either 0 or 1) that is transmitted or processed by a computer system. Binary streams are often used for reading or writing binary data, such as images, audio files, video files, or other types of non-text data, from or to files, networks, or other data sources.
+
+In the context of programming languages and libraries, a binary stream is typically represented as an object or an interface that allows developers to read or write binary data to a specified source, such as a file or a network socket. The binary stream provides methods for reading and writing individual bytes or sequences of bytes, enabling the manipulation of binary data within a program.
+
+For example, in the .NET Framework, the Stream class is a base class for various types of binary streams, such as FileStream (for reading and writing data to a file) and NetworkStream (for reading and writing data over a network connection). In Java, the InputStream and OutputStream classes serve as base classes for different types of binary streams.
+
+Working with binary streams allows developers to handle binary data efficiently, as the data is processed in its native format without the need for additional encoding or decoding, such as converting the binary data to a text-based format like Base64. This can lead to improved performance and reduced memory usage when working with large binary files or streaming data.
+
+| Basic Auhentication
+a| 
+
+| EC (Enterprise Certificate)
+a| 509 Virksomhetssertifikat iht. SEID-standarden​
+
+Problematisk å implementere, spesielt for en del Java-rammeverk.​
+
+| Party conv.
+a| Party konv. = konvertering fra org.nr og personnr. til intern Party-id som dekker begge deler
+
+| MS SQL Server
+a| 
+
+| Receipt
+a| 
+
+| Altinn TTP
+a| Logging; ref. https://altinn.github.io/docs/tul/tjenestetyper/felles-funksjonalitet/
+
+| TUL Meta
+a| 
+
+| Altinn TUL 2.0
+a| https://altinn.github.io/docs/tul/
+
+| Se også:
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

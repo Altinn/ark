@@ -1,0 +1,19 @@
+= Brukerbehov
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-user-needs:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+:leveloffset: +1
+include::main@messaging:messaging-user-needs:page$Epics og user stories.adoc[]
+include::main@messaging:messaging-user-needs:page$Ikke-funksjonelle krav.adoc[]
+:leveloffset: -1

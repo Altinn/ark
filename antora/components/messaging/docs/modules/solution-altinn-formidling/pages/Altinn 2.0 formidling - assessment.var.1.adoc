@@ -1,0 +1,209 @@
+= Altinn 2.0 formidling - assessment
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+To-do
+
+.Altinn 2.0 formidling - assessment
+image::{imagepath}Altinn 2.0 formidling - assessment.png[alt=Altinn 2.0 formidling - assessment image, link=https://altinn.github.io/ark/models/archi-all?view=id-35472e5b3d064c23b8e912a913d3d7f8]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Altinn 2.0 formidling - assessment
+|===
+
+| Element
+| Beskrivelse
+
+| Problemer med dagens Altinn 2.0 formidlingstjeneste
+a| 
+
+| Praktisk størrelsesbegrensing på  ca. 1GB meldinger 
+a| Working with binary streams allows developers to handle binary data efficiently, as the data is processed in its native format without the need for additional encoding or decoding, such as converting the binary data to a text-based format like Base64. This can lead to improved performance and reduced memory usage when working with large binary files or streaming data.
+
+###
+
+MTOM (Message Transmission Optimization Mechanism) itself does not impose specific size limits on binary attachments. However, the size limits for MTOM attachments may be influenced by various factors, including the web service implementation, the application server, and the network infrastructure. Some common factors that may impact the size limits for MTOM attachments are:
+
+Web service and application server configurations: Different web service frameworks and application servers may have their own default settings or configurable limits on the size of SOAP messages, including MTOM attachments. These limits can usually be adjusted in the server or framework configuration files.
+
+Network constraints: Network infrastructure, including routers, switches, and firewalls, may impose limits on the size of data packets that can be transmitted. This could affect the maximum size of MTOM attachments that can be sent without encountering network-related issues.
+
+Client and server resources: The resources available on the client and server, such as memory and processing power, can impact the handling of large MTOM attachments. Insufficient resources may lead to performance issues or failures when processing large attachments.
+
+Intermediary systems: In some cases, SOAP messages with MTOM attachments may pass through intermediary systems, such as proxy servers, which could impose their own size limits on message attachments.
+
+###
+
+To mitigate these potential issues, you may consider:
+
+Adjusting server and client configurations to handle larger messages, such as increasing memory allocation, modifying timeout settings, and configuring maximum message size limits.
+
+Using streaming techniques when available, which can allow you to process and transmit large MTOM attachments as a stream of smaller chunks, reducing memory usage and improving overall performance.
+
+Compressing the binary attachments before transmitting them to reduce their size and minimize the impact on bandwidth usage.
+
+Splitting large binary attachments into smaller parts and sending them as separate MTOM messages, which can help circumvent size limitations and improve processing efficiency.
+
+In summary, MTOM messages larger than approximately 1GB can cause problems due to memory usage, processing time, network limitations, and interoperability issues. It's crucial to consider these factors when designing and configuring your web services to handle large MTOM messages effectively.
+
+| Manglende funksjonalitet
+a| Mangler f.eks.
+* Notifikasjon om nytt innhold (mottakere må "polle")
+* Pub-sub
+* Inkrementelle endringer vs. hele "pakka" hver gang
+
+| Blir brukt for andre formål enn tiltenkt
+a| Mye "små" meldinger
+
+| Rotårsak
+a| 
+
+| Begrensninger relatert til SOAP og MTOM
+a| MTOM (Message Transmission Optimization Mechanism) itself does not impose specific size limits on binary attachments. However, the size limits for MTOM attachments may be influenced by various factors, including the web service implementation, the application server, and the network infrastructure. Some common factors that may impact the size limits for MTOM attachments are:
+
+Web service and application server configurations: Different web service frameworks and application servers may have their own default settings or configurable limits on the size of SOAP messages, including MTOM attachments. These limits can usually be adjusted in the server or framework configuration files.
+
+Network constraints: Network infrastructure, including routers, switches, and firewalls, may impose limits on the size of data packets that can be transmitted. This could affect the maximum size of MTOM attachments that can be sent without encountering network-related issues.
+
+Client and server resources: The resources available on the client and server, such as memory and processing power, can impact the handling of large MTOM attachments. Insufficient resources may lead to performance issues or failures when processing large attachments.
+
+Intermediary systems: In some cases, SOAP messages with MTOM attachments may pass through intermediary systems, such as proxy servers, which could impose their own size limits on message attachments.
+
+###
+
+To mitigate these potential issues, you may consider:
+
+Adjusting server and client configurations to handle larger messages, such as increasing memory allocation, modifying timeout settings, and configuring maximum message size limits.
+
+Using streaming techniques when available, which can allow you to process and transmit large MTOM attachments as a stream of smaller chunks, reducing memory usage and improving overall performance.
+
+Compressing the binary attachments before transmitting them to reduce their size and minimize the impact on bandwidth usage.
+
+Splitting large binary attachments into smaller parts and sending them as separate MTOM messages, which can help circumvent size limitations and improve processing efficiency.
+
+In summary, MTOM messages larger than approximately 1GB can cause problems due to memory usage, processing time, network limitations, and interoperability issues. It's crucial to consider these factors when designing and configuring your web services to handle large MTOM messages effectively.
+
+| Begrensninger relatert til Binary Streams
+a| The size limitations for messaging over binary streams depend on various factors, such as the programming language, libraries, underlying transport protocol, and system resources.
+
+Programming language and libraries: Some programming languages or libraries may impose limitations on the maximum size of data that can be read or written using a binary stream. However, these limitations are generally quite large and are unlikely to cause issues in most practical scenarios.
+
+Transport protocol: The underlying transport protocol used for transmitting binary data may impose its own limitations on message size. For example, when using HTTP, the maximum message size may be constrained by the server and client configurations. In practice, servers and clients can usually handle large messages, but it is essential to consider potential limitations and adjust the configurations accordingly.
+
+System resources: The available system resources, such as memory and storage, can also limit the size of messages that can be processed or transmitted using binary streams. Large messages may require more memory for buffering or processing, which may lead to issues if the system resources are insufficient. In such cases, it may be necessary to process the data in smaller chunks to avoid overloading the system.
+
+Interoperability and practical considerations: When exchanging messages between different systems or platforms, it is essential to consider the size limitations imposed by the receiving system. Large messages may cause issues if the receiving system is unable to handle them, so it is important to ensure that the message size is within the acceptable limits of all participating systems.
+
+In general, there is no fixed size limitation for messaging over binary streams, but it is crucial to consider the factors mentioned above and choose an appropriate message size based on the specific requirements and constraints of the system, transport protocol, and the participating parties. If you expect to work with large messages, it is advisable to implement mechanisms like chunking, streaming, or compression to minimize potential issues and optimize the data transmission process.
+
+| Mulige løsninger ut fra teknologier i as-is løsning
+a| 
+
+| Mulig løsning: Multimedia streaming
+a| 
+
+| Mulig løsning: SMB Share Replication
+a| Replication of SMB (Server Message Block) shares refers to the process of synchronizing the data stored on SMB shares across multiple servers or storage devices. This can help improve data redundancy, fault tolerance, and load balancing, and ensure that the data remains accessible even in case of hardware failures or network issues.
+
+There are several methods and technologies available for replicating SMB shares:
+
+DFS-R (Distributed File System Replication): DFS-R is a feature available in Windows Server that enables the replication of data between multiple servers. It uses a replication model called Remote Differential Compression (RDC) to replicate only the changes made to the files, reducing the amount of data transferred between servers. DFS-R can be used in conjunction with DFS-N (Distributed File System Namespace) to create a unified namespace, making it easier for users to access the replicated SMB shares.
+
+Storage Replica: Storage Replica is a feature introduced in Windows Server 2016 that provides block-level replication between servers or clusters. It can be used for replicating SMB shares by synchronizing the underlying storage volumes. Storage Replica supports synchronous and asynchronous replication, allowing you to choose the desired balance between data consistency and performance.
+
+Third-party replication solutions: There are various third-party software solutions available for replicating SMB shares, such as PeerSync, Double-Take, and SyncBack. These tools often provide additional features and customization options that may not be available in built-in Windows solutions.
+
+Manual or scripted replication: In some cases, you may opt for a manual or scripted approach to replicate SMB shares. This can involve using tools like Robocopy or rsync to synchronize the data between servers periodically. While this method may require more setup and maintenance, it can provide more control over the replication process.
+
+When replicating SMB shares, it's essential to consider factors such as the replication method, network bandwidth, storage capacity, and the desired level of redundancy and fault tolerance. It's also crucial to monitor the replication process and ensure that any issues or conflicts are resolved promptly to maintain data integrity and consistency.
+
+| MTOM
+a| Message Transmission Optimization Mechanism (MTOM) is a method for efficiently sending large binary attachments, such as images, videos, or files, within a SOAP (Simple Object Access Protocol) message over the internet. SOAP is an XML-based messaging protocol used for exchanging structured information in the implementation of web services in computer networks.
+
+In a typical SOAP message, binary data is encoded using Base64 encoding, which increases the size of the message by approximately 33%. This can lead to performance issues and increased network bandwidth usage, especially when dealing with large binary attachments.
+
+MTOM addresses this problem by optimizing the transmission of binary data in SOAP messages. Instead of embedding the binary data directly within the XML message using Base64 encoding, MTOM uses XOP (XML-binary Optimized Packaging) to package the binary data separately from the XML message. The binary data is sent as-is, without Base64 encoding, alongside the XML message as a MIME (Multipurpose Internet Mail Extensions) attachment.
+
+This approach reduces the overall message size and improves the efficiency of transmitting binary data in SOAP messages. The recipient can still process the XML message and access the binary attachment seamlessly, without any significant changes to the web service implementation.
+
+In summary, MTOM is an optimization mechanism for transmitting large binary attachments within SOAP messages. It reduces message size and network bandwidth usage by sending binary data as MIME attachments rather than embedding them in the XML message using Base64 encoding.
+
+MTOM (Message Transmission Optimization Mechanism) itself does not impose specific size limits on binary attachments. However, the size limits for MTOM attachments may be influenced by various factors, including the web service implementation, the application server, and the network infrastructure. Some common factors that may impact the size limits for MTOM attachments are:
+
+Web service and application server configurations: Different web service frameworks and application servers may have their own default settings or configurable limits on the size of SOAP messages, including MTOM attachments. These limits can usually be adjusted in the server or framework configuration files.
+
+Network constraints: Network infrastructure, including routers, switches, and firewalls, may impose limits on the size of data packets that can be transmitted. This could affect the maximum size of MTOM attachments that can be sent without encountering network-related issues.
+
+Client and server resources: The resources available on the client and server, such as memory and processing power, can impact the handling of large MTOM attachments. Insufficient resources may lead to performance issues or failures when processing large attachments.
+
+Intermediary systems: In some cases, SOAP messages with MTOM attachments may pass through intermediary systems, such as proxy servers, which could impose their own size limits on message attachments.
+
+The size limits for MTOM attachments may vary depending on the specific environment and configuration. It is essential to review the relevant documentation for the web service framework, application server, and network infrastructure to determine any size limitations and configure them appropriately to support the desired attachment sizes.
+
+| SOAP
+a| 
+
+| REST
+a| 
+
+| Binary Stream
+a| A binary stream refers to a continuous sequence of binary data (composed of bits, which are either 0 or 1) that is transmitted or processed by a computer system. Binary streams are often used for reading or writing binary data, such as images, audio files, video files, or other types of non-text data, from or to files, networks, or other data sources.
+
+In the context of programming languages and libraries, a binary stream is typically represented as an object or an interface that allows developers to read or write binary data to a specified source, such as a file or a network socket. The binary stream provides methods for reading and writing individual bytes or sequences of bytes, enabling the manipulation of binary data within a program.
+
+For example, in the .NET Framework, the Stream class is a base class for various types of binary streams, such as FileStream (for reading and writing data to a file) and NetworkStream (for reading and writing data over a network connection). In Java, the InputStream and OutputStream classes serve as base classes for different types of binary streams.
+
+Working with binary streams allows developers to handle binary data efficiently, as the data is processed in its native format without the need for additional encoding or decoding, such as converting the binary data to a text-based format like Base64. This can lead to improved performance and reduced memory usage when working with large binary files or streaming data.
+
+| Multimedia streaming
+a| Multimedia streaming protocols are used to transmit audio, video, and other media content over a network efficiently and in real-time. These protocols enable the delivery of multimedia content to various devices, such as computers, smartphones, and smart TVs, while maintaining a high level of quality and minimizing latency. Some widely-used multimedia streaming protocols include:
+
+RTP (Real-time Transport Protocol): RTP is a network protocol designed for the delivery of real-time multimedia content, such as audio and video, over IP networks. RTP is often used in conjunction with RTCP (Real-time Transport Control Protocol), which provides feedback on the quality of the data transmission and helps maintain synchronization between different media streams.
+
+RTSP (Real Time Streaming Protocol): RTSP is an application-level protocol that enables the control of multimedia streaming sessions. It allows clients to start, pause, and stop the playback of media streams, as well as to control other aspects of the streaming session, such as selecting a specific media track or adjusting the playback rate.
+
+HTTP Live Streaming (HLS): HLS is a streaming protocol developed by Apple for delivering live and on-demand multimedia content over HTTP. HLS divides media files into small segments and delivers them as a playlist, allowing the client to adapt the quality of the stream based on its current network conditions. This adaptive streaming approach helps ensure a smooth playback experience even in fluctuating network environments.
+
+Dynamic Adaptive Streaming over HTTP (DASH): DASH is an adaptive bitrate streaming protocol that, like HLS, delivers multimedia content in small segments over HTTP. DASH is codec-agnostic and supports multiple DRM (Digital Rights Management) systems, making it a flexible solution for delivering multimedia content to a wide range of devices and platforms.
+
+RTMP (Real-Time Messaging Protocol): RTMP is a protocol developed by Adobe for streaming audio, video, and data over the internet. RTMP is used primarily for low-latency live streaming and is often employed by streaming platforms and live streaming software. While it has been largely replaced by HTTP-based streaming protocols, RTMP is still in use for specific applications and scenarios.
+
+These multimedia streaming protocols each have their own strengths and weaknesses, and the choice of protocol depends on factors such as latency requirements, network conditions, compatibility with devices and platforms, and content protection needs.
+
+| SMB Share
+a| An SMB (Server Message Block) Share is a network file sharing protocol that enables applications to read, write, and request file and print services on remote computers or servers over a local area network (LAN) or the internet. SMB is commonly used for sharing files, printers, and other resources among multiple users or devices within a network.
+
+SMB Share allows users to access files and folders on remote servers as if they were on their local machines, enabling collaboration, data sharing, and centralized file storage. The protocol supports various operating systems, including Windows, macOS, and Linux, which makes it versatile and widely used in various network environments.
+
+SMB has evolved over time, and different versions of the protocol have been developed. The latest version, SMB 3.x, comes with enhanced security, performance, and reliability features compared to earlier versions.
+
+In summary, an SMB Share is a way to share files and resources across a network using the Server Message Block protocol, facilitating collaboration and centralized data storage in multi-user environments.
+
+SMB Shares can handle large files, but the actual file size limit depends on the version of the SMB protocol being used and the file system of the shared storage.
+
+For SMB 2.x and SMB 3.x, the maximum file size limit is 16 exabytes (EB) minus 64 kilobytes (KB). However, this theoretical limit is usually not reached in practice because the underlying file system itself imposes its own file size limits. For example:
+
+NTFS (New Technology File System) – used in modern Windows systems – supports a maximum file size of 16 terabytes (TB) minus 64 KB.
+HFS+ (Hierarchical File System Plus) – used in macOS – supports a maximum file size of 8 exabytes (EB) minus 1 byte.
+ext4 (Fourth Extended Filesystem) – commonly used in Linux – supports a maximum file size of 16 terabytes (TB) to 1 exabyte (EB), depending on the specific configuration.
+In general, SMB Shares are capable of handling very large files, with the actual limit typically determined by the file system on the shared storage rather than the SMB protocol itself.
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

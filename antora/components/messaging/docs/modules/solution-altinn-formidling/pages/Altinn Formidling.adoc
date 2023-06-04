@@ -1,0 +1,20 @@
+= Altinn Formidling
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:toc: left
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+Om Altinn formidling ...
+
+:leveloffset: +1
+include::main@messaging:solution-altinn-formidling:page$Altinn Formidling As-Is.adoc[]
+include::main@messaging:solution-altinn-formidling:page$Altinn Formidling To-be.adoc[]
+:leveloffset: -1

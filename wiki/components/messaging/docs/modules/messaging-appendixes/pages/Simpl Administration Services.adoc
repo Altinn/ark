@@ -1,0 +1,21 @@
+= Simpl Administration Services
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Simpl Administration Services
+image::{imagepath}Simpl Administration Services.png[alt=Simpl Administration Services image, link=https://altinn.github.io/ark/models/archi-all?view=id-488e6d1bc74545c0880762e74352a5dd]
+
+
+
+

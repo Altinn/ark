@@ -1,0 +1,21 @@
+= Gaia-X 
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Gaia-X 
+image::{imagepath}Gaia-X .png[alt=Gaia-X  image, link=https://altinn.github.io/ark/models/archi-all?view=id-ba919b78f45749a7ac734c793962f154]
+
+
+
+

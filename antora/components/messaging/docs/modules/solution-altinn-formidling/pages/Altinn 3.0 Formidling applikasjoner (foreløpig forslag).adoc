@@ -1,0 +1,22 @@
+= Altinn 3.0 Formidling applikasjoner (foreløpig forslag)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:toc: left
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+View dok...
+
+.Altinn 3.0 Formidling applikasjoner (foreløpig forslag)
+image::{imagepath}Altinn 3.0 Formidling applikasjoner (foreløpig forslag).png[alt=Altinn 3.0 Formidling applikasjoner (foreløpig forslag) image, link=https://solutions-no.github.io/models/archi/?view=id-3a9f8a7eb8284d66b84579f2e6ecc69e]
+
+
+
+

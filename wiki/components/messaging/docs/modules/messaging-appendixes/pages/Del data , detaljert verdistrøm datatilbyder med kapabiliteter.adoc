@@ -1,0 +1,36 @@
+= Del data , detaljert verdistrøm datatilbyder med kapabiliteter
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+Forklaring:
+Datatilbyder må evne å bestemme hvilken teknisk løsning som skal benyttes når dataene gjøres tilgjengelig som åpne data
+
+Datatilbyder må evne å velge hvor og hvordan dataene skal gjøres tilgjengelig, hvor skal datakonsument finne dataene og på hvilket format skal dataene deles 
+
+Datatilbyder må videre evne å bestemme detaljeringsgrad på dataene
+
+Krav til personvern må kunne ivaretas, samt eventuelle krav i forhold til andre skjermingsverdige opplysninger  
+
+
+Løsning:
+Prosesser for å dele data som åpne data
+
+
+.Del data , detaljert verdistrøm datatilbyder med kapabiliteter
+image::{imagepath}Del data , detaljert verdistrøm datatilbyder med kapabiliteter.png[alt=Del data , detaljert verdistrøm datatilbyder med kapabiliteter image, link=https://altinn.github.io/ark/models/archi-all?view=6e794bab-1330-418d-af53-3b216a2317a4]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Del data , detaljert verdistrøm datatilbyder med kapabiliteter.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

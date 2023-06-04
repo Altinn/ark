@@ -1,0 +1,19 @@
+= Løsninger og arkitektur as-is
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-as-is:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+Løsninger for meldingsutveksling...
+
+:leveloffset: +1
+include::main@messaging:messaging-solutions-as-is:page$Altinn Broker As-Is.adoc[]
+include::main@messaging:messaging-solutions-as-is:page$Altinn Correspondance As-Is.adoc[]
+:leveloffset: -1

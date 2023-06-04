@@ -1,0 +1,24 @@
+= Samhandlingsmønstre og meldingstyper
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Samhandlingsmønstre og meldingstyper
+image::{imagepath}Samhandlingsmønstre og meldingstyper.png[alt=Samhandlingsmønstre og meldingstyper image, link=https://altinn.github.io/ark/models/archi-all?view=id-e134fdc2984146499393babd5cab6090]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Samhandlingsmønstre og meldingstyper.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

@@ -1,0 +1,24 @@
+= Altinn formidling - applikasjonstjenester - flow
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn formidling - applikasjonstjenester - flow
+image::{imagepath}Altinn formidling - applikasjonstjenester - flow.png[alt=Altinn formidling - applikasjonstjenester - flow image, link=https://altinn.github.io/ark/models/archi-all?view=id-e6d5b64ece904784aa06ed3b80f711f6]
+
+
+****
+xref:main@messaging:solution-altinn-formidling:page$Altinn formidling - applikasjonstjenester - flow.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

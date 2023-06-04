@@ -1,0 +1,24 @@
+= Altinn formidling 2.0 - informasjonsmodell (påbegynt)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn formidling 2.0 - informasjonsmodell (påbegynt)
+image::{imagepath}Altinn formidling 2.0 - informasjonsmodell (påbegynt).png[alt=Altinn formidling 2.0 - informasjonsmodell (påbegynt) image, link=https://solutions-no.github.io/models/archi/?view=id-65578c67a03740c1a7c5bc5af9dacdd0]
+
+
+****
+xref:main@messaging:solution-altinn-formidling:page$Altinn formidling 2.0 - informasjonsmodell (påbegynt).var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

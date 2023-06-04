@@ -1,0 +1,26 @@
+= Introduksjon til Data Spaces
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:solution-altinn-formidling:
+endif::[]
+:toc: left
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+== Bakgrunn (modelx:section)
+Dataområder er et sentralt element i den europeiske datapolitikken. Arbeidet med arkitekturer og løsninger rundt dataområder har pågått i ca. ti år, drevet fram av ulike initiativ på tvers av privat og offentlig sektor i Europa. Med etableringen av en europeisk datastrategi i 2020, har EU-kommisjonen stilt seg bak og tatt ledelsen i denne utviklingen. Datastrategien støttes nå av en rekke lovreguleringer fra EU som også er i ferd med å treffe Norge. Se Digdirs oversikt over EU-regelverk om deling og bruk av data. Målet er gode offentlige tjenester og europeisk konkurransekraft i en datadrevet økonomi, basert på europeiske verdier, som beskrevet i Meld. St. 22 (2020–2021) Data som ressurs – Datadrevet økonomi og innovasjon. 
+
+== Konseptet
+Konseptet for Data Spaces kan oppsummeres slik: Et europeisk dataområde er en form for økosystem med aktører som utveksler data og tjenester over en felles infrastruktur i henhold til regler og standarder innen området. Ulike områder knyttes sammen med felles regler og standarder på tvers.
+
+image::{imagepath}Introduksjon til Data Spaces.png[]
+
+Dette kan godt sammenliknes med konseptet for Felles Økosystem, med deling av data og sammenhengende tjenester på tvers av sektorer. Samtidig er det noen spesifikke elementer i den europeiske tilnærmingen som det kan være gode grunner til å ta hensyn til i den videre utviklingen i Norge.
+
+.............................................
+

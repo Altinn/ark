@@ -1,0 +1,38 @@
+= Altinn Melding og formidling
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-books:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+image:{imagepath}messaging-front-cover.png[]
+
+----
+Mon May 22 2023 16:39:29 GMT+0200 (CEST)
+Erik Hagen 	erik.hagen@digdir.no
+----
+
+
+:leveloffset: +1
+include::main@messaging:messaging-introduction:page$Introduksjon.adoc[]
+include::main@messaging:messaging-solutions-as-is:page$Løsninger og arkitektur as-is.adoc[]
+include::main@messaging:messaging-architecture:page$Arkitektur - målbilder.adoc[]
+include::main@messaging:messaging-solutions-to-be:page$Løsninger to-be.adoc[]
+include::main@messaging:messaging-roadmap:page$Veikart.adoc[]
+include::main@messaging:messaging-appendixes:page$Vedlegg.adoc[]
+:leveloffset: -1
+
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-books:
+endif::[]
+
+image:{imagepath}messaging-back-cover.png[]
+

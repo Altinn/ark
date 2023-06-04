@@ -1,0 +1,96 @@
+= Utvekslingsmønstre
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Utvekslingsmønstre
+image::{imagepath}Utvekslingsmønstre.png[alt=Utvekslingsmønstre image, link=https://altinn.github.io/ark/models/archi-all?view=id-763a4a188c344e0db7003ece0686f0a1]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Utvekslingsmønstre
+|===
+
+| Element
+| Beskrivelse
+
+| Viktige utvekslingsmønstre
+a| 
+
+| Publisering til abonnenter (pub-sub)
+a| Publisert meldingsinnhold kan leses av alle interesserte abonnenter på det aktuelle emnet, så lenge innholdet er tilgjengelig (tidsbegrenset eller andre kriterier for gyldighet).
+
+xref:drafts:ra-datax-patterns:pub-sub-one-to-many.adoc[Videre detaljer]
+
+| Publisering via en hendelsesliste (event streaming)
+a| Dette mønsteret tilsvarer "Publisering fra en til flere ukjente abonnementer (pub-sub)". Forskjeller: 
+
+Konsumentene behøver ikke å sette opp abonnement, men kan kople seg direkte på en hendelsesstrøm via en hendelsesliste som kan navigeres og leses fra ønsket sted i hendelsesstrømmen. Hendelsesstrømmen er "durable" og hendelsene er "immutable".
+
+Dette mønsteret er nærmere beskrevet under https://nasjonal-arkitektur.github.io/architecture-repository/publish-subscribe/book-publish-subscribe.html[Publisering og konsumering av hendelsesstrømmer] i https://nasjonal-arkitektur.github.io/architecture-repository/index.html[arkitekturverkstedet].
+
+xref:drafts:ra-datax-patterns:event-streaming-12m-one-log.adoc[Videre detaljer]
+
+| Publisering via felles kø
+a| Meldinger tas ut av køen ved lesing, slik at hver melding bare går til en mottaker.
+
+xref:drafts:ra-datax-patterns:pub-to-queue.adoc[Videre detaljer]
+
+| Forsendelse - en til en
+a| Det mest grunnleggende mønsteret for meldingsutveksling omhandler enkeltvise meldinger fra en avsender til en kjent mottaker. Dette kan skje direkte og synkront,eller via meldingskøer.
+
+xref:drafts:ra-datax-patterns:sending-one-to-one.adoc[Videre detaljer]
+
+
+
+| Forsendelse - en til flere kjente
+a| Forsendelse fra en til flere kjente bygger på _basismønsteret for forsendelse fra en til en_, ved at samme innhold sendes gjennom gjentatte, men separate meldinger til et antall kjente mottakere.
+
+xref:drafts:ra-datax-patterns:sending-one-to-many.adoc[Videre detaljer]
+
+
+| Forsendelse - flere til en
+a| Forsendelse fra flere til en kjent mottaker bygger på _basismønsteret for forsendelse fra en til en_, ved at ulike meldinger med ulikt innhold sendes til bestemt kanal hos mottaker.
+
+xref:drafts:ra-datax-patterns:sending-many-to-one.adoc[Videre detaljer]
+
+| Forespørsel-svar - en mot flere ukjente
+a| Dette mønsteret kombinerer mønstrene _publish-subscribe_ og _Forsendelse - flere til en_. 
+
+Forespørsler publiseres, slik at en ikke er låst til svar fra bestemte tilbydere. Mottatte svar prosesseres ut fra valgt strategi. F.eks. kan strategien være at første svar bestandig velges, eller f.eks. kan alle svar kombineres til et samlet svar.
+
+xref:drafts:ra-datax-patterns:request-reply-many-unknown.adoc[Videre detaljer]
+
+
+
+Dette mønsteret støtter også datavirtualisering
+
+| Forespørsel-svar - en mot flere kjente
+a| Dette mønsteret bygger på basismønsteret for forespørsel-svar. Samme forespørsel sendes mot flere kjente tilbydere og mottatte svar prosesseres ut fra valgt strategi. F.eks. kan strategien være at første svar bestandig velges, eller f.eks. kan alle svar kombineres til et samlet svar.
+
+xref:drafts:ra-datax-patterns:request-reply-many-known.adoc[Videre detaljer]
+
+| Forespørsel-svar - en mot en
+a| Dette er et basismønster som omhandler oppslag i data fra en datakonsument mot en datatilbyder. Mønsteret dekker både asynkrone og synkrone oppslag, og det tas ikke stilling til kommunikasjonsprotokoll. Spørring og oppslag kan gjøres både mot data med ulike grader av tilgangsbegrensninger og mot åpne data, dvs. uten  helt uten behvo for tilgangsstyring.
+
+xref:drafts:ra-datax-patterns:request-reply-basic.adoc[Videre detaljer]
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

@@ -1,0 +1,44 @@
+= Altinn Broker
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-solutions-as-is:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Altinn Broker
+image::{imagepath}Altinn Broker.png[alt=Altinn Broker image, link=https://solutions-no.github.io/models/archi/?view=id-a2785368fbea435aad43459bd0e06acf]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Altinn Broker
+|===
+
+| Element
+| Beskrivelse
+
+| Altinn Broker
+a| Om Altinn formidling ...
+
+| Altinn Broker As-Is
+a| 
+
+| Altinn Broker To-be
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

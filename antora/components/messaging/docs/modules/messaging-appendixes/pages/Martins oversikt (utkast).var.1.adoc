@@ -1,0 +1,139 @@
+= Martins oversikt (utkast)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Martins oversikt (utkast)
+image::{imagepath}Martins oversikt (utkast).png[alt=Martins oversikt (utkast) image, link=https://altinn.github.io/ark/models/archi-all?view=id-1f712d28b8b441caa9979facfaf01534]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Martins oversikt (utkast)
+|===
+
+| Element
+| Beskrivelse
+
+| Grouping
+a| 
+
+| Virksomhet
+a| 
+
+| Sak/arkiv-system
+a| 
+
+| Fagsystem
+a| 
+
+| Integrasjon
+a| 
+
+| eFormidling
+a| eFormidling er en løsning for sikker og effektiv meldingsutveksling i offentlig sektor. Hovedkomponentene i løsningen er et integrasjonspunkt som installeres lokalt hos
+virksomhetene og et adresseregister som driftes av digitaliseringsdirektoratet. eFormidling gjør det mulig å kommunisere på en enkel og sikker måte, uten å måtte ta hensyn til om mottakeren er privat eller offentlig virksomhet, eller innbygger. Dette gir teknisk og organisatorisk samhandlingsevne.
+
+Mer om eFormidling:
+https://www.digdir.no/digitale-felleslosninger/eformidling/782
+
+| Altinn Tjenesteutviklingsløsning (TUL)
+a| Altinn TUL gir deg tilgang til et sett med verktøy du behøver for å utvikle tjenester på Altinn-plattformen.
+
+| Autentisering og autorisasjon
+a| 
+
+| Maskinporten
+a| Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.
+
+Mer om Maskinporten:
+https://www.digdir.no/digitale-felleslosninger/maskinporten/869
+
+| Altinn autorisasjon
+a| [Torget]
+Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
+Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.
+
+[Verktøykasse for deling av data]
+Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
+autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.
+
+Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.
+
+Mer om Altinn autorisasjon:
+https://www.altinndigital.no/produkter/styring-av-tilgang/
+
+| Standardisering
+a| 
+
+| Meldingsformidling
+a| 
+
+| Peppol eDelivery Network
+a| 
+
+| FIKS IO
+a| FIKS IO er en tjeneste for sikker maskin-til-maskin integrasjon. Tjenesten kan benyttes for å bygge prosesser på tvers av systemer og organisasjoner, for eksempel når et fagsystem skal arkivere et dokument i et arkivsystem eller spørre om informasjon som er lagret i et annet system.
+
+
+| FEIDE
+a| Ref. https://www.feide.no/ofte-stilte-sporsmal-om-feide:
+
+Feide er den nasjonale løsningen for trygg innlogging og datadeling i utdanning og forskning.
+
+Svært mange av de digitale læremidlene og tjenestene som er i bruk i norsk utdanning benytter Feide som innloggingsløsning.
+
+Med en Feide-bruker benytter elever, studenter, forskere og undervisere ett og samme brukernavn og passord til å logge inn på alle tjenester som benytter Feide som innloggingsløsning. De slipper med andre ord å huske ulike brukernavn og passord for ulike tjenester.
+
+Feide-brukere opprettes og endres av organisasjonen man tilhører (f.eks. NTNU eller Oslo kommune), og brukerinformasjon administreres og lagres lokalt hos organisasjonen. Hvis passord skal endres, gjøres ikke dette for hver tjeneste brukeren benytter, men én gang av organisasjonen.
+
+| NHN løsninger for meldingsformidling
+a| https://www.nhn.no/tjenester
+
+| Markedsløsninger  for meldings-formidlimg
+a| 
+
+| Altinn Formidling
+a| 
+
+| Digital postkasse til innbyggere (DPI)
+a| Digital postkasse gir teknisk samhandlingsevne ved at virksomheter kan sende digital post sikkert til innbyggerne, uavhengig av om innbygger har valgt e-Boks eller Digipost for mottak.
+
+Mer om Digital postkasse til innbygger:
+https://www.digdir.no/digitale-felleslosninger/digital-postkasse-tilinnbyggere/
+775
+
+| Digital postkasse til virksomheter (DPV)
+a| https://www.altinndigital.no/produkter/digital-post/
+
+https://altinn.github.io/docs/utviklingsguider/digital-post-til-virksomheter/
+
+Digital Post til Virksomheter (DPV) er en fellestjeneste i Altinn som det offentlige kan bruke for å sende digital post til virksomhetens innboks i Altinn.
+
+Altinns meldingstjenester kan benyttes i ulike sammenhenger, ofte i forbindelse med andre dialogtjenester i Altinn. Med Digital post til virksomheter (DPV) har vi utviklet et ferdig sett med tjenester til dette formålet slik at du skal slippe å utvikle dem selv. DPV er således en påbygg for de avsendere som i utgangspunktet kun skal sende post til virksomheter uten behov for å knytte dette tett til en spesifikk innsendingstjeneste i Altinn, eller særskilte behov som ikke dekkes av DPV. Et eksempel på særskilte behov kan f eks være at tilgangsstyringsregler for DPV-tjenestene (dvs regler om hvem som får tilgang til posten som sendes) ikke fungerer hensiktsmessig for den post dere sender ut.
+
+Med tradisjonell bruk av meldingstjenester i Altinn har Tjenesteeierne selv utviklet egne meldingstjenester, der de selv kan stille krav til at kun brukere med spesielle roller skal få tilgang. I DPV introduseres derimot meldingstjenester som er generelle i krav om sluttbrukers rolle. Det vil være opp til virksomhetene som mottar post å styre tilgang til egen post, og formidle denne videre inn i sin organisasjon, enten via automatiske og maskinell integrasjon med Altinn eller tilgang i Altinn meldingsboks.
+
+
+| Dialogporten
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

@@ -1,0 +1,24 @@
+= Utvekslingsmønstre
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Utvekslingsmønstre
+image::{imagepath}Utvekslingsmønstre.png[alt=Utvekslingsmønstre image, link=https://altinn.github.io/ark/models/archi-all?view=id-763a4a188c344e0db7003ece0686f0a1]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Utvekslingsmønstre.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

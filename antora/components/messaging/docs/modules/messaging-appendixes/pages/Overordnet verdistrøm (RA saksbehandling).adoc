@@ -1,0 +1,24 @@
+= Overordnet verdistrøm (RA saksbehandling)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Overordnet verdistrøm (RA saksbehandling)
+image::{imagepath}Overordnet verdistrøm (RA saksbehandling).png[alt=Overordnet verdistrøm (RA saksbehandling) image, link=https://altinn.github.io/ark/models/archi-all?view=id-f32e7006b19945ac989c04e800276fe6]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Overordnet verdistrøm (RA saksbehandling).var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

@@ -1,0 +1,40 @@
+= Utfør steg i samhandlingsprosess
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+Figuren nedenfor viser en generisk prosess for operativ databehandling, der datautveksling inngår. 
+
+Oppsummering:
+
+* Enhver databehandling krever data som input og vil resultere i output av data. 
+
+* Input kan være alt fra en notifikasjon uten videre innhold til komplette meldinger. Om tilleggsdata må innhentes, gjøres dette f.eks. ved å forespørre  aktuelle datakilde eller ved å vente på ytterligere input initiert av andre.
+
+* Output vil være lagrede data for bevis og gjenbruk, samt videresendte data til påfølgende ledd i behandlingskjeden, der det er aktuelt. 
+
+* Det er ikke direkte vist i dette enkle prosessdiagrammet, men videresendte data kan her inkludere svar til avsender av mottatte data, i tillegg til en eller flere andre samhandlingsaktører.
+
+* For behandling av personopplysninger må det finnes et dokumentert behandlingsgrunnlag, enten i form av hjemmel eller samtykke. Dette vil være del av det totale datagrunnlaget for databehandlingen. 
+
+De viktigste kapabilitetene som behøves er indikert for hvert prosessteg. TBD?
+
+
+
+.Utfør steg i samhandlingsprosess
+image::{imagepath}Utfør steg i samhandlingsprosess.png[alt=Utfør steg i samhandlingsprosess image, link=https://altinn.github.io/ark/models/archi-all?view=3c9586f5-3098-4147-a9cc-eaf8594f626f]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Utfør steg i samhandlingsprosess.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+

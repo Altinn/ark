@@ -1,0 +1,229 @@
+= OPEN DEI Building Blocks (2022)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.OPEN DEI Building Blocks (2022)
+image::{imagepath}OPEN DEI Building Blocks (2022).png[alt=OPEN DEI Building Blocks (2022) image, link=https://altinn.github.io/ark/models/archi-all?view=id-63dee2b19f3b433ca1e35385ad4a9f46]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for OPEN DEI Building Blocks (2022)
+|===
+
+| Element
+| Beskrivelse
+
+| Technical building blocks
+a| 
+
+| Data interoperability
+a| 
+
+| Data Exchange APIs
+a| Data Exchange APIs: This building block facilitates the sharing and exchange of data (i.e., data provision and data consumption/use) between data space participants. An example of a data interoperability building block providing a common data exchange API is the ‘Context Broker’ of the Connecting Europe Facility (CEF)50, which is recommended by the European Commission for sharing right-time data among multiple organisations.
+
+| Data Provenance and Traceability
+a| This building block provides the means for tracing and tracking in the process of data provision and data consumption/use. It thereby provides the basis for a number of important functions, from identification of the lineage of data to audit-proof logging of transactions. It also enables implementation of a wide range of tracking use cases at application level, such as tracking of products or material flows in a supply chain.
+
+| Data Models and Formats
+a| This building block establishes a common format for data model specifications and representation of data in data exchange payloads. Combined with the Data Exchange APIs building block, this ensures full interoperability among participants.
+
+| Data sovereignty and trust
+a| 
+
+| Trusted Exchange
+a| This building block facilitates trusted data exchange among participants, reassuring participants in a data exchange transaction that other participants really are who they claim to be and that they comply with defined rules/agreements. This can be achieved by organisational measures (e.g. certification or verified credentials) or technical measures (e.g. remote attestation).
+
+| Identity Management (IM)
+a| The IM building block allows identification, authentication, and authorisation of stakeholders operating in a data space. It ensures that organisations, individuals, machines, and other actors are provided with acknowledged identities, and that those identities can be authenticated and verified, including additional information provisioning1, to be used by authorisation mechanisms to enable access and usage control. The IM building block can be implemented on the basis of readily available IM platforms that cover parts of the required functionality. Examples of open-source solutions are the KeyCloak infrastructure51, the Apache Syncope IM platform52, the open-source IM platform of the Shibboleth Consortium53, or the FIWARE IM framework54. Integration of the IM building block with the eID building block of the Connecting Europe Facility (CEF)55, supporting electronic identification of users across Europe, would be particularly important. Creation of federated and trusted identities in data spaces can be supported by European regulations such as EIDAS.
+
+| Access and Usage Control/Policies
+a| This building block guarantees enforcement of data access and usage policies defined as part of the terms and conditions established when data resources or services are published (see ‘Publication and Services Marketplace’ building block below) or negotiated between providers and consumers. A data provider typically implements data access control mechanisms to prevent misuse of resources, while data usage control mechanisms are typically implemented on the data consumer side to prevent misuse of data. In complex data value chains, both mechanisms are combined by prosumers. Access control and usage control rely on identification and authentication.
+
+| Data value creation
+a| 
+
+| Metadata and Discovery Protocol
+a| This building block incorporates publishing and discovery mechanisms for data resources and services, making use of common descriptions of resources, services, and participants. Such descriptions can be both domain-agnostic and domain-specific. They should be enabled by semantic-web technologies and include linked-data principles.
+
+| Data Usage Accounting
+a| This building block provides the basis for accounting access to and/or usage of data by different users. This in turn is supportive of important functions for clearing, payment, and billing (including data-sharing transactions without involvement of data marketplaces).
+
+| Publication and Marketplace Services
+a| To support the offering of data resources and services under defined terms and conditions, marketplaces must be established. This building block supports publication of these offerings, management of processes linked to the creation and monitoring of smart contracts (which clearly describe the rights and obligations for data and service usage), and access to data and services.
+
+Based on the technical needs, the corresponding backend processes for rating, clearing, and billing can be executed. The building block thereby facilitates dynamic enlargement of data spaces with more stakeholders, data resources, and data-processing/analytics services (such as big-data analysis services, machine learning services, or services based on statistical processing models for different business functions). It should comprise capabilities for publishing data resources following the broadly accepted DCAT (Data Catalogue Vocabulary) standards, and for harvesting data from existing open-data publication platforms.
+
+| Data Processing
+a| Systems connected to data spaces via system adapters are able to process shared data to enforce data usage restrictions. The organisations’ rules or legal contracts can be substituted or at least accompanied by technical solutions. However, such processing adds additional complexity to data usage control by data providers or data space operators. In order to exert wider control, data spaces may incorporate different stages of usage control, as provided by the concept of the usage control onion, (e.g. for data accountability/traceability or access/usage control) with data-processing technologies.
+
+| System Adaptation
+a| One of the main functions of a data space is to facilitate the transfer of data to and from participants’ systems (i.e. database systems, data-processing systems, enterprise systems [like CRM, ERP, MRP or MES systems], but also cyberphysical systems and IoT-enabled systems). Regardless of the system, there is a need for a System Adaptation building block that interfaces with the various data resources exported by the system and performs the necessary transformation of the data formats adopted for data exchange within the data space (see ‘Data Exchange APIs’ building block). The interface depends on the nature of the system: For example, IoT protocols (e.g. CoAP [Constrained Application Protocol] or MQTT [Message Queuing Telemetry Transport]) can be used to interface with IoT resources, database protocols (e.g. JDBC [Java Database Connectivity] or SQL [Structured Query Language]) can be used to interface with databases, and API protocols (e.g. RESTful services) can be used to interface with enterprise systems and applications. To maintain confidentiality and privacy when transferring data from participants’ systems to the data space and vice versa, data encryption and anonymization may be required. Additional data and metadata may also be incorporated in order to transport relevant information required for other data space building blocks (e.g., on data accountability/traceability or usage control) to work.
+
+| Data Routing and Preprocessing (DR&P)
+a| There may be a need for dynamic routing of data to the proper data-processing node (as part of a dynamic data-routing function). The building block for data routing and preprocessing is usually a data middleware platform (or a combination of two or more such platforms). These address different technical requirements, depending on the nature of the data that is collected and routed (e.g. streaming data, data at rest). For instance, stream-processing middleware platforms (e.g. Apache Kafka) can be used to support the routing and preprocessing of streaming data. Data routing needs to consider technical aspects, like horizontal and vertical scalability, but also aspects resulting from data usage policies, like jurisdiction for data processing, data egress, or combination with other data.
+
+| Workflow Management Engine (WME)
+a| Data-processing use cases usually involve interaction of multiple data sources, data consumers, and data services. This interaction must be properly orchestrated by means of structured and acknowledged workflows (including data extraction, transformation, and analysis, as well as data presentation and visualization).
+
+| Data Analytics Engine (DAE)
+a| Many data space use cases allow analysis of multi-source, multi-stakeholder data based on methods like statistical analysis, machine learning, deep learning, and other data-mining techniques (e.g. for demand forecasting in an industrial use case, which must synthesise and analyse multiple data flows coming from different platforms the data space is comprised of). A function like that requires analysis of multiple data flows, which is why it needs to be supported by a ‘Data Analytics Engine’ building block. Depending on the nature of the data, this building block can take different forms (such as streaming analytics, cloud-based analytics, machine learning, or complex event processing [CEP]).
+
+| Data Visualisation
+a| Data spaces should also provide data presentation and visualisation features. A building block offering these features can take various forms, from a simple dashboard to augmented analytics (e.g. implemented on the basis of frameworks like Kibana or Grafana).
+
+| Web-based UI for IDSA data space connector
+a| A web-based UI has been developed for enabling small companies to exchange data through IDSA data space. Target use has been agriculture domain and farmers’ sharing data with their subcontractors. [VTT]
+
+| Governance buiding blocks
+a| 
+
+| Business agreements
+a| 
+
+| Data valuation method
+a| data evaluation is concerned with methods to estimate the value of data shared by organizations in the data space.
+
+| Data consent wizard
+a| 
+
+| Notification Manager
+a| 
+
+| Smart Contracts
+a| They provide a protocol for implementation of agreements between two or more parties (mainly the Data Provider and the Data Consumer). As such they specify data usage policies, legal aspects, SLAs and other agreements in a machine-readable and cryptographically signable manner.
+
+| Operational Service Level Agreement (SLA)
+a| Provides specification of a service and the standards that it should meet
+
+| Smart Contract Generator
+a| 
+
+| Consent receipt management
+a| 
+
+| Billing/Charging Scheme
+a| This artifact specifies how billing/charging is to be performed. Commonly used billing/charging schemes are schemes relying on the data volume provided (i.e. volume-based), the number of requests for, or connections to, a service (i.e. I/O based) or the time period the service can be used (i.e. time-based). While in some cases flat billing/charging schemes may be an adequate solution (as they are simple to set up and use), it is also possible to combine the above-listed schemes into a hybrid scheme.
+
+| Accounting Scheme
+a| This artifact details the accounting practices and reports that should be produced as part of the operation of the data space and in line with the underlying business models. It specifies the parameters that should be logged and reported for every business actor and transaction of the data space.
+
+| Continuity Model
+a| 
+
+| Continuity Model Regulations
+a| 
+
+| Overarching Cooperation Agreements
+a| 
+
+| Data Space Boards
+a| 
+
+| Organizational and operational governance
+a| 
+
+| Smart Contracts for Permissioning
+a| 
+
+| Ontologies
+a| 
+
+| Semantic Database
+a| 
+
+| Synchronization
+a| 
+
+| Database
+a| 
+
+| API for External Access
+a| 
+
+| Embedded Ledger
+a| 
+
+| KNOWLEDGE graph
+a| Erik's notes: See e.g. https://www.knowledgegraph.tech/kgc-2022-tutorial-validating-semantic-knowledge-graphs-using-shacl/ 
+
+| ITSM framework
+a| Erik's notes: https://www.bmc.com/blogs/itsm-frameworks-popular/
+
+| Linked data Automated Contracting Tool (ACT)
+a| Erik's notes: https://juro.com/learn/contract-automation
+
+| FAIR principles
+a| Erik's notes: https://www.go-fair.org/fair-principles/
+
+| Governance roles
+a| 
+
+| Data Owner
+a| 
+
+| Data Marketplace Operator
+a| providing different kinds of infrastructure (e.g. soft infrastructure, [cloud] hardware, data-processing tools). Furthermore, it is responsible for marketplace governance by providing support services, defining terms and conditions, and deciding on admission and withdrawal of datasets or participants. As the importance and potential of data is more and more acknowledged, data marketplaces are emerging as a new type of business offering. Their goal is to make data usage possible in a seamless and automated fashion, bypassing the need for complicated back-office contracts and agreements. A data marketplace can be cross-domain or domain-specific (i.e. dealing with data of interest to specific use cases and industries). Their main duty is to make data easily discoverable (based on a set of standardised data models) and to provide transparent tracking of all data-related transactions (from who used what data at what point in time to revenues generated from sharing data).
+
+| Data Processor
+a| responsible for, and interested in, using certain types of data to create new services to be offered in the market. The spectrum of such services is very broad, ranging from domain-specific use cases to cross-domain applications. The value of the data used for creation of new services depends on the data’s accuracy, availability (i.e. the number of data providers offering it), and how important it is for the processing algorithms used. It is usually estimated and agreed upon upfront, what to some extent limits the data owner’s ability to achieve maximum monetisation of their data, as they have no sound understanding of the additional value created on top of their data and/or the value the new services have for users. As data usage control is based on conventional contract documents set up by the parties involved, leading to dependency on manual/back-office operations, utilisation of data is further complicated, thus slowing down full exploitation and monetisation of data.
+
+| Data Acquirer or Data Provider
+a| responsible for collecting and preprocessing data and providing it to others on behalf of a Data Owner (often as part of a business-related service provided to a Data Owner).
+
+| Organisational/operational building blocks
+a| 
+
+| Interoperability
+a| 
+
+| Domain Data Standard
+a| The Domain Data Standard represents the language for data sharing in a specific sector or domain. To achieve specific goals, multiple such standards can be used in combination.
+
+| Trust
+a| In addition to the technical implementation of building blocks related to trust, operational and organisational measures create a trust anchor for the overall system. The main purpose of the trust anchor is to connect the physical and the digital world. A legal or natural entity requires a digital identity that enables reliable identification and authentication.
+
+| Unique Identifiers
+a| Unique and trusted identifiers enable reliable identification of legal and natural entities (including things) across domain specific or country specific identification schemes. Such identification has to be extended with value-adding attributes (e.g. commercial register number or tax identification number). Such additional information must be provided by trusted parties.
+
+| Authorisation Registries
+a| To unambiguously identify each data space participant, special authentication registries must be in place. These registries need to be established in accordance with operational agreements (i.e. policies) concluded within the data space. These registries itself must be approved and monitored by a neutral body. Authentication of a participant requires a structured admission process including a compliance assessment to set up the trust anchor of each identity at the registry.
+
+| Trusted Parties
+a| On the basis of authenticated identities, trusted parties can verify and validate participants’ capabilities. This includes two aspects: 1) acquisition or evaluation of capabilities in a structured process and 2) verification of these claims against a digital identity. While the first aspect is typically covered by certifications or registrations, the second aspect is often carried out by commercial services. A trusted party therefore provides digital evidence of specified and measurable criteria. The content of those criteria is specified by regulations or by (sector-)specific agreements.
+
+| Data space administration, organisation, and guidance
+a| The fundamentals of all business transactions are frameworks that provide agreements between all actors. All technical and functional agreements are part of this and must be agreed and monitored by a special body.
+
+| Regulations:
+a| Regulations refer to laws or administrative rules, issued by an organisation, used to guide or prescribe the conduct of the members of that organisation or countries.
+
+| Overarching cooperation Agreements
+a| All data space participants need to agree on certain functional, technical, operational and legal aspects. While some agreements are reusable in a generic or sector-specific way (e. g. rule books), others are use-case specific.
+
+| Data Space Boards
+a| Data Space Boards provide governance for data spaces in terms of decision-making, guidance, steering, and conflict resolution.
+
+| Continuity Model
+a| The Continuity Model describes the processes for the management of changes, versions, and releases for standards and agreements. This also includes the governance body for decision-making and conflict resolution.
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

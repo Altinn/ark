@@ -1,0 +1,21 @@
+= RA Publisering
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.RA Publisering
+image::{imagepath}RA Publisering.png[alt=RA Publisering image, link=https://altinn.github.io/ark/models/archi-all?view=b0e47cd5-e2b4-426e-9ad5-fc9f0e91337d]
+
+
+
+

@@ -1,0 +1,24 @@
+= Prioriterte temaer innen datadeling (2019)
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Prioriterte temaer innen datadeling (2019)
+image::{imagepath}Prioriterte temaer innen datadeling (2019).png[alt=Prioriterte temaer innen datadeling (2019) image, link=https://altinn.github.io/ark/models/archi-all?view=f76132f1-7845-4248-9c00-9040a63eabb1]
+
+
+****
+xref:main@messaging:messaging-appendixes:page$Prioriterte temaer innen datadeling (2019).var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
+
+
