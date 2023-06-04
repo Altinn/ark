@@ -14,7 +14,8 @@ content:
 
 
 
-  - url: https://github.com/altinn/ark.git
+  #- url: https://github.com/altinn/ark/wiki/components/messaging.git
+  - url: https://github.com/altinn/ark/wiki/components/messaging
     start_path: docs
 
 
