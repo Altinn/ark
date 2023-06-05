@@ -502,13 +502,27 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <p>Mangler f.eks.
 * Notifikasjon om nytt innhold (mottakere må "polle")
 * Pub-sub
-* Inkrementelle endringer vs. hele "pakka" hver gang</p>
+* Inkrementelle endringer vs. hele "pakka" hver gang
+* Lesebekreftelse ref. Politiet
+* Tilbakekalling ref. Politiet</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blir brukt for andre formål enn tiltenkt</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Mye "små" meldinger</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrenset antall filer i en oversendelse (10)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Dette er for lite, ref. Politiet</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issues med pålitelighet?</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ref. Politiet:  Ikke ubetydelig antall filer som bare blir borte</p>
 </div></div></td>
 </tr>
 <tr>
@@ -580,10 +594,6 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mulig løsning: Multimedia streaming</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Mulig løsning: SMB Share Replication</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Replication of SMB (Server Message Block) shares refers to the process of synchronizing the data stored on SMB shares across multiple servers or storage devices. This can help improve data redundancy, fault tolerance, and load balancing, and ensure that the data remains accessible even in case of hardware failures or network issues.</p>
@@ -605,6 +615,33 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </div>
 <div class="paragraph">
 <p>When replicating SMB shares, it&#8217;s essential to consider factors such as the replication method, network bandwidth, storage capacity, and the desired level of redundancy and fault tolerance. It&#8217;s also crucial to monitor the replication process and ensure that any issues or conflicts are resolved promptly to maintain data integrity and consistency.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SMB Share</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>An SMB (Server Message Block) Share is a network file sharing protocol that enables applications to read, write, and request file and print services on remote computers or servers over a local area network (LAN) or the internet. SMB is commonly used for sharing files, printers, and other resources among multiple users or devices within a network.</p>
+</div>
+<div class="paragraph">
+<p>SMB Share allows users to access files and folders on remote servers as if they were on their local machines, enabling collaboration, data sharing, and centralized file storage. The protocol supports various operating systems, including Windows, macOS, and Linux, which makes it versatile and widely used in various network environments.</p>
+</div>
+<div class="paragraph">
+<p>SMB has evolved over time, and different versions of the protocol have been developed. The latest version, SMB 3.x, comes with enhanced security, performance, and reliability features compared to earlier versions.</p>
+</div>
+<div class="paragraph">
+<p>In summary, an SMB Share is a way to share files and resources across a network using the Server Message Block protocol, facilitating collaboration and centralized data storage in multi-user environments.</p>
+</div>
+<div class="paragraph">
+<p>SMB Shares can handle large files, but the actual file size limit depends on the version of the SMB protocol being used and the file system of the shared storage.</p>
+</div>
+<div class="paragraph">
+<p>For SMB 2.x and SMB 3.x, the maximum file size limit is 16 exabytes (EB) minus 64 kilobytes (KB). However, this theoretical limit is usually not reached in practice because the underlying file system itself imposes its own file size limits. For example:</p>
+</div>
+<div class="paragraph">
+<p>NTFS (New Technology File System) – used in modern Windows systems – supports a maximum file size of 16 terabytes (TB) minus 64 KB.
+HFS+ (Hierarchical File System Plus) – used in macOS – supports a maximum file size of 8 exabytes (EB) minus 1 byte.
+ext4 (Fourth Extended Filesystem) – commonly used in Linux – supports a maximum file size of 16 terabytes (TB) to 1 exabyte (EB), depending on the specific configuration.
+In general, SMB Shares are capable of handling very large files, with the actual limit typically determined by the file system on the shared storage rather than the SMB protocol itself.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -664,57 +701,6 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </div>
 <div class="paragraph">
 <p>Working with binary streams allows developers to handle binary data efficiently, as the data is processed in its native format without the need for additional encoding or decoding, such as converting the binary data to a text-based format like Base64. This can lead to improved performance and reduced memory usage when working with large binary files or streaming data.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multimedia streaming</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Multimedia streaming protocols are used to transmit audio, video, and other media content over a network efficiently and in real-time. These protocols enable the delivery of multimedia content to various devices, such as computers, smartphones, and smart TVs, while maintaining a high level of quality and minimizing latency. Some widely-used multimedia streaming protocols include:</p>
-</div>
-<div class="paragraph">
-<p>RTP (Real-time Transport Protocol): RTP is a network protocol designed for the delivery of real-time multimedia content, such as audio and video, over IP networks. RTP is often used in conjunction with RTCP (Real-time Transport Control Protocol), which provides feedback on the quality of the data transmission and helps maintain synchronization between different media streams.</p>
-</div>
-<div class="paragraph">
-<p>RTSP (Real Time Streaming Protocol): RTSP is an application-level protocol that enables the control of multimedia streaming sessions. It allows clients to start, pause, and stop the playback of media streams, as well as to control other aspects of the streaming session, such as selecting a specific media track or adjusting the playback rate.</p>
-</div>
-<div class="paragraph">
-<p>HTTP Live Streaming (HLS): HLS is a streaming protocol developed by Apple for delivering live and on-demand multimedia content over HTTP. HLS divides media files into small segments and delivers them as a playlist, allowing the client to adapt the quality of the stream based on its current network conditions. This adaptive streaming approach helps ensure a smooth playback experience even in fluctuating network environments.</p>
-</div>
-<div class="paragraph">
-<p>Dynamic Adaptive Streaming over HTTP (DASH): DASH is an adaptive bitrate streaming protocol that, like HLS, delivers multimedia content in small segments over HTTP. DASH is codec-agnostic and supports multiple DRM (Digital Rights Management) systems, making it a flexible solution for delivering multimedia content to a wide range of devices and platforms.</p>
-</div>
-<div class="paragraph">
-<p>RTMP (Real-Time Messaging Protocol): RTMP is a protocol developed by Adobe for streaming audio, video, and data over the internet. RTMP is used primarily for low-latency live streaming and is often employed by streaming platforms and live streaming software. While it has been largely replaced by HTTP-based streaming protocols, RTMP is still in use for specific applications and scenarios.</p>
-</div>
-<div class="paragraph">
-<p>These multimedia streaming protocols each have their own strengths and weaknesses, and the choice of protocol depends on factors such as latency requirements, network conditions, compatibility with devices and platforms, and content protection needs.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SMB Share</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>An SMB (Server Message Block) Share is a network file sharing protocol that enables applications to read, write, and request file and print services on remote computers or servers over a local area network (LAN) or the internet. SMB is commonly used for sharing files, printers, and other resources among multiple users or devices within a network.</p>
-</div>
-<div class="paragraph">
-<p>SMB Share allows users to access files and folders on remote servers as if they were on their local machines, enabling collaboration, data sharing, and centralized file storage. The protocol supports various operating systems, including Windows, macOS, and Linux, which makes it versatile and widely used in various network environments.</p>
-</div>
-<div class="paragraph">
-<p>SMB has evolved over time, and different versions of the protocol have been developed. The latest version, SMB 3.x, comes with enhanced security, performance, and reliability features compared to earlier versions.</p>
-</div>
-<div class="paragraph">
-<p>In summary, an SMB Share is a way to share files and resources across a network using the Server Message Block protocol, facilitating collaboration and centralized data storage in multi-user environments.</p>
-</div>
-<div class="paragraph">
-<p>SMB Shares can handle large files, but the actual file size limit depends on the version of the SMB protocol being used and the file system of the shared storage.</p>
-</div>
-<div class="paragraph">
-<p>For SMB 2.x and SMB 3.x, the maximum file size limit is 16 exabytes (EB) minus 64 kilobytes (KB). However, this theoretical limit is usually not reached in practice because the underlying file system itself imposes its own file size limits. For example:</p>
-</div>
-<div class="paragraph">
-<p>NTFS (New Technology File System) – used in modern Windows systems – supports a maximum file size of 16 terabytes (TB) minus 64 KB.
-HFS+ (Hierarchical File System Plus) – used in macOS – supports a maximum file size of 8 exabytes (EB) minus 1 byte.
-ext4 (Fourth Extended Filesystem) – commonly used in Linux – supports a maximum file size of 16 terabytes (TB) to 1 exabyte (EB), depending on the specific configuration.
-In general, SMB Shares are capable of handling very large files, with the actual limit typically determined by the file system on the shared storage rather than the SMB protocol itself.</p>
 </div></div></td>
 </tr>
 </tbody>
