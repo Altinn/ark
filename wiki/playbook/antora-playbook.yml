@@ -25,8 +25,8 @@ content:
 ui:
   bundle:
     #url: https://github.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
-    #url: C:\gitlab\digdir\antora-ui\build\ui-bundle.zip
-    url: C:\Users\eha\OneDrive\antora\altinn\ark\wiki\antora-ui\build\ui-bundle.zip
+    url: C:\gitlab\digdir\antora-ui\build\ui-bundle.zip
+    #url: C:\Users\eha\OneDrive\antora\altinn\ark\wiki\antora-ui\build\ui-bundle.zip
     #onedrive ny pc: url: C:\Users\eha\OneDrive\antora\digdir\antora-ui\build\ui-bundle.zip
     #url: C:\gitlab\digdir\antora-ui-default\build\ui-bundle.zip
     #url: C:\github\antora-uis\ax-docs-across-site-ui\build\ui-bundle.zip
