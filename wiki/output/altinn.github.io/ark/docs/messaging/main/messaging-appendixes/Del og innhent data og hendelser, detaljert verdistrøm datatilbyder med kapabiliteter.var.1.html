@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter :: Altinn arkitekturverksted (under etablering og uttesting, vår 2023)</title>
+    <link rel="canonical" href="https://altinn.github.io/ark/messaging/main/messaging-appendixes/Del%20og%20innhent%20data%20og%20hendelser,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.var.1.html">
+    <meta name="generator" content="Antora 3.1.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://altinn.github.io/ark">Altinn arkitekturverksted (under etablering og uttesting, vår 2023)</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        </div>
+		<a id="twitter-link" class="navbar-item" href="https://twitter.com/janakaSteph" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="messaging" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Arkitekturverksted</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-books/Altinn%20Melding%20og%20formidling.html">Altinn Melding og formidling</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../messaging-introduction/Introduksjon.html">Introduksjon</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-as-is/Løsninger%20og%20arkitektur%20as-is.html">Løsninger og arkitektur as-is</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-as-is/Altinn%20Broker%20As-Is.html">Altinn Broker As-Is</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20formidling%202.0%20-%20kapabiliteter.html">Altinn formidling 2.0 - kapabiliteter</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20Formidling%202.0%20-%20Roller.html">Altinn Formidling 2.0 - Roller</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20formidling%202.0%20-%20forretningstjenester%20og%20prosesser%20(Steinars%20modell).html">Altinn formidling 2.0 - forretningstjenester og prosesser (Steinars modell)</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20formidling%202.0%20-%20sekvensdiagram%20(påbegynt).html">Altinn formidling 2.0 - sekvensdiagram (påbegynt)</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20formidling%20-%20applikasjonstjenester%20-%20flow.html">Altinn formidling - applikasjonstjenester - flow</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20formidling%202.0%20-%20applikasjonstjenester%20-%20service%20usage.html">Altinn formidling 2.0 - applikasjonstjenester - service usage</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20formidling%202.0%20-%20applikasjonstjenester%20og%20API-er.html">Altinn formidling 2.0 - applikasjonstjenester og API-er</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Atlinn%202.0%20formidling%20-%20applikasjoner%20og%20teknologier.html">Atlinn 2.0 formidling - applikasjoner og teknologier</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%20Formidling%202.0%20-%20eksisterende%20løsningsskisse.html">Altinn Formidling 2.0 - eksisterende løsningsskisse</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../solution-altinn-formidling/Altinn%202.0%20formidling%20-%20assessment.html">Altinn 2.0 formidling - assessment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-solutions-as-is/Altinn%20Correspondance%20As-Is.html">Altinn Correspondance As-Is</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-architecture/Arkitektur%20-%20målbilder.html">Arkitektur - målbilder</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-architecture/Kapabiliteter.html">Kapabiliteter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-architecture/Forretningstjenester.html">Forretningstjenester</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-architecture/Applikasjonstjenester.html">Applikasjonstjenester</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-architecture/Applikasjoner.html">Applikasjoner</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-to-be/Løsninger%20to-be.html">Løsninger to-be</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-to-be/Altinn%20Broker%20to-be.html">Altinn Broker to-be</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-to-be/Brukerbehov.html">Brukerbehov</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../messaging-solutions-to-be/Use%20cases%20for%20meldingsutveksling.html">Use cases for meldingsutveksling</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../messaging-solutions-to-be/Tjenestekvalitet.html">Tjenestekvalitet</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../messaging-solutions-to-be/Epics%20og%20user%20stories.html">Epics og user stories</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-to-be/Kundespesifikke%20krav.html">Kundespesifikke krav</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="6">
+    <a class="nav-link" href="../messaging-solutions-to-be/Spek.%20fra%20Helse%20Møre%20og%20Romsdal.html">Spek. fra Helse Møre og Romsdal</a>
+  </li>
+  <li class="nav-item" data-depth="6">
+    <a class="nav-link" href="../messaging-solutions-to-be/Krav%20fra%20NHN.html">Krav fra NHN</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-solutions-to-be/Altinn%20Broker%203.0%20transition%20architectures.html">Altinn Broker 3.0 transition architectures</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../messaging-solutions-to-be/Altinn%20Broker%203.0%20forslag%201%20(utkast).html">Altinn Broker 3.0 forslag 1 (utkast)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-solutions-to-be/Altinn%20Correspondance%20to-be.html">Altinn Correspondance to-be</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../messaging-roadmap/Veikart.html">Veikart</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../messaging-roadmap/Overordnet%20veikart.html">Overordnet veikart</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Vedlegg.html">Vedlegg</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Diverse%20utkast%20-%20gammelt%20og%20nytt.html">Diverse utkast - gammelt og nytt</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Fellesløsninger%20-%20oversikt%20og%20sammenheng.html">Fellesløsninger - oversikt og sammenheng</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Martins%20oversikt%20(utkast).html">Martins oversikt (utkast)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Steinars%20oversikt%20(utkast).html">Steinars oversikt (utkast)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Mortens%20oversikt%20(utkast).html">Mortens oversikt (utkast)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Fellesløsninger%20for%20deling%20av%20data%20(Erik%202019).html">Fellesløsninger for deling av data (Erik 2019)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Fellesløsninger%20ref.%20Torget%20vår%202019).html">Fellesløsninger ref. Torget vår 2019)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Mønstre%20(Erik,%202021).html">Mønstre (Erik, 2021)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Integration%20styles.html">Integration styles</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Samhandlingsmønstre%20og%20meldingstyper.html">Samhandlingsmønstre og meldingstyper</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Utvekslingsmønstre.html">Utvekslingsmønstre</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Utvekslingsmønstre%20-%20oversikt%20(canvas).html">Utvekslingsmønstre - oversikt (canvas)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Samhandlingsmønstre%20-%20de%20viktigste.html">Samhandlingsmønstre - de viktigste</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Map%20utvekslingsmønstre%20til%20samhandlingsmønstre.html">Map utvekslingsmønstre til samhandlingsmønstre</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Referansearkitektur%20for%20datautveksling%20(Erik,%202019).html">Referansearkitektur for datautveksling (Erik, 2019)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Roller%20involvert%20i%20datautveksling.html">Roller involvert i datautveksling</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="RA%20Forsendelse.html">RA Forsendelse</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Inngangsport%20RA%20Forespørsel.html">Inngangsport RA Forespørsel</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="RA%20Publisering.html">RA Publisering</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Deling%20av%20data%20(Erik,%202019).html">Deling av data (Erik, 2019)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Del%20og%20innhent%20data,%20verdistrøm.html">Del og innhent data, verdistrøm</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Del%20og%20innhent%20data%20og%20hendelser,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.html">Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Innhent%20data,%20detaljert%20verdistrøm%20konsument%20med%20kapabiliteter.html">Innhent data, detaljert verdistrøm konsument med kapabiliteter</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Tilrettelegg%20for%20datadeling.html">Tilrettelegg for datadeling</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Del%20og%20innhent%20data%20-%20overordnet%20aktørbilde.html">Del og innhent data - overordnet aktørbilde</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Prioriterte%20temaer%20innen%20datadeling%20(2019).html">Prioriterte temaer innen datadeling (2019)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Sammenhengende%20tjenester%20Erik,%202019).html">Sammenhengende tjenester Erik, 2019)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Sammenhengende%20tjenester%20-%20Overordnede%20verdistrømmer.html">Sammenhengende tjenester - Overordnede verdistrømmer</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Del%20data%20,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.html">Del data , detaljert verdistrøm datatilbyder med kapabiliteter</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Innhent%20data,%20detaljert%20verdistrøm%20konsument%20med%20kapabiliteter.html">Innhent data, detaljert verdistrøm konsument med kapabiliteter</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Overordnet%20verdistrøm%20-%20Samhandle%20i%20tverrgående%20prosesser.html">Overordnet verdistrøm - Samhandle i tverrgående prosesser</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Utfør%20steg%20i%20samhandlingsprosess.html">Utfør steg i samhandlingsprosess</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Saksbehandling%20RA%20(Erik,%202021).html">Saksbehandling RA (Erik, 2021)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Overordnet%20verdistrøm%20(RA%20saksbehandling).html">Overordnet verdistrøm (RA saksbehandling)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Forvaltningsmessige%20evner.html">Forvaltningsmessige evner</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Operative%20evner.html">Operative evner</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Modelleringskonvensjoner%20Erik,%202019).html">Modelleringskonvensjoner Erik, 2019)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Archimate-symboler.html">Archimate-symboler</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Realisering.html">Realisering</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Abstraksjon%20eksempler.html">Abstraksjon eksempler</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Abstraksjon%20-%20data.html">Abstraksjon - data</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Abstraksjon%20-%20tjeneste.html">Abstraksjon - tjeneste</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Abstraksjon%20-%20interface.html">Abstraksjon - interface</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Abstraksjon%20-%20prosess.html">Abstraksjon - prosess</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Abstraksjon%20-%20ressurser.html">Abstraksjon - ressurser</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Felles%20økosystem.html">Felles økosystem</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Felles%20økosystem%20(Kartverkets%20framstilling).html">Felles økosystem (Kartverkets framstilling)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="EU-arkitektur.html">EU-arkitektur</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="OPEN%20DEI%20Building%20Blocks%20(2021).html">OPEN DEI Building Blocks (2021)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="OPEN%20DEI%20Building%20Blocks%20(2022).html">OPEN DEI Building Blocks (2022)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Gaia-X%20.html">Gaia-X </a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Promoteheus-X%20Building%20blocks%20(2022).html">Promoteheus-X Building blocks (2022)</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Simple%20building%20blocks%20level%201.html">Simple building blocks level 1</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Simpl%20Data%20Services.html">Simpl Data Services</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Simpl%20Infrastructure%20connector%20services.png.html">Simpl Infrastructure connector services.png</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Simpl%20Administration%20Services.html">Simpl Administration Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Arkitekturverksted</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Arkitekturverksted</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../index.html">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Arkitekturverksted</a></li>
+    <li><a href="Del%20og%20innhent%20data%20og%20hendelser,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.var.1.html">Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://gitlab.com/solutions-no/wiki/components/messaging/edit/main/docs/modules/messaging-appendixes/pages/Del%20og%20innhent%20data%20og%20hendelser,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.var.1.adoc">Rediger kilde</a></div>
+  </div>
+<article class="doc"><a name="section-top"></a>
+<h1 class="page">Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</h1>
+<div class="paragraph">
+<p>Forklaring:
+Datatilbyder må evne å bestemme hvilken teknisk løsning som skal benyttes når dataene gjøres tilgjengelig som åpne data</p>
+</div>
+<div class="paragraph">
+<p>Datatilbyder må evne å velge hvor og hvordan dataene skal gjøres tilgjengelig, hvor skal datakonsument finne dataene og på hvilket format skal dataene deles</p>
+</div>
+<div class="paragraph">
+<p>Datatilbyder må videre evne å bestemme detaljeringsgrad på dataene</p>
+</div>
+<div class="paragraph">
+<p>Krav til personvern må kunne ivaretas, samt eventuelle krav i forhold til andre skjermingsverdige opplysninger</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Prosesser for å dele data som åpne data</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://altinn.github.io/ark/models/archi-all?view=6e794bab-1330-418d-af53-3b216a2317a4"><img src="_images/Del%20og%20innhent%20data%20og%20hendelser,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.png" alt="Del og innhent data og hendelser" width="detaljert verdistrøm datatilbyder med kapabiliteter image"></a>
+</div>
+<div class="title">Figure 1. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Elementer i view for Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å motta et teknisk kall, behandle dette og returnere respons</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må ha ønsket tilgjengelighet på sine grensesnitt slik at konsumenter får ønsket respons på forespørsler innen rimelig tid.</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Datatilbyder må enten selv ha et modent driftsmiljø som kan levere en tjeneste med rett kvalitet, eller så må man benytte en partner som kan tilby denne tjenesten på vegne av seg. Denne parten er en databehandler på vegne av datatilbyder.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å tilrettelegge data for deling</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må evne å utvikle eller bruke tekniske løsninger for deling av data med konsumenten. Eventuell tilgangsstyring må tilrettelegges</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Virksomheten bør ha beste praksis for hvordan data skal tilrettelegges for deling.</p>
+</div>
+<div class="paragraph">
+<p>Teknisk løsning for datadeling bør være på plass slik at data effektivt kan tilrettelegges for å konsumentens behov.</p>
+</div>
+<div class="paragraph">
+<p>Bruk av fellesfunksjonalitet som Maskinporten og Altinn Autorisasjon er kjent og kan benyttes i henhold til beste praksis.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å gi konsumenten tilgang til data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder kjenner til hvordan man setter opp tilgang for nye konsumenter</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Følger beste praksis for oppsett av tilgang i Maskinporten og eventuelt tilgangskontroll internt i virksomheten.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å publisere oversikt over virksomhetens datasett (fra orden i eget hus)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må evne å tilby datakonsument oversikt over data som virksomheten produserer slik at datakonsument enkelt kan oppdage data som tilbys. Videre bør det være opplyst hvordan datakonsument kan få tilgang til dataene</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Prosesser for hvor og hvordan oversikt over virksomhetens datasett skal publiseres</p>
+</div>
+<div class="paragraph">
+<p>Legge oversikt over virksomhetens datasett på Felles datakatalog</p>
+</div>
+<div class="paragraph">
+<p>Eventuelt Intern datakatalog som kan benyttes til å publisere oversikten på Felles datakatalog. Om mulig automatisere høsting fra egne kataloger til felles datakatalog.</p>
+</div>
+<div class="paragraph">
+<p>Publisere oversikt over datatilbyders APIer</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å utvikle IT-løsninger for deling av data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Løsningene må kunne håndtere både åpne data og data som deles etter henvendelse</p>
+</div>
+<div class="paragraph">
+<p>IT løsningene bør kunne gjenbrukes slik at det ikke er nødvendig å utvikle løsninger hver gang det skal deles data</p>
+</div>
+<div class="paragraph">
+<p>Ved utvikling av nye IT løsninger til annen bruk i virksomhetene bør det tas høyde for at løsningene skal støtte deling av data</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Prosesser som beskriver hvilke vurderinger som skal gjøres rundt valg av IT løsninger. Prosesser for utvikling av IT løsninger, samt implementering av disse.</p>
+</div>
+<div class="paragraph">
+<p>Det bør være en beste praksis at alle nye løsninger legger til rette for at data skal kunne deles («innebygd deling av data»).</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å ta imot henvendelser om tilgang til data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må ha rutiner for å håndtere mottak av henvendelser slik at krav til eventuell journalføring, registrering og arkivering blir ivaretatt</p>
+</div>
+<div class="paragraph">
+<p>Datatilbyder må sørge for at henvendelsen er forstått slik at det ikke er uklarheter omkring konsumentens behov. Dersom tilbyder ikke har forstått hva konsument har behov for, må konsument kontaktes</p>
+</div>
+<div class="paragraph">
+<p>Det må videre håndteres hvordan henvendelsen skal følges opp videre i virksomheten</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Rutine for mottak av henvendelser om tilgang til data for å sikre at henvendelser håndteres effektivt og ensartet</p>
+</div>
+<div class="paragraph">
+<p>Konsumentene må dokumentere sitt formål og behandlingsgrunnlag, og argumentere for hvilke informasjonselementer de mener de skal ha tilgang til for det gitte formålet.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Tilbyder av data til andre aktører, eventuelt på vegne av andre.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Del  data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilrettelegg for dataoppdagelse og datadeling</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Del data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"Del data (operativt)" handler om utveksling av data gjennom etablerte kanaler og iht. avtaler. Dette forutsetter også håndtering av avvik og ikke-tilsiktede hendelser.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sett opp avtaler, løsninger og tilganger etter henvendelse</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motta henvendelser om datadeling</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Forbedre løsninger, sikkerhet og datakvalitet (tilbyder)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"Kontinuerlig forbedring av opplegg for deling av data" handler om aktiv forvaltning av operative løsninger for deling av data gjennom kontakt med datakonsumenter og tilpasning til nye behov, krav og teknologi.</p>
+</div>
+<div class="paragraph">
+<p>Kan også omfatte tilbakemeldinger på kvalitet på data og forbedring av datagrunnlaget.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ta rede på egne data og krav til datadeling</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å organisere virksomheten slik at datadeling kan håndteres effektivt og etter gjeldene krav og regelverk</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Virksomheten må være organisert slik at den har kapasitet til å dele data. Videre må det settes fokus på deling slik at dette ikke blir nedprioritert i forhold til virksomhetens øvrige oppgaver</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+En mulighet er at virksomheten har ansatte som har datadeling som spesialområde og fått tid og ressurser til å utføre oppgaven</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å etablere interne krav og retningslinjer for deling av data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Internt må virksomheten forankre arbeidet med datadeling og det må settes krav til arbeidet og resultatet av virksomhetens deling av data</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Krav til datadeling kan tas inn i virksomhetens planer og strategier. Det bør etableres en beste praksis for deling av data ut av huset som passer med referansearkitekturene for datautveksling.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å beskrive og ha oversikt over virksomhetens data (fra orden i eget hus)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Beskrivelse av offentlige data i Norge skal utføres på en felles, strukturert måte og i en maskinlesbar form</p>
+</div>
+<div class="paragraph">
+<p>Informasjonsmodeller: Etablere felles begrepsapparat, standardiserte beskrivelser og sammenhengen mellom dataelementene</p>
+</div>
+<div class="paragraph">
+<p>Datakvaliteten bør være dokumentert, og kjente utfordringer knyttet til datakvalitet bør omtales eksplisitt i beskrivelsen.</p>
+</div>
+<div class="paragraph">
+<p>Det må være kjent hvilket formål data er innhentet for.</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Bruke DCAT-AP-NO</p>
+</div>
+<div class="paragraph">
+<p><a href="https://doc.difi.no/data/veileder-orden-i-eget-hus/#_beskrive_data" class="bare">https://doc.difi.no/data/veileder-orden-i-eget-hus/#_beskrive_data</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å vurdere og beskrive tilgang til data (fra orden i eget hus)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må evne å vurdere egne data med tanke på deling med eksterne konsumenter. Vurderingene som gjøres bør gjøres tilgjengelig for allmennheten</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Vurdere om data kan deles ved å klassifisere data som grønn (offentlig), gul (begrenset offentlighet) og rød (unntatt offentlighet)</p>
+</div>
+<div class="paragraph">
+<p>Vurderingene bør dokumenteres og gjøres tilgjengelig for eventuelle konsumenter</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å vurdere om data kan gjøres tilgjengelig som åpne data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Hvis data klassifiseres som grønn (eventuelt gule data som kan være aktuelt å dele som åpne data), må det videre vurderes om dataene skal deles som åpne data. Her vil flere forhold kunne spille inn. Eksempel på dette er vurdering av om dataene er interessante for allmennheten, samt vurdering av kostnadene med å dele dataene sett i forhold til samfunnsnytten</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Sjekkliste for vurderingene som skal gjøres før dataene eventuelt gjøres tilgjengelig som åpne data</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å utarbeide avtaler</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+I en del tilfeller vil det være behov for utleveringsavtale som regulerer hvordan data utleveres og hvordan dataene brukes av konsument</p>
+</div>
+<div class="paragraph">
+<p>Dersom konsument skal betale for dataene må pris avklares og tas inn i avtale med konsument</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Mal for utleveringsavtale</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å dele data som åpne data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må evne å bestemme hvilken teknisk løsning som skal benyttes når dataene gjøres tilgjengelig som åpne data</p>
+</div>
+<div class="paragraph">
+<p>Datatilbyder må evne å velge hvor og hvordan dataene skal gjøres tilgjengelig, hvor skal datakonsument finne dataene og på hvilket format skal dataene deles</p>
+</div>
+<div class="paragraph">
+<p>Datatilbyder må videre evne å bestemme detaljeringsgrad på dataene</p>
+</div>
+<div class="paragraph">
+<p>Krav til personvern må kunne ivaretas, samt eventuelle krav i forhold til andre skjermingsverdige opplysninger</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Prosesser for å dele data som åpne data</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å dele data etter henvendelse</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Datatilbyder må evne å vurdere hvordan dataene skal deles, hvilken teknisk løsning som skal benyttes, hvordan dataene skal tilrettelegges for konsument og hvordan skal tilgang til dataene håndteres. Skal dataen leveres som enkeltleveranse eller skal det være en fast leveranse</p>
+</div>
+<div class="paragraph">
+<p>Kompetanse på hvordan prising av leveransene skal håndteres, samt hvilke kostnader til datatilbyder skal eventuelt dekkes av konsument</p>
+</div>
+<div class="paragraph">
+<p>Datatilbyder må evne å bestemme detaljeringsgrad på dataene</p>
+</div>
+<div class="paragraph">
+<p>Krav til sikkerhet ved deling av data må kunne ivaretas</p>
+</div>
+<div class="paragraph">
+<p>Krav til personvern må ivaretas, samt eventuelle krav i forhold til andre skjermingsverdige opplysninger</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Prosesser for å dele data etter henvendelse</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å motta henvendelser om forbedringer</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+Det bør være enkelt for datakonsument å gi tilbakemelding til virksomheten om hvordan datakonsument opplever datatilbyders tilbud av data. Datatilbyder må evne å motta og behandle tilbakemeldinger på en profesjonell måte.</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Løsning for mottak av henvendelser. Kan eksempelvis være mottaksapparat i form av felles postkasse eller lignende.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å videreutvikle prosessene for deling av data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forklaring:
+For at virksomhetens deling av data skal videreutvikles og møte datakonsumentens behov, må virksomheten evne å endre måten datadeling gjennomføres på</p>
+</div>
+<div class="paragraph">
+<p>Løsning:
+Personer som er ansvarlige for virksomhetens prosesser for deling av data må behandle tilbakemeldingene. Det må deretter vurderes om det skal gjøres endringer i prosessene</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="sidebarblock">
+<div class="content">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">Innhold</h3>
+  <div id="article-toc"></div>
+</aside></main>
+</div>
+<footer class="footer">
+  <p>Kontakt: nasjonalarkitektur@digdir.no, eventuelt erik.hagen@digdir.no, tlf. +47 90631013.</p>
+  <p>Digitaliseringsirektoratet, 2020.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
+<script src="../../../_/js/site.js"></script>
+<script src="../../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+<script>
+  tocbot.init( {
+                  tocSelector: '#article-toc',
+                  contentSelector: 'article',
+                  headingSelector: 'h2, h3, h4, h5, h6',
+                  collapseDepth: 6,
+                  positionFixedSelector: '#article-toc',
+                  scrollSmooth: false
+                } );
+  var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
+  if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
+    document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
+  }
+</script>  </body>
+</html>

@@ -1,5 +1,0 @@
-= About the Examples directory
-
-The examples directory contains non-AsciiDoc file types, such as source code or sample data sets. An example is inserted into a page using the AsciiDoc include directive and the example’s resource ID.
-
-Also see https://docs.antora.org/antora/2.2/modules/#examples-dir.

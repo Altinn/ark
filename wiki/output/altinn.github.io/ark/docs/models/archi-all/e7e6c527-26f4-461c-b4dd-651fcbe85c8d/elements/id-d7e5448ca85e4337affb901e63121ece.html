@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Utfør steg i samhandlingsprosess</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Utf&#248;r steg i samhandlingsprosess</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Representation"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Representation" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Figuren nedenfor viser en generisk prosess for operativ databehandling, der datautveksling inng&#229;r. 
+
+Oppsummering:
+
+* Enhver databehandling krever data som input og vil resultere i output av data. 
+
+* Input kan v&#230;re alt fra en notifikasjon uten videre innhold til komplette meldinger. Om tilleggsdata m&#229; innhentes, gj&#248;res dette f.eks. ved &#229; foresp&#248;rre  aktuelle datakilde eller ved &#229; vente p&#229; ytterligere input initiert av andre.
+
+* Output vil v&#230;re lagrede data for bevis og gjenbruk, samt videresendte data til p&#229;f&#248;lgende ledd i behandlingskjeden, der det er aktuelt. 
+
+* Det er ikke direkte vist i dette enkle prosessdiagrammet, men videresendte data kan her inkludere svar til avsender av mottatte data, i tillegg til en eller flere andre samhandlingsakt&#248;rer.
+
+* For behandling av personopplysninger m&#229; det finnes et dokumentert behandlingsgrunnlag, enten i form av hjemmel eller samtykke. Dette vil v&#230;re del av det totale datagrunnlaget for databehandlingen. 
+
+De viktigste kapabilitetene som beh&#248;ves er indikert for hvert prosessteg. TBD?
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>modelx:antora_component</td><td class="convertlinks no-margin" style="white-space:pre-wrap">messaging</td></tr><tr><td>modelx:antora_version</td><td class="convertlinks no-margin" style="white-space:pre-wrap">main</td></tr><tr><td>modelx:antora_module</td><td class="convertlinks no-margin" style="white-space:pre-wrap">messaging-appendixes</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">modelx:archimate_view</td></tr><tr><td>modelx:view_reference</td><td class="convertlinks no-margin" style="white-space:pre-wrap">3c9586f5-3098-4147-a9cc-eaf8594f626f</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

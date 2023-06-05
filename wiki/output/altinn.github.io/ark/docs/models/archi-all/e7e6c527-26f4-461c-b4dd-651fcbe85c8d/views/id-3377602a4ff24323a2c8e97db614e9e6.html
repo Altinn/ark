@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Grunnleggende modell for datautveksling</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Grunnleggende modell for datautveksling</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-CanvasModel"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-CanvasModel" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-3377602a4ff24323a2c8e97db614e9e6.png" alt="Grunnleggende modell for datautveksling" usemap="#id-3377602a4ff24323a2c8e97db614e9e6map"/>
+			   <map name="id-3377602a4ff24323a2c8e97db614e9e6map">
+				          <area shape="rect" coords="448,174,512,242" href="../objects/id-d8c2520088274675b5f23c162dd839ef.html" target="element" >
+				          <area shape="rect" coords="690,414,764,466" href="../objects/id-446c49e2870c45669330215e2ab14a5b.html" target="element" >
+				  				        <area shape="rect" coords="364,82,380,102" href="../objects/id-7db27709aa7d4b4da5c7f31bec31895d.html" target="element" >
+				  				        <area shape="rect" coords="234,82,250,102" href="../objects/id-9982dc43dc7d4beea2627eeaee22bbe0.html" target="element" >
+
+				  		        <area shape="rect" coords="30,70,334,122" href="../objects/id-3b861ca3abbd48dc83625bddf274deab.html" target="element" >
+				  				        <area shape="rect" coords="364,52,384,72" href="../objects/id-d036b27f950b4af3bc6206bab8a62e25.html" target="element" >
+				  				        <area shape="rect" coords="234,42,254,72" href="../objects/id-6b2219b5076c4937bd2d57ce1e3169bf.html" target="element" >
+
+				  		        <area shape="rect" coords="30,30,334,72" href="../objects/id-d0d9d9a687c24010aec34abb13b016e8.html" target="element" >
+
+				          <area shape="rect" coords="20,20,392,128" href="../objects/id-25b2fcc1c08a415cbbb2985959900cba.html" target="element" >
+				          <area shape="rect" coords="176,414,250,466" href="../objects/id-78c797ea714949e6a4438fa053c193ca.html" target="element" >
+				          <area shape="rect" coords="366,438,588,518" href="../objects/id-eb483a1139f64915a744368ebade23e2.html" target="element" >
+				          <area shape="rect" coords="294,378,654,562" href="../objects/id-2f960822c6434a1d9e5d2f0a3be8361f.html" target="element" >
+				          <area shape="rect" coords="30,306,178,354" href="../objects/id-6fa9668587b743f3a20ae03f7b60255b.html" target="element" >
+				          <area shape="rect" coords="834,306,982,354" href="../objects/id-abf15e89f5854ae6b0e914d50161adaf.html" target="element" >
+				  		        <area shape="rect" coords="870,198,932,270" href="../objects/id-a204098e83d24668ba165e9edd1049c1.html" target="element" >
+
+				          <area shape="rect" coords="834,186,980,308" href="../objects/id-6ef645375e6b42b69862b4856b746f1b.html" target="element" >
+				  		        <area shape="rect" coords="78,198,140,270" href="../objects/id-8402df3eafb84f89a2e950b535dbdbe0.html" target="element" >
+
+				          <area shape="rect" coords="30,186,176,308" href="../objects/id-02f902d25944443fb0e62c18a6d3e95b.html" target="element" >
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">include::ra-datax-references:partial$references.adoc[]
+
+Samhandlingsakt&#248;rer kommuniserer ved &#229; sende meldinger via sine aksesspunkter til den tekniske  meldingsinfrastrukturen.
+Den logiske ende-til-ende meldingsflyten kan likevel beskrives uavhengig av teknologi i kommunikasjonsinfrastrukturen. 
+
+I beskrivelsen av datautvekslingsm&#248;nstre, tas det utgangspunkt i en slik logisk meldingsflyt.
+
+&#8203;Det tas f.eks. ikke stilling til om meldinger sendes synkront eller asynkront. Aktuelle kommunikasjonsstandarder kan f.eks. v&#230;re ebXML, HTTP, REST, GraphQL eller SPARQL. Det kan dreie seg om felles infrastruktur og punkt-til-punkt kommunikasjon, eller det kan v&#230;re en mer kompleks infrastruktur som arter seg ulikt p&#229; hver side.
+
+Dette er ikke det samme som &#229; si at valg av teknologi og l&#248;sninger ikke er viktig. Aktuelle krav til tjenestekvalitet m.m. bestemmer hvilke teknologier og l&#248;sninger som passer.
+
+Modellen som vises her kan ses som en forenklet utgave av lagdelte modeller som {OSI-modellen} (7 lag) eller TCP/IP (4 lag).  
+
+//Kommunikasjonsprotokoller finnes alts&#229; p&#229; flere niv&#229;er i kommunikasjonsinfrastrukturen.
+
+
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+									        <tr>
+									           <td> <a href="../objects/id-02f902d25944443fb0e62c18a6d3e95b.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-02f902d25944443fb0e62c18a6d3e95b.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-8402df3eafb84f89a2e950b535dbdbe0.html" target="element"> Image </a> </td>
+											           <td> <a href="../objects/id-8402df3eafb84f89a2e950b535dbdbe0.html" target="element" class="i18n-elementtype-CanvasModelImage"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-6ef645375e6b42b69862b4856b746f1b.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-6ef645375e6b42b69862b4856b746f1b.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-a204098e83d24668ba165e9edd1049c1.html" target="element"> Image </a> </td>
+											           <td> <a href="../objects/id-a204098e83d24668ba165e9edd1049c1.html" target="element" class="i18n-elementtype-CanvasModelImage"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-abf15e89f5854ae6b0e914d50161adaf.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-abf15e89f5854ae6b0e914d50161adaf.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-6fa9668587b743f3a20ae03f7b60255b.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-6fa9668587b743f3a20ae03f7b60255b.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-2f960822c6434a1d9e5d2f0a3be8361f.html" target="element"> Image </a> </td>
+									           <td> <a href="../objects/id-2f960822c6434a1d9e5d2f0a3be8361f.html" target="element" class="i18n-elementtype-CanvasModelImage"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-eb483a1139f64915a744368ebade23e2.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-eb483a1139f64915a744368ebade23e2.html" target="element" class="i18n-elementtype-CanvasModelSticky"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-78c797ea714949e6a4438fa053c193ca.html" target="element"> Image </a> </td>
+									           <td> <a href="../objects/id-78c797ea714949e6a4438fa053c193ca.html" target="element" class="i18n-elementtype-CanvasModelImage"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-25b2fcc1c08a415cbbb2985959900cba.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-25b2fcc1c08a415cbbb2985959900cba.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-d0d9d9a687c24010aec34abb13b016e8.html" target="element">  </a> </td>
+											           <td> <a href="../objects/id-d0d9d9a687c24010aec34abb13b016e8.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+											        </tr>
+
+													        <tr>
+													           <td> <a href="../objects/id-6b2219b5076c4937bd2d57ce1e3169bf.html" target="element">  </a> </td>
+													           <td> <a href="../objects/id-6b2219b5076c4937bd2d57ce1e3169bf.html" target="element" class="i18n-elementtype-CanvasModelSticky"> </a> </td>
+													        </tr>
+
+													        <tr>
+													           <td> <a href="../objects/id-d036b27f950b4af3bc6206bab8a62e25.html" target="element">  </a> </td>
+													           <td> <a href="../objects/id-d036b27f950b4af3bc6206bab8a62e25.html" target="element" class="i18n-elementtype-CanvasModelSticky"> </a> </td>
+													        </tr>
+
+													
+											        <tr>
+											           <td> <a href="../objects/id-3b861ca3abbd48dc83625bddf274deab.html" target="element">  </a> </td>
+											           <td> <a href="../objects/id-3b861ca3abbd48dc83625bddf274deab.html" target="element" class="i18n-elementtype-CanvasModelBlock"> </a> </td>
+											        </tr>
+
+													        <tr>
+													           <td> <a href="../objects/id-9982dc43dc7d4beea2627eeaee22bbe0.html" target="element">  </a> </td>
+													           <td> <a href="../objects/id-9982dc43dc7d4beea2627eeaee22bbe0.html" target="element" class="i18n-elementtype-CanvasModelSticky"> </a> </td>
+													        </tr>
+
+													        <tr>
+													           <td> <a href="../objects/id-7db27709aa7d4b4da5c7f31bec31895d.html" target="element">  </a> </td>
+													           <td> <a href="../objects/id-7db27709aa7d4b4da5c7f31bec31895d.html" target="element" class="i18n-elementtype-CanvasModelSticky"> </a> </td>
+													        </tr>
+
+													
+											
+									        <tr>
+									           <td> <a href="../objects/id-446c49e2870c45669330215e2ab14a5b.html" target="element"> Image </a> </td>
+									           <td> <a href="../objects/id-446c49e2870c45669330215e2ab14a5b.html" target="element" class="i18n-elementtype-CanvasModelImage"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-d8c2520088274675b5f23c162dd839ef.html" target="element"> Image </a> </td>
+									           <td> <a href="../objects/id-d8c2520088274675b5f23c162dd839ef.html" target="element" class="i18n-elementtype-CanvasModelImage"> </a> </td>
+									        </tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelImage -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelImage -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelImage -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelSticky -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelImage -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+															<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelSticky -->
+															<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelSticky -->
+													
+													<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelBlock -->
+															<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelSticky -->
+															<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelSticky -->
+													
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelImage -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.canvas.model.impl.CanvasModelImage -->
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
