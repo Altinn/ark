@@ -11,8 +11,6 @@ endif::[]
 :sectnums:
 :sectnumlevels: 0
 
-Foreløpig tekst:
-
 Altinn melding og Altinn formidling er to av produktene for meldingsutveksling som tilbys av Digdir. Disse produktene sorterer under felles produkteier, og presenteres derfor her samlet.
 
 Altinn er for tiden i en moderniseringsprosess, der en går fra Altinn II til Altinn III. Denne prosessen forventes skal være ferdig innen juni 2025, blant annet fordi nåværende driftsavtaler da utgår. Dette innebærer betydelig innsats, da dagens Altinn-løsninger skal moderniseres og migreres til skyen.
@@ -27,3 +25,4 @@ Vi ser i det følgende på behov, arkitektur og løsninger på veien fra dagens 
 
 
 
+    
