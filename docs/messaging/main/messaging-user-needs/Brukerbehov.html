@@ -409,7 +409,7 @@
     <li><a href="Brukerbehov.html">Brukerbehov</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://gitlab.com/solutions-no/wiki/components/messaging/edit/main/docs/modules/messaging-user-needs/pages/Brukerbehov.adoc">Rediger kilde</a></div>
+  <div class="edit-this-page"><a href="https://github.com/altinn/ark/edit/master/wiki/components/messaging/docs/modules/messaging-user-needs/pages/Brukerbehov.adoc">Rediger kilde</a></div>
   </div>
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">Brukerbehov</h1>
@@ -424,8 +424,151 @@
 <div class="sect1">
 <h2 id="_ikke_funksjonelle_krav"><a class="anchor" href="#_ikke_funksjonelle_krav"></a>Ikke-funksjonelle krav</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_juridiske_forhold"><a class="anchor" href="#_juridiske_forhold"></a>Juridiske forhold</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Gjeldende lovpålagte krav. Eksempel: GDPR med krav til dataminimering mv.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Langtidslaging (arkivering)</p>
+</li>
+<li>
+<p>Dokumentasjon av etterlevelse</p>
+</li>
+<li>
+<p>Sporing av data - dataproveniens</p>
+</li>
+<li>
+<p>Krav til anonymisering, kryptering og beskyttelse av sensitive data (personvern og informasjonssikkerhet)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_egenskaper_relatert_til_organisatorisk_samhandling"><a class="anchor" href="#_egenskaper_relatert_til_organisatorisk_samhandling"></a>Egenskaper relatert til organisatorisk samhandling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Type forretningsprosess. Eksempler: Bilateral prosess mellom to kjente parter (herunder spørring og forhåndsavtalt, periodisk distriusjon); Tverrgående prosess mellom faste parter; Tverrgående prosess mellom dynamiske oppdagete parter</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Antall samhandlingsparter</p>
+<div class="ulist">
+<ul>
+<li>
+<p>En-til-en, en-til-mange, mange-til-mange, mange-til-en</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Kjente eller ukjente mottakere</p>
+</li>
+<li>
+<p>Fast eller dynamisk gruppe med samhandlingsparter</p>
+</li>
+<li>
+<p>Prosessens levetid. Relevant for feilhåndtering: Kortlevde prosesser med innebygd transaksjonssikkerhet kan tilbakerulles gjennom generelle mekanismer, f.eks. slik dette støttes av rollback i relasjonsdatabaser. Langlevde prosesser krever skreddersydde kompensasjonsaksjoner</p>
+</li>
+<li>
+<p>Roler og ansvar. Hvem skal ha ansvar for hva? Hvem sier om du får tilgang til opplysninger eller ikke?</p>
+</li>
+<li>
+<p>Støtte for samtidig versjonshåndtering og konfliktløsning</p>
+</li>
+<li>
+<p>Støtte for workflow- og godkjenningsprosesser</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_egenskaper_relatert_til_semantisk_interoperabilitet"><a class="anchor" href="#_egenskaper_relatert_til_semantisk_interoperabilitet"></a>Egenskaper relatert til semantisk interoperabilitet</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Støtte for felles datamodeller (core vocabularies)</p>
+</li>
+<li>
+<p>Støtte for aktuelle utvekslingsformater</p>
+</li>
+<li>
+<p>Støtte for lenking av data</p>
+</li>
+<li>
+<p>Støtte for ontologier eller semantiske standarder for bedre gjenfinning, tolkning og interoperabilitet av data</p>
+</li>
+<li>
+<p>Muligheten til å definere og utvide felles datamodeller og vocabularies basert på spesifikke bransjekrav eller domener</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_egenskaper_relatert_til_teknisk_samhandling"><a class="anchor" href="#_egenskaper_relatert_til_teknisk_samhandling"></a>Egenskaper relatert til teknisk samhandling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Utvekslingsprotokoller</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Synkron eller asynkron kommunikasjon</p>
+</li>
+<li>
+<p>Støtte for utveklsingsprotokoller som f.eks. SOAP og REST</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Tjenestekvalitet (QoS)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Meldingsstørrelse</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Størrelse på enkeltvedlegg vs. samlede vedlegg?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Leveringstid for meldinger. Mål: Mikrosekunder, millisekunder, sekunder, timer, dager</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Garantert leveringstid vs. krav til levering</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
