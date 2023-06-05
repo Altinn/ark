@@ -17,7 +17,7 @@ content:
   #- url: https://github.com/altinn/ark/wiki/components/messaging.git    
   #  start_path: docs
   - url: https://github.com/altinn/ark.git
-    start_path: wiki\components\messaging\docs
+    start_path: wiki/components/messaging/docs
 #
 #
 ui:
