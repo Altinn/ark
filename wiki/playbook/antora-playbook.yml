@@ -34,7 +34,7 @@ output:
     #dir: ././../output/altinn/ark.github.io
     #dir: ././../output/arch/docs
     #dir: ././../output/altinn.github.io/ark/docs
-    dir: ././.. /docs
+    dir: ././../../docs
 
 asciidoc:
   attributes:
