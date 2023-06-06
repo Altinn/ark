@@ -17,12 +17,10 @@ Altinn er for tiden i en moderniseringsprosess, der en går fra Altinn II til Al
 
 En søker å legge opp migreringsløpet slik at det peker i "riktig" retning i forhold til et mer langsiktig løp. Det arbeides derfor med visjoner og malgsiktig strategi som grunnlag for løsningsvalfl på kort sikt.
 
-Arbeidet med produktstrategi og arkitektur  for Altinn melding og Altinn formidling henger sammen med produktstrategien for hele produktområdet for meldingsutveksling i Digdir. Det er også sammenhenger med andre produkteområder innen datadeling.
-
-Vi ser i det følgende på behov, arkitektur og løsninger på veien fra dagens situasjon (Altinn II, 2023) til et fremtidig målbilde via en overgangsarkitektur i 2023 (Altinn III).
+Produktstrategien for Altinn melding og Altinn formidling henger sammen med produktstrategien for hele produktområdet for meldingsutveksling i Digdir. Det er også sammenhenger med andre produkteområder innen datadeling.
 
 
 
 
 
-    
+
