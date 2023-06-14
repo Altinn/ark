@@ -66,7 +66,7 @@ a| Den som har eller er delegert et ansvar i forbindelse med databehandling.
 | Koordinator
 a| En aktør som har en koordinerende rolle i tilrettelegging og gjennomføring av datautveksling.
 
-| Segmentansvarlig
+| Segmentansvarlig / tjenesteeier?
 a| Den som har en koordinerende rolle innen en bransje. F.eks. Finans Norge på vegne av bankene.
 
 

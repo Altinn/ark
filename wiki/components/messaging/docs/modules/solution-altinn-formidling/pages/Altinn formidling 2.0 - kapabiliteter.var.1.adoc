@@ -33,13 +33,13 @@ a|
 | Brukerstøtte
 a| 
 
-| Onboarding innbygger
+| Onboarding av innbygger
 a| 
 
-| Fakturering/Betaling
+| Beregne fakturagrunnlag
 a| 
 
-| Statistikk
+| Generere statistikk
 a| Detaljering:
 
 * Generere statistikk
@@ -48,15 +48,17 @@ a| Detaljering:
 
 Se statisikk: https://eur03.safelinks.protection.outlook.com/ap/x-59584e83/?url=https%3A%2F%2Fdigdir-my.sharepoint.com%2F%3Ax%3A%2Fg%2Fpersonal%2Fsiv_therese_aglen_digdir_no%2FEZS8jK_noPBFi5ieTtcJAqEBv3HlH26coDu7e_T9z0Gihw&data=05%7C01%7C%7C9b75ab57717941db4ff408db40cbf007%7C008e560f08af4ceca056b35447503991%7C1%7C0%7C638175016865824684%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=zknTA6ZcZnLvAade1SCUw5e3nrOMchgmSFQYB2gylg0%3D&reserved=0
 
-| Onboarding virksomhet
+| Onboarding av virksomhet
 a| Detaljering:
-* Registrere tjeneste
+* ...
 
-| Støtte for meldingsmønstre en-til-mange (pub-sub, multicast)
-a| 
+| Støtte for meldingsmønster en-til-mange ukjente (pub-sub)
+a| Hendelsesstørmming + notifikasjoner/varslers
 
-| Støtte for meldingsmønster en-til-en
-a| 
+Del opp i to
+
+| Støtte for meldingsmønstre  en-til-en og en til mange kjente (multicast)
+a| Altinn Broker 2.0 kan ta i mot adresseliste, men lite brukt (90% en-til-en)s
 
 | Spesifisere meldingsformat og metadata (xml manifest)
 a| Sjekk "kontrakt for xml manifest"
@@ -65,7 +67,13 @@ a| Sjekk "kontrakt for xml manifest"
 a| 
 
 | Formidle mottakskvitteringer
-a| Hovedkvittering vs. underkvitteringer (per mottaker)
+a| Hovedkvittering vs. underkvitteringer per mottaker
+
+Forbedrinspotanisale: 
+* Bør ha en bedre struktur på kvittering til avsender (med samlet oversikt over status på underkvitteringer)
+* Hovedstatus oppdateres ikke automatisk (før saneringsjobben kjøres) 
+* Historikk: I dag fritekstfelt , men bør være "maskinlesbart"
+* La mottaker legge til ekstrainfo på kvitteringen (se også lesekvittering)
 
 | Lagring og arkivering av  meldingsinnhold
 a| Foreløpig notat: Default 10 år, men ? ? ? ? 
@@ -76,20 +84,14 @@ a|
 | Identitetsforvaltning
 a| 
 
-| Formidle (store) meldinger/filer
+| Evne til å formidle STORE filer/ datamengder
 a| Detaljering:
 * Unntakshåndtering
 ** Gjentatte forsøk
 ** Varsling om feil
 
 
-| Adressering
-a| * Uvidet adressering (interne organisasjonsenheter)
-* Oppslagstjeneste for å finne aktuelle mottakere (direkte adressering)
-* Rettighetsregister for å sjekk hvem som har lov til å motta (pub-sub, events)
-
-
-| Etablere avtaler mellom avsendere og mottakere
+| Etablere avtaler med avsendere og mottakere
 a| 
 
 | Informasjonssikkerhet
@@ -176,6 +178,12 @@ a| Evnen til å delegere rettigheter til databehandler som utfører oppgaver på
 a| Evne til å delegere en rettighet til en annen aktør feks. en driftslevereandør på en slik måte at dette kan etterprøves.
 Registrering og kontroll av representasjonsforhold. Trenger ikke være begrenset til virksomheter men også omfatter f.eks. foreldre-barn relasjon, vergemål, bobestyrer osv.
 
+
+
+| Adressere meldinger
+a| * Uvidet adressering (interne organisasjonsenheter)
+* Oppslagstjeneste for å finne aktuelle mottakere (direkte adressering)
+* Rettighetsregister for å sjekk hvem som har lov til å motta (pub-sub, events)
 
 
 |===
