@@ -45,7 +45,9 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Seafile is an open source cloud-based file storage and sharing platform that includes a variety of features for sharing large files, such as file versioning, file locking, and file encryption. Seafile can be installed on-premises or hosted in the cloud, and includes mobile and desktop clients for easy file access and sharing.</div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Seafile is an open source cloud-based file storage and sharing platform that includes a variety of features for sharing large files, such as file versioning, file locking, and file encryption. Seafile can be installed on-premises or hosted in the cloud, and includes mobile and desktop clients for easy file access and sharing.
+
+Seafile has a slightly different architecture, and it uses its own server component instead of a traditional web server. It stores files in a de-duplicated, block-based storage, which can make it more efficient for large datasets. File transfer is done via a custom protocol that uses TCP for transfer and HTTPS for encryption.</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
