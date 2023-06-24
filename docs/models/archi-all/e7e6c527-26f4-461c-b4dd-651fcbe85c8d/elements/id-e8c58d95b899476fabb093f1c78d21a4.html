@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Løsningsarkitektur med Dialogporten ref. Bjørns  utkast 1</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>L&#248;sningsarkitektur med Dialogporten ref. Bj&#248;rns  utkast 1</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Representation"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Representation" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Original, se https://lucid.app/lucidchart/d4a01a25-dd70-4bb9-9e41-e96a3c990380/edit?invitationId=inv_034f0602-9404-423a-a403-54f52af5e6aa&amp;page=0_0#
+
+
+Sp&#248;rsm&#229;l/forbedringer:
+
+* Ser rart ut at det skilles p&#229; varsling via sms/e-post (Altinn varsling) og API (Altinn events). Beh&#248;ver Dialogporten egen funksjonalitet for varlsing? Ellers kan vel Meldingskomponenten selv sende varsel? Beh&#248;ves grenseoppgang mellom produktene?
+Ser rart ut at API for avsendere ligger hos Meldingskomponenten, mens API for mottakere ligger hos Dialogporten. Forklaring?
+* Bj&#248;rns utkast 1 viser ikke sending og mottak av meldinger via GUI (felles arbeidsflate), noe som gj&#248;r det litt vanseklig &#229; forst&#229;.
+* Presisering: Meldingmottaker som mottar via API kan rute videre internt til sluttbruker i eget sluttbrukersystem (SBS)
+* Figuren b&#248;r kanskje la skillet mellom Altinn felles arbeidsflate og SBS komme tydeligere fram? Skill mellom 
+* Samme betraktning om SBS vs. Altinn felles arbeidsflate gjelder vel for avsender?
+* Gjerne forklar sammenhengen tjenesteeier vs. tjenestetilbyder?
+* Finnes noen eier av produktet Altinn storage? Dokumentasjon? Terje Holene?
+* F&#229; med noe om adressering m.m.
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

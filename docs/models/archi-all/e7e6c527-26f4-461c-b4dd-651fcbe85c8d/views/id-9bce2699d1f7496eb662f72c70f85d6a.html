@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>KLADD: Konseptuell løsningsarkitektur utkast 1</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>KLADD: Konseptuell l&#248;sningsarkitektur utkast 1</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-9bce2699d1f7496eb662f72c70f85d6a.png" alt="KLADD: Konseptuell løsningsarkitektur utkast 1" usemap="#id-9bce2699d1f7496eb662f72c70f85d6amap"/>
+			   <map name="id-9bce2699d1f7496eb662f72c70f85d6amap">
+				  		<area shape="rect" coords="896,212,1162,354" href="../elements/id-1c09092db10d43dabae7ef6333d0d7b0.html"  target="element">
+				  		<area shape="rect" coords="524,620,790,762" href="../elements/id-ea92e863e2bd4a8a9dca13ac5feaa455.html"  target="element">
+				  		<area shape="rect" coords="536,428,802,570" href="../elements/id-5ce61204d73944478ee554bd57ed3c73.html"  target="element">
+				  		<area shape="rect" coords="536,212,802,354" href="../elements/id-224159d2828c4008b74fe0490ddd0cbd.html"  target="element">
+				  		<area shape="rect" coords="536,20,802,162" href="../elements/id-28a5d97079464646b654e86db92667b0.html"  target="element">
+				  		<area shape="rect" coords="20,128,286,270" href="../elements/id-0bd91ec9279f45149544998a09135233.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-0bd91ec9279f45149544998a09135233.html" target="element"> Meldingskomponent </a> </td>
+											    <td> <a href="../elements/id-0bd91ec9279f45149544998a09135233.html" target="element" class="i18n-elementtype-Resource">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-28a5d97079464646b654e86db92667b0.html" target="element"> Lagringstjeneste </a> </td>
+											    <td> <a href="../elements/id-28a5d97079464646b654e86db92667b0.html" target="element" class="i18n-elementtype-Resource">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-224159d2828c4008b74fe0490ddd0cbd.html" target="element"> Autentiseringstjeneste for sluttbrukere </a> </td>
+											    <td> <a href="../elements/id-224159d2828c4008b74fe0490ddd0cbd.html" target="element" class="i18n-elementtype-Resource">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5ce61204d73944478ee554bd57ed3c73.html" target="element"> Varslingstjenester (som dekker b&#229;de sluttbrukere og maskinbrukere </a> </td>
+											    <td> <a href="../elements/id-5ce61204d73944478ee554bd57ed3c73.html" target="element" class="i18n-elementtype-Resource">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-ea92e863e2bd4a8a9dca13ac5feaa455.html" target="element"> Lagringstjeneste (copy) </a> </td>
+											    <td> <a href="../elements/id-ea92e863e2bd4a8a9dca13ac5feaa455.html" target="element" class="i18n-elementtype-Resource">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-1c09092db10d43dabae7ef6333d0d7b0.html" target="element"> Autentiseringstjeneste for maskinbrukere </a> </td>
+											    <td> <a href="../elements/id-1c09092db10d43dabae7ef6333d0d7b0.html" target="element" class="i18n-elementtype-Resource">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

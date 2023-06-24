@@ -409,7 +409,7 @@
     <li><a href="Altinn%20formidling%202.0%20-%20kapabiliteter.var.1.html">Altinn formidling 2.0 - kapabiliteter</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/altinn/ark/edit/master/wiki/components/messaging/docs/modules/solution-altinn-formidling/pages/Altinn%20formidling%202.0%20-%20kapabiliteter.var.1.adoc">Rediger kilde</a></div>
+  <div class="edit-this-page"><a href="https://github.com/altinn/ark/edit/main/wiki/components/messaging/docs/modules/solution-altinn-formidling/pages/Altinn%20formidling%202.0%20-%20kapabiliteter.var.1.adoc">Rediger kilde</a></div>
   </div>
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">Altinn formidling 2.0 - kapabiliteter</h1>
@@ -456,15 +456,15 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Onboarding innbygger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Onboarding av innbygger</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fakturering/Betaling</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beregne fakturagrunnlag</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Statistikk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generere statistikk</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Detaljering:</p>
 </div>
@@ -486,19 +486,26 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Onboarding virksomhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Onboarding av virksomhet</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Detaljering:
-* Registrere tjeneste</p>
+* &#8230;&#8203;</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Støtte for meldingsmønstre en-til-mange (pub-sub, multicast)</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Støtte for meldingsmønster en-til-mange ukjente (pub-sub)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Hendelsesstørmming + notifikasjoner/varslers</p>
+</div>
+<div class="paragraph">
+<p>Del opp i to</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Støtte for meldingsmønster en-til-en</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Støtte for meldingsmønstre  en-til-en og en til mange kjente (multicast)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Altinn Broker 2.0 kan ta i mot adresseliste, men lite brukt (90% en-til-en)s</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spesifisere meldingsformat og metadata (xml manifest)</p></td>
@@ -513,7 +520,14 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Formidle mottakskvitteringer</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Hovedkvittering vs. underkvitteringer (per mottaker)</p>
+<p>Hovedkvittering vs. underkvitteringer per mottaker</p>
+</div>
+<div class="paragraph">
+<p>Forbedrinspotanisale:
+* Bør ha en bedre struktur på kvittering til avsender (med samlet oversikt over status på underkvitteringer)
+* Hovedstatus oppdateres ikke automatisk (før saneringsjobben kjøres)
+* Historikk: I dag fritekstfelt , men bør være "maskinlesbart"
+* La mottaker legge til ekstrainfo på kvitteringen (se også lesekvittering)</p>
 </div></div></td>
 </tr>
 <tr>
@@ -531,7 +545,7 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Formidle (store) meldinger/filer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overføre STORE filer/ datamengder</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Detaljering:
 * Unntakshåndtering
@@ -540,23 +554,7 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Adressering</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>Uvidet adressering (interne organisasjonsenheter)</p>
-</li>
-<li>
-<p>Oppslagstjeneste for å finne aktuelle mottakere (direkte adressering)</p>
-</li>
-<li>
-<p>Rettighetsregister for å sjekk hvem som har lov til å motta (pub-sub, events)</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Etablere avtaler mellom avsendere og mottakere</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Etablere avtaler med avsendere og mottakere</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
@@ -684,6 +682,22 @@ Registrering og kontroll av representasjonsforhold. Trenger ikke være begrenset
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Evne til å delegere en rettighet til en annen aktør feks. en driftslevereandør på en slik måte at dette kan etterprøves.
 Registrering og kontroll av representasjonsforhold. Trenger ikke være begrenset til virksomheter men også omfatter f.eks. foreldre-barn relasjon, vergemål, bobestyrer osv.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adressere meldinger</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Uvidet adressering (interne organisasjonsenheter)</p>
+</li>
+<li>
+<p>Oppslagstjeneste for å finne aktuelle mottakere (direkte adressering)</p>
+</li>
+<li>
+<p>Rettighetsregister for å sjekk hvem som har lov til å motta (pub-sub, events)</p>
+</li>
+</ul>
 </div></div></td>
 </tr>
 </tbody>
