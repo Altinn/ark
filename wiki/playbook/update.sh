@@ -24,8 +24,8 @@ npx antora --fetch antora-playbook.yml --attribute lang=no 	--attribute wysiwig_
 echo "Updating site..."
 cd /c/Users/eha/OneDrive/antora/altinn/ark/docs
 touch .nojekyll
-#git checkout main
-#git add .
-#git commit -m "Dev"
-#git push origin main
+git checkout main
+git add .
+git commit -m "Dev"
+git push origin main
 cd /c/Users/eha/OneDrive/antora/altinn/ark/wiki/playbook
