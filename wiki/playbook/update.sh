@@ -2,20 +2,20 @@
 echo "Updating component messaging..."
 echo "=========================="
 cd /c/Users/eha/OneDrive/antora/altinn/ark/wiki/components/messaging
-git checkout master
+git checkout main
 git add .
 git commit -m "Dev"
-git push origin master
+git push origin main
 echo ""
 echo ""
 echo ""
 echo "Updating playbook..."
 echo "===================="
 cd /c/Users/eha/OneDrive/antora/altinn/ark/wiki/playbook
-git checkout master
+git checkout main
 git add .
 git commit -m "Dev"
-git push origin master
+git push origin main
 echo ""
 echo ""
 echo "Running Antora..."
@@ -24,8 +24,8 @@ npx antora --fetch antora-playbook.yml --attribute lang=no 	--attribute wysiwig_
 echo "Updating site..."
 cd /c/Users/eha/OneDrive/antora/altinn/ark/docs
 touch .nojekyll
-#git checkout master
+#git checkout main
 #git add .
 #git commit -m "Dev"
-#git push origin master
+#git push origin main
 cd /c/Users/eha/OneDrive/antora/altinn/ark/wiki/playbook
