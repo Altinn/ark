@@ -129,7 +129,7 @@ Med tradisjonell bruk av meldingstjenester i Altinn har Tjenesteeierne selv utvi
 
 
 | Dialogporten
-a| 
+a| Dialogporten benyttes  som navn på løsningskomponenten (produktet) som tilbyr API for enhetlig tilgang og håndtering av digitale dialoger til Felles Arbeidsflate(r) og Sluttbrukersystemer, inkludert lagring av metadata om dialogene, og som dekker Altinn Platform-funksjonalitet for tilgangsstyring og -kontroll, hendelser og varsling.
 
 |===
 ****

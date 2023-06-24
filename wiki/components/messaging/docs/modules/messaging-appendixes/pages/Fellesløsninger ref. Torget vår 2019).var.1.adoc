@@ -37,7 +37,13 @@ a|
 a| Med denne løsningen styrer du hvem som kan bruke en digital tjeneste. Du kan bruke den til å styre tilganger for privatpersoner og til å gi tilganger basert på rettigheter en person har på vegne av en virksomhet.
 
 | Altinn varsling
-a| Vil du varsle innbyggere, virksomheter og organisasjoner på SMS eller e-post, kan du bruke løsningen Varsling. Brukeren logger seg deretter inn for å lese informasjonen du har sendt. 
+a| NB: Altinn varsling og ny KRR klar for Altinn 3.0? Ikk prioritert å lage 
+Dyrt, derfor push via Events
+KRR for persoer
+Enhetsregisetret for firksomheter
+Altinn Profil??
+
+Vil du varsle innbyggere, virksomheter og organisasjoner på SMS eller e-post, kan du bruke løsningen Varsling. Brukeren logger seg deretter inn for å lese informasjonen du har sendt. 
 
 | Altinn sending av dokument
 a| Denne løsningen kan du bruke til å sende og motta dokumenter og store datamengder. Du bruker en sikker infrastruktur til formidling og kan spore forsendelsene.

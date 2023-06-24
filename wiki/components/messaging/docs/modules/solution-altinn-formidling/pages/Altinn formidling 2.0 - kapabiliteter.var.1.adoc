@@ -84,7 +84,7 @@ a|
 | Identitetsforvaltning
 a| 
 
-| Evne til å formidle STORE filer/ datamengder
+| Overføre STORE filer/ datamengder
 a| Detaljering:
 * Unntakshåndtering
 ** Gjentatte forsøk

@@ -88,16 +88,16 @@ a| Den som innhenter eller mottar data fra andre aktører.
 | Innhent data
 a| 
 
-| Oppdag data og datakilder
+| Oppdag data 
 a| 
 
-| Be  om tilganger og abonnementer
+| Etabler løsninger for mottak og innhentig  av data og hendelser
 a| 
 
-| Forespør og motta data
+| Motta og innhent data
 a| 
 
-| Etabler avtaler og løsninger for datainnhenting
+| Klargjør for operativ datautveksling (datakonsument)
 a| 
 
 | Forvalt og forbedre opplegg for innhenting av data

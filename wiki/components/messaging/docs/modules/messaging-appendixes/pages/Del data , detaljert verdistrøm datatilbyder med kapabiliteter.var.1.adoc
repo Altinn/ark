@@ -123,10 +123,10 @@ a|
 a| "Del data (operativt)" handler om utveksling av data gjennom etablerte kanaler og iht. avtaler. Dette forutsetter også håndtering av avvik og ikke-tilsiktede hendelser.
 
 
-| Sett opp avtaler, løsninger og tilganger etter henvendelse
+| Klargjør for operativ datautveksling (datatibyder)
 a| 
 
-| Motta henvendelser om datadeling
+| Etabler løsninger for sending av data og hendelser
 a| 
 
 | Forbedre løsninger, sikkerhet og datakvalitet (tilbyder)
@@ -134,7 +134,7 @@ a| "Kontinuerlig forbedring av opplegg for deling av data" handler om aktiv forv
 
 Kan også omfatte tilbakemeldinger på kvalitet på data og forbedring av datagrunnlaget.
 
-| Ta rede på egne data og krav til datadeling
+| Ta rede på egne data og behov for  datadeling
 a| 
 
 

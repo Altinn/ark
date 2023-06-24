@@ -93,7 +93,7 @@ a| Datahotellet gir teknisk samhandlingsevne tilbyder kan distribuere åpne data
 Mer om datahotellet:
 https://hotell.difi.no/
 
-| Data.altinn.no
+| Data.altinn.no (DAN)
 a| Data.altinn.no bidrar til teknisk samhandlingsevne og er en løsning for utveksling og deling av data. Data.altinn.no tilbyr en sikker, autorisert og tilgjengelig mekanisme for å dele data
 med næringsliv og innbyggere, eller en kanal for å hente informasjon fra offentlige virksomheter.
 Med data.altinn.no kan man be om data som det offentlige allerede har, tilknyttet definerte sett med data fra ulike registre. Datasettene kan enkelt minimeres eller kombineres etter konsumentenes behov og gis separate autentiserings- og autorisasjonskrav.

@@ -17,5 +17,8 @@ View dok...
 image::{imagepath}Altinn Broker 3.0 forslag 1 (utkast).png[alt=Altinn Broker 3.0 forslag 1 (utkast) image, link=https://altinn.github.io/ark/models/archi-all?view=id-3a9f8a7eb8284d66b84579f2e6ecc69e]
 
 
+****
+xref:main@messaging:messaging-solutions-to-be:page$Altinn Broker 3.0 forslag 1 (utkast).var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
 
 

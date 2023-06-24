@@ -40,18 +40,18 @@ a|
 a| "Del data (operativt)" handler om utveksling av data gjennom etablerte kanaler og iht. avtaler. Dette forutsetter også håndtering av avvik og ikke-tilsiktede hendelser.
 
 
-| Sett opp avtaler, løsninger og tilganger etter henvendelse
+| Klargjør for operativ datautveksling (datatibyder)
 a| 
 
-| Motta henvendelser om datadeling
+| Etabler løsninger for sending av data og hendelser
 a| 
 
-| Ta rede på egne data og krav til datadeling
+| Ta rede på egne data og behov for  datadeling
 a| 
 
 
 
-| Forbedre løsninger, sikkerhet og datakvalitet (tilbyder)
+| Drift og forvalt løsninger (datatilbyder)
 a| 
 
 | Datakonsument
@@ -60,22 +60,22 @@ a| Den som innhenter eller mottar data fra andre aktører.
 | Innhent data
 a| 
 
-| Oppdag data og datakilder
+| Oppdag data 
 a| 
 
-| Be  om tilganger og abonnementer
+| Etabler løsninger for mottak og innhentig  av data og hendelser
 a| 
 
-| Forespør og motta data
+| Motta og innhent data
 a| 
 
-| Etabler avtaler og løsninger for datainnhenting
+| Klargjør for operativ datautveksling (datakonsument)
 a| 
 
 | Ta rede på behov for innhenting av data
 a| 
 
-| Forbedre løsninger, sikkerhet og datakvalitet (konsument)
+| Drift og forvalt løsninger (datakonsument)
 a| 
 
 |===

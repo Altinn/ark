@@ -168,6 +168,9 @@ a| https://altinn.github.io/docs/tul/
 | Se også:
 a| 
 
+| Tjenestemotor (Service Engine)
+a| 
+
 |===
 ****
 TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
