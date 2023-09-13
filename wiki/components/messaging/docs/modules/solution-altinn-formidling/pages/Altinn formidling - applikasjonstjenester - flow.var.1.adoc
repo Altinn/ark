@@ -27,13 +27,13 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Element
 | Beskrivelse
 
-| Avsender 
+| Avsender
 a| Den som sender en elektronisk melding eller tilsvarende.
 
 | Mottaker
 a| Den som mottar en elektronisk melding eller tilsvarende.
 
-| Altinn Formidling
+| Altinn Formidling 2.0
 a| 
 
 | Check  if available Files
@@ -53,7 +53,7 @@ a| Bekrefter at mottaker har lastet ned filen, hvorpå filen kan saneres dersom 
 Endrer FileRecipientStatus til "Downloaded".
 
 | Get receipt confirmation
-a| Hent ut kvittering knyttet til filen basert på FileReference.
+a| Hent ut kvittering knyttet til filen basert på FileReference, per mottaker og totalt (alle motakere mottatt)
 
 | Update receipt confirmation
 a| Mottaker: Oppdater tekst i mottakers kvittering, som er synlig også for avsender.

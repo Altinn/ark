@@ -92,9 +92,6 @@ a| Bjørn: Mer finkornet?
 a| Teknologibinding (Microsoft/Azure) som kanskje ikke passer for alle konsumenter/mottakere? 
 
 
-| Altinn Formidling 3.0
-a| 
-
 | Sanering
 a| 
 
@@ -115,6 +112,9 @@ a|
 
 | Altinn TTP
 a| Logging; ref. https://altinn.github.io/docs/tul/tjenestetyper/felles-funksjonalitet/
+
+| Altinn formidling 3.0
+a| 
 
 |===
 ****

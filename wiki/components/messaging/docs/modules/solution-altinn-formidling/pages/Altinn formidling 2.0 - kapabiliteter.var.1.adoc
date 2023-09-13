@@ -30,7 +30,7 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Altinn formidling 2.0 kapabiliteter
 a| 
 
-| Brukerstøtte
+| Brukerstøtte  og veiledning
 a| 
 
 | Onboarding av innbygger
@@ -57,8 +57,8 @@ a| Hendelsesstørmming + notifikasjoner/varslers
 
 Del opp i to
 
-| Støtte for meldingsmønstre  en-til-en og en til mange kjente (multicast)
-a| Altinn Broker 2.0 kan ta i mot adresseliste, men lite brukt (90% en-til-en)s
+| Støtte for meldingsmønstre  en-til-en
+a| 
 
 | Spesifisere meldingsformat og metadata (xml manifest)
 a| Sjekk "kontrakt for xml manifest"
@@ -66,7 +66,7 @@ a| Sjekk "kontrakt for xml manifest"
 | Autorisasjon (inkl. delegering)
 a| 
 
-| Formidle mottakskvitteringer
+| Formidling av  mottakskvitteringer
 a| Hovedkvittering vs. underkvitteringer per mottaker
 
 Forbedrinspotanisale: 
@@ -84,11 +84,12 @@ a|
 | Identitetsforvaltning
 a| 
 
-| Overføre STORE filer/ datamengder
+| Støtte for STORE filer
 a| Detaljering:
+* Teknologi
 * Unntakshåndtering
-** Gjentatte forsøk
-** Varsling om feil
+* ...
+
 
 
 | Etablere avtaler med avsendere og mottakere
@@ -105,8 +106,8 @@ a|
 | Autentisere samhandlingsaktør
 a| 
 
-| Logging
-a| 
+| Logging og sporing
+a| Meldingslogg, inkl. identifisering av filer og metadata
 
 | Dataformidler
 a| Dataformidler er et mellomledd som formidler data mellom produsent og konsument. Eksempler. Tilbyder av meldingsinfrastruktur, aksesspunkt, mellomliggende lagringsløsninger, sammenstilling av data fra flere datakilder.

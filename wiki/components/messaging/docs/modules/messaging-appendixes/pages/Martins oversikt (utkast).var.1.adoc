@@ -106,7 +106,7 @@ a| https://www.nhn.no/tjenester
 | Markedsløsninger  for meldings-formidlimg
 a| 
 
-| Altinn Formidling
+| Altinn Formidling 2.0
 a| 
 
 | Digital postkasse til innbyggere (DPI)

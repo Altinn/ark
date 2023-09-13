@@ -1,0 +1,74 @@
+= Operative evner
+:wysiwig_editing: 1
+ifeval::[{wysiwig_editing} == 1]
+:imagepath: ../images/
+endif::[]
+ifeval::[{wysiwig_editing} == 0]
+:imagepath: main@messaging:messaging-appendixes:
+endif::[]
+:experimental:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 0
+
+
+
+.Operative evner
+image::{imagepath}Operative evner.png[alt=Operative evner image, link=https://altinn.github.io/ark/models/archi-all?view=id-41fde00d5db647f992cd4b65b0f6231c]
+
+
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+
+
+[cols ="1,3", options="header"]
+.Elementer i view for Operative evner
+|===
+
+| Element
+| Beskrivelse
+
+| Operative evner
+a| 
+
+| Logging og sporing
+a| Meldingslogg, inkl. identifisering av filer og metadata
+
+| Korrelering av meldinger (sak og prosess)
+a| 
+
+| Dynamisk saksbehandling (hendelsesdrevet)
+a| 
+
+| Prosessmonitorering
+a| 
+
+| Datautveksling
+a| 
+
+| Informasjonssikkerhet (tillitstjenester)
+a| 
+
+| Eksekvering av prosessmodeller (orkestering og koreografi)
+a| 
+
+| Innebygget arkivering
+a| 
+
+| Innebygget dokumentasjon av  etterlevelse
+a| 
+
+| Innebygget dataproveniens
+a| 
+
+| Dataanalyse
+a| 
+
+| Eksekvering av regelmodeller 
+a| 
+
+|===
+****
+TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
+****
+
+

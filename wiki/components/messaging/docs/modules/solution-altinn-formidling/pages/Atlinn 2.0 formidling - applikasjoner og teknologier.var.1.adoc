@@ -27,7 +27,7 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Element
 | Beskrivelse
 
-| Altinn Formidling
+| Altinn Formidling 2.0
 a| 
 
 | Broker DB

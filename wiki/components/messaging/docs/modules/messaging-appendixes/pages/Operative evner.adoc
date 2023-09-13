@@ -17,5 +17,8 @@ endif::[]
 image::{imagepath}Operative evner.png[alt=Operative evner image, link=https://altinn.github.io/ark/models/archi-all?view=id-41fde00d5db647f992cd4b65b0f6231c]
 
 
+****
+xref:main@messaging:messaging-appendixes:page$Operative evner.var.1.adoc[Vis detaljer om elementene i diagrammet] (Tips: kbd:[Shift]-klikk for å åpne i nytt vindu)
+****
 
 

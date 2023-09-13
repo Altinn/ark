@@ -28,7 +28,7 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Element
 | Beskrivelse
 
-| Avsender 
+| Avsender
 a| Den som sender en elektronisk melding eller tilsvarende.
 
 | Mottaker
