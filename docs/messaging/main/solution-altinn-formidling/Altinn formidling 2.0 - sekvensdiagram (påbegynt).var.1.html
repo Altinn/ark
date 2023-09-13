@@ -445,26 +445,146 @@ Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vindue
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avsender</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Den som sender en elektronisk melding eller tilsvarende.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mottaker</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Den som mottar en elektronisk melding eller tilsvarende.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Altinn Formidling</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Altinn Formidling 2.0</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Broker DB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initiate message transfer</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Liste over alle meldinger i en stor Altinn SQL Server,</p>
+<p>Forbereder opprettelse av en formidlingstjeneste ved å sende inn nødvendig metadata, hvorpå fil kan strømmes opp .Returnerer en FileReference, en GUID som brukes videre som identifikator.
+Autoriserer og oppretter metadata i databasen, FileStatus=Initialized</p>
 </div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Upload file</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Strømmer opp fil for en gitt FileReference basert på opprettelse av formidlingstjeneste.
+Autoriserer, strømmer opp fil til sharet, oppdaterer manifest, utfører viruskontroll og setter status til "Uploaded" for både FileStatus og RecipientStatus.
+Returnerer Receipt.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check  if available Files</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Lettvekt metode for mottakere som ofte må sjekke om det er nye filer tilgjengelig.
+Sjekker kun i db, hopper over autorisasjons-steg. Returnerer True/false.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get Available Files</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Henter en "avgivers" (Erik: du mener mottakers?) tilgjengelige formidlingstjenester med metadata og referanse for nedlasting. Inkluderer autorisasjon og henter ut liste med metadata for tilgjengelige filer.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Download File</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Strømmer ned fil for formidlingstjeneste basert på referanse. Autoriserer, strømmer ned fil, endrer IKKE status.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get receipt confirmation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Hent ut kvittering knyttet til filen basert på FileReference, per mottaker og totalt (alle motakere mottatt)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Altinn Formidling 2.0</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mottakers system</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avsenders system</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initiate message transfer</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forbereder opprettelse av en formidlingstjeneste ved å sende inn nødvendig metadata, hvorpå fil kan strømmes opp .Returnerer en FileReference, en GUID som brukes videre som identifikator.
+Autoriserer og oppretter metadata i databasen, FileStatus=Initialized</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avsenders prosess for  å sende melding og vedlegg</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Upload file</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Strømmer opp fil for en gitt FileReference basert på opprettelse av formidlingstjeneste.
+Autoriserer, strømmer opp fil til sharet, oppdaterer manifest, utfører viruskontroll og setter status til "Uploaded" for både FileStatus og RecipientStatus.
+Returnerer Receipt.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avsenders system</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avsenders prosess for  å sende melding og vedlegg</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avsenders prosess for å verifisere mottak</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mottakers system</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mottakers prosess for å motta melding via API</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm downloaded</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Bekrefter at mottaker har lastet ned filen, hvorpå filen kan saneres dersom den møter kriteriene.
+Endrer FileRecipientStatus til "Downloaded".</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check  if available Files</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Lettvekt metode for mottakere som ofte må sjekke om det er nye filer tilgjengelig.
+Sjekker kun i db, hopper over autorisasjons-steg. Returnerer True/false.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get Available Files</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Henter en "avgivers" (Erik: du mener mottakers?) tilgjengelige formidlingstjenester med metadata og referanse for nedlasting. Inkluderer autorisasjon og henter ut liste med metadata for tilgjengelige filer.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Download File</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Strømmer ned fil for formidlingstjeneste basert på referanse. Autoriserer, strømmer ned fil, endrer IKKE status.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm downloaded</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Bekrefter at mottaker har lastet ned filen, hvorpå filen kan saneres dersom den møter kriteriene.
+Endrer FileRecipientStatus til "Downloaded".</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get receipt confirmation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Hent ut kvittering knyttet til filen basert på FileReference, per mottaker og totalt (alle motakere mottatt)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mottakers prosess for å motta melding via API</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avsenders prosess for å verifisere mottak</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 </tbody>
 </table>
