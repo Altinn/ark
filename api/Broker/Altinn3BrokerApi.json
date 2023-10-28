@@ -1,0 +1,381 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Altinn.Broker",
+    "version": "1.0",
+    "description": "API for Altinn Broker functionality."
+  },
+  "paths": {
+    "/broker/api/v1/file": {
+      "post": {
+        "tags": ["File"],
+        "summary": "Initialize a new file.",
+        "description": "This endpoint initializes a new file for processing.",
+        "operationId": "InitializeFile",
+        "requestBody": {
+          "description": "File initialization details.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileInitalizeExt"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileInitalizeExt"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileInitalizeExt"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully initialized the file.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": ["File"],
+        "summary": "Retrieve file status.",
+        "description": "This endpoint retrieves the status of a specified file.",
+        "operationId": "GetFileStatus",
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the file status.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileStatusOverviewExt"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileStatusOverviewExt"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileStatusOverviewExt"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/broker/api/v1/file/{fileId}/upload": {
+      "post": {
+        "tags": ["File"],
+        "summary": "Upload a file.",
+        "description": "This endpoint allows for the uploading of a specified file.",
+        "operationId": "UploadFile",
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully uploaded the file."
+          }
+        }
+      }
+    },
+    "/broker/api/v1/file/{fileId}/download": {
+      "get": {
+        "tags": ["File"],
+        "summary": "Download a file.",
+        "description": "This endpoint allows for the downloading of a specified file.",
+        "operationId": "DownloadFile",
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully downloaded the file.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stream"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stream"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stream"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/broker/api/v1/file/{fileId}/confirmdownload": {
+      "post": {
+        "tags": ["File"],
+        "summary": "Confirm a file download.",
+        "description": "This endpoint confirms the successful download of a specified file.",
+        "operationId": "ConfirmDownload",
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully confirmed the file download."
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": ["Health"],
+        "summary": "Check the health of the service.",
+        "description": "This endpoint checks the health status of the service.",
+        "operationId": "CheckHealth",
+        "responses": {
+          "200": {
+            "description": "Service is healthy."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FileInitalizeExt": {
+        "type": "object",
+        "description": "Schema for initializing a new file with relevant metadata.",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "The name of the file.",
+            "nullable": true
+          },
+          "sendersFileReference": {
+            "type": "string",
+            "description": "A unique reference ID provided by the sender.",
+            "nullable": true
+          },
+          "checksum": {
+            "type": "string",
+            "description": "Checksum value for verifying the file's integrity.",
+            "nullable": true
+          },
+          "brokerResourceId": {
+            "type": "string",
+            "description": "Unique resource ID assigned by the broker.",
+            "format": "uuid"
+          },
+          "sender": {
+            "type": "string",
+            "description": "The entity or individual sending the file.",
+            "nullable": true
+          },
+          "recipients": {
+            "type": "array",
+            "description": "List of intended recipients for the file.",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "metadata": {
+            "type": "object",
+            "description": "Additional metadata associated with the file.",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FileStatusExt": {
+        "enum": [
+          0, 1, 2, 3, 4, 5, 6, 7, 8
+        ],
+        "description": "Enumeration representing the various statuses a file can be in.",
+        "type": "integer",
+        "format": "int32"
+      },
+      "FileStatusOverviewExt": {
+        "type": "object",
+        "description": "Overview of the file's current status and associated metadata.",
+        "properties": {
+          "fileId": {
+            "type": "string",
+            "description": "Unique identifier for the file.",
+            "format": "uuid"
+          },
+          "fileName": {
+            "type": "string",
+            "description": "The name of the file.",
+            "nullable": true
+          },
+          "sendersFileReference": {
+            "type": "string",
+            "description": "Reference ID provided by the sender.",
+            "nullable": true
+          },
+          "checksum": {
+            "type": "string",
+            "description": "Checksum for verifying file integrity.",
+            "nullable": true
+          },
+          "fileStatus": {
+            "$ref": "#/components/schemas/FileStatusExt"
+          },
+          "fileStatusText": {
+            "type": "string",
+            "description": "Human-readable description of the file's status.",
+            "nullable": true
+          },
+          "fileStatusChanged": {
+            "type": "string",
+            "description": "Timestamp indicating the last change in file status.",
+            "format": "date-time"
+          },
+          "brokerResourceId": {
+            "type": "string",
+            "description": "Resource ID assigned by the broker.",
+            "format": "uuid"
+          },
+          "sender": {
+            "type": "string",
+            "description": "Entity or individual sending the file.",
+            "nullable": true
+          },
+          "recipients": {
+            "type": "array",
+            "description": "List of recipients for the file.",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "metadata": {
+            "type": "object",
+            "description": "Metadata associated with the file.",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Stream": {
+        "type": "object",
+        "description": "Properties defining the characteristics and capabilities of a file stream.",
+        "properties": {
+          "canRead": {
+            "type": "boolean",
+            "description": "Indicates if the stream supports reading.",
+            "readOnly": true
+          },
+          "canWrite": {
+            "type": "boolean",
+            "description": "Indicates if the stream supports writing.",
+            "readOnly": true
+          },
+          "canSeek": {
+            "type": "boolean",
+            "description": "Indicates if the stream supports seeking to a specific position.",
+            "readOnly": true
+          },
+          "canTimeout": {
+            "type": "boolean",
+            "description": "Indicates if the stream has a timeout feature.",
+            "readOnly": true
+          },
+          "length": {
+            "type": "integer",
+            "description": "The total length of the stream in bytes.",
+            "format": "int64",
+            "readOnly": true
+          },
+          "position": {
+            "type": "integer",
+            "description": "The current position of the stream in bytes.",
+            "format": "int64"
+          },
+          "readTimeout": {
+            "type": "integer",
+            "description": "The timeout duration for reading from the stream.",
+            "format": "int32"
+          },
+          "writeTimeout": {
+            "type": "integer",
+            "description": "The timeout duration for writing to the stream.",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+  
