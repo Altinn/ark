@@ -3,7 +3,10 @@
   "info": {
     "title": "Altinn3.Broker",
     "version": "2.0.0",
-    "description": "API for Altinn Broker functionality."
+    "description": "API for Altinn Broker functionality.",
+    "x-comment-Erik-2023-10-29-23:10": "Started adding comments in this json file, to document change proposals and support discussion on the API",
+    "x-comment-Erik-2023-10-29-23:11": "Added summary, description and operationId to all endpoints (best practice and also used in Altinn 2 Broker API)",
+    "x-comment-Erik-2023-10-29-23:20": "Forgot to add examples for all endpoints (best practice and also used in Altinn 2 Broker API)"
   },
   "paths": {
     "/broker/api/v2.0.0/file": {
@@ -209,9 +212,10 @@
       "UploadProtocolType": {
         "x-comment-Erik-2023-10-26-22:00": "Added this schema to support multiple upload protocols (assume default https)",
         "type": "string",
-        "description": "Protocol for uploading the file.",
+        "description": "Protocol for uploading the file, e.g. https, tus, etc.",
         "enum": ["https", "tus", "ftp", "sftp"],
-        "default": "https"
+        "default": "https",
+        "nullable": true
       },
       "FilenameType": {
         "x-comment-Erik-2023-10-26-22:36": "Added this schema to support filename verification",
@@ -220,7 +224,7 @@
         "maxLength":255,
         "pattern":"^[a-zA-Z0-9._-]+$",
         "nullable":false,
-        "description":"Name of the file. Must be alphanumeric and can include hyphens, underscores, and periods."}
+        "description":"Name of the file. Must be alphanumeric and can include hyphens, underscores, and periods."
       },
       "FileInitalizeExt": {
         "x-comment-Erik-2023-10-26-21:37": "Added (optional) property correlationId, to support correlation between files, e.g. within a case", 
@@ -230,23 +234,17 @@
         "description": "Schema for initializing a new file with relevant metadata.",
         "properties": {
           "correlationId": {
-            "type": "uuid",
+            "type": "string",
             "description": "Correlation ID for the file, e.g. as part of a case",
             "format": "uuid",
             "nullable": true
           },
           "uploadProtocol": {
-            "x-comment-Erik-2023-10-26-22:41": "Reference to UploadProtocolType schema",
-            "$ref": "#/components/schemas/UploadProtocolType",
-            "description": "Protocol for uploading the file, e.g. https, tus, etc.",
-            "nullable": true
+          "$ref": "#/components/schemas/UploadProtocolType"
           },
           "filename": {
             "x-comment-Erik-2023-10-26-22:41": "Reference to FilenameType schema",
-            "x-comment-Erik-2023-10-26-22:42": "set nullable to false",
-            "$ref": "#/components/schemas/FilenameType",
-            "description": "The name of the file.",
-            "nullable": false
+            "$ref": "#/components/schemas/FilenameType"
           },
           "sendersFileReference": {
             "type": "string",
