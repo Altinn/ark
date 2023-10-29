@@ -2,11 +2,11 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Altinn3.Broker",
-    "version": "2",
+    "version": "2.0.0",
     "description": "API for Altinn Broker functionality."
   },
   "paths": {
-    "/broker/api/v2/file": {
+    "/broker/api/v2.0.0/file": {
       "post": {
         "tags": ["File"],
         "summary": "Initialize a new file.",
@@ -98,7 +98,7 @@
         }
       }
     },
-    "/broker/api/v2/file/{fileId}/upload": {
+    "/broker/api/v2.0.0/file/{fileId}/upload": {
       "post": {
         "tags": ["File"],
         "summary": "Upload a file.",
@@ -123,7 +123,7 @@
         }
       }
     },
-    "/broker/api/v2/file/{fileId}/download": {
+    "/broker/api/v2.0.0/file/{fileId}/download": {
       "get": {
         "tags": ["File"],
         "summary": "Download a file.",
@@ -165,7 +165,7 @@
         }
       }
     },
-    "/broker/api/v2/file/{fileId}/confirmdownload": {
+    "/broker/api/v2.0.0/file/{fileId}/confirmdownload": {
       "post": {
         "tags": ["File"],
         "summary": "Confirm a file download.",
@@ -206,14 +206,47 @@
   },
   "components": {
     "schemas": {
+      "UploadProtocolType": {
+        "x-comment-Erik-2023-10-26-22:00": "Added this schema to support multiple upload protocols (assume default https)",
+        "type": "string",
+        "description": "Protocol for uploading the file.",
+        "enum": ["https", "tus", "ftp", "sftp"],
+        "default": "https"
+      },
+      "FilenameType": {
+        "x-comment-Erik-2023-10-26-22:36": "Added this schema to support filename verification",
+        "type":"string",
+        "minLength":1,
+        "maxLength":255,
+        "pattern":"^[a-zA-Z0-9._-]+$",
+        "nullable":false,
+        "description":"Name of the file. Must be alphanumeric and can include hyphens, underscores, and periods."}
+      },
       "FileInitalizeExt": {
+        "x-comment-Erik-2023-10-26-21:37": "Added (optional) property correlationId, to support correlation between files, e.g. within a case", 
+        "x-comment-Erik-2023-10-26-21:40": "Added (optional) property uploadProtocol, to support multiple upload protocols (assume default https", 
+        "x-comment-Erik-2023-10-26-21:45": "Consider setting nullable to false for most of the properties",
         "type": "object",
         "description": "Schema for initializing a new file with relevant metadata.",
         "properties": {
-          "filename": {
-            "type": "string",
-            "description": "The name of the file.",
+          "correlationId": {
+            "type": "uuid",
+            "description": "Correlation ID for the file, e.g. as part of a case",
+            "format": "uuid",
             "nullable": true
+          },
+          "uploadProtocol": {
+            "x-comment-Erik-2023-10-26-22:41": "Reference to UploadProtocolType schema",
+            "$ref": "#/components/schemas/UploadProtocolType",
+            "description": "Protocol for uploading the file, e.g. https, tus, etc.",
+            "nullable": true
+          },
+          "filename": {
+            "x-comment-Erik-2023-10-26-22:41": "Reference to FilenameType schema",
+            "x-comment-Erik-2023-10-26-22:42": "set nullable to false",
+            "$ref": "#/components/schemas/FilenameType",
+            "description": "The name of the file.",
+            "nullable": false
           },
           "sendersFileReference": {
             "type": "string",
