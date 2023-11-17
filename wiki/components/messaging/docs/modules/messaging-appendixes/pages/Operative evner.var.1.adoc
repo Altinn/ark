@@ -42,7 +42,7 @@ a|
 | Prosessmonitorering
 a| 
 
-| Datautveksling
+| Data Exchange
 a| 
 
 | Informasjonssikkerhet (tillitstjenester)

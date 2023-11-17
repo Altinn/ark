@@ -33,7 +33,7 @@ a|
 | Etabler samhandlingsløsninger
 a| 
 
-| Utfør steg i samhandlingsprosess
+| Generic value stream for execution of a process step
 a| 
 
 | Identifiser sluttbrukertjenester og utform brukerreiser

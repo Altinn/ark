@@ -62,7 +62,7 @@ virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandling
 Mer om Maskinporten:
 https://www.digdir.no/digitale-felleslosninger/maskinporten/869
 
-| Altinn autorisasjon
+| Altinn Authorization
 a| [Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.
@@ -106,7 +106,7 @@ a| https://www.nhn.no/tjenester
 | Markedsløsninger  for meldings-formidlimg
 a| 
 
-| Altinn Formidling 2.0
+| Altinn 2 Formidling
 a| 
 
 | Digital postkasse til innbyggere (DPI)

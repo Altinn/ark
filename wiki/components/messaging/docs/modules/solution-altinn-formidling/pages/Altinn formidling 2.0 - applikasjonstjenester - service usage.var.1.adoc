@@ -33,7 +33,7 @@ a| Den som sender en elektronisk melding eller tilsvarende.
 | Mottaker
 a| Den som mottar en elektronisk melding eller tilsvarende.
 
-| Altinn Formidling 2.0
+| Altinn 2 Formidling
 a| 
 
 | Initiate message transfer
@@ -70,7 +70,7 @@ a| Hent ut kvittering knyttet til filen basert på FileReference, per mottaker o
 a| Mottaker: Oppdater tekst i mottakers kvittering, som er synlig også for avsender.
 Avsender: Kan (teoretisk) også brukes til å oppdatere kvitteringer for avsender, men kun avsender kan se sin oppdaterte kvittering.
 
-| Notify receipient
+| Notify recepient
 a| Brukes av Politiet til å sende en melding via Altinn Corresponance) til mottaker med nedlastningslenke.
 
 | Get File Metadata

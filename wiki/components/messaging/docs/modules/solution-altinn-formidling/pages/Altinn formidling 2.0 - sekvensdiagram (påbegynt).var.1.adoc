@@ -27,7 +27,7 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Element
 | Beskrivelse
 
-| Altinn Formidling 2.0
+| Altinn 2 Formidling
 a| 
 
 | Initiate message transfer
@@ -56,13 +56,13 @@ a| Strømmer ned fil for formidlingstjeneste basert på referanse. Autoriserer, 
 | Get receipt confirmation
 a| Hent ut kvittering knyttet til filen basert på FileReference, per mottaker og totalt (alle motakere mottatt)
 
-| Altinn Formidling 2.0
+| Altinn 2 Formidling
 a| 
 
-| Mottakers system
+| Recepient's End User System
 a| 
 
-| Avsenders system
+| Sender's End User System
 a| 
 
 | Initiate message transfer
@@ -79,19 +79,19 @@ Autoriserer, strømmer opp fil til sharet, oppdaterer manifest, utfører virusko
 Returnerer Receipt.
 
 
-| Avsenders system
+| Sender's End User System
 a| 
 
 | Avsenders prosess for  å sende melding og vedlegg
 a| 
 
-| Avsenders prosess for å verifisere mottak
+| Sender's monitoring process (polling)
 a| 
 
-| Mottakers system
+| Recepient's End User System
 a| 
 
-| Mottakers prosess for å motta melding via API
+| Recepient's download process (polling)
 a| 
 
 | Confirm downloaded
@@ -117,10 +117,10 @@ Endrer FileRecipientStatus til "Downloaded".
 | Get receipt confirmation
 a| Hent ut kvittering knyttet til filen basert på FileReference, per mottaker og totalt (alle motakere mottatt)
 
-| Mottakers prosess for å motta melding via API
+| Recepient's download process (polling)
 a| 
 
-| Avsenders prosess for å verifisere mottak
+| Sender's monitoring process (polling)
 a| 
 
 |===

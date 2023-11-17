@@ -58,7 +58,7 @@ MP (Maskinporten Token).
 a| Kopier av offentlige registre som f.eks. Folkeregisteret. Fremdeles relevant?
 
 | Broker DB
-a| Liste over alle meldinger i en stor Altinn SQL Server, 
+a| Liste over alle meldinger i database
 
 | Broker Fileshare (clustered)
 a| 
@@ -85,8 +85,11 @@ WCF supports multiple communication patterns, including one-way messaging, reque
 
 WCF services can expose different types of endpoints, including SOAP-based endpoints and RESTful endpoints. While REST is an architectural style used for designing networked applications, WCF is a framework that can be used to implement RESTful services along with other communication patterns and protocols.
 
-| Altinn events
-a| Bjørn: Mer finkornet?
+| Altinn Events
+a| The Altinn Events component is an a ASP.NET Core MVC Application exposing REST-API to Altinn Apps and other Altinn Platform components.
+
+Alse see:
+* [Powerponit presentation of Altinn Events[(https://www.digdir.no/media/3660/download)
 
 | Vurdering av begrepet "generisk meldingskomponent"
 a| Teknologibinding (Microsoft/Azure) som kanskje ikke passer for alle konsumenter/mottakere? 
@@ -113,7 +116,7 @@ a|
 | Altinn TTP
 a| Logging; ref. https://altinn.github.io/docs/tul/tjenestetyper/felles-funksjonalitet/
 
-| Altinn formidling 3.0
+| Altinn 3 Broker
 a| 
 
 |===

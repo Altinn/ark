@@ -36,7 +36,7 @@ a| Den som mottar en elektronisk melding eller tilsvarende.
 | Personbruker
 a| 
 
-| Altinn Formidling 2.0
+| Altinn 2 Formidling
 a| 
 
 | Check  if available Files
@@ -44,7 +44,7 @@ a| Lettvekt metode for mottakere som ofte må sjekke om det er nye filer tilgjen
 Sjekker kun i db, hopper over autorisasjons-steg. Returnerer True/false.
 
 
-| Notify receipient
+| Notify recepient
 a| Brukes av Politiet til å sende en melding via Altinn Corresponance) til mottaker med nedlastningslenke.
 
 | Update receipt confirmation

@@ -43,100 +43,85 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Element
 | Beskrivelse
 
-| Utfør steg i samhandlingsprosess
+| Generic value stream for execution of a process step
 a| 
 
-| Detekter triggerhendelse
+| Detect  trigger event
 a| 
 
-| Etabler datagrunnlag
+| Establish input data (evidence)
 a| 
 
-| Prosesser datagrunnlag
+| Process input data
 a| 
 
-| Avgi utgående hendelser
+| Distribute outgoing events
 a| 
 
-| Svar på forespørsel om datagrunnlag og etterlevelse
+| Respond to later requests about data provenance and compliance
 a| 
 
-| Detektere triggerhendelse
+| Request reception
 a| 
 
-| Motta forespørsler
+| Notification reception
 a| 
 
-| Motta notifikasjoner
+| Complex event processing
 a| 
 
-| Analysere hendelsesstrømmer
-a| 
-
-| Etablere datagrunnlag
-a| 
-
-| Identifisere styrende lover og regler
+| Identification of  applicable regulations and legal base
 a| 
 
 | Minimere innhenting av  persondata
 a| 
 
-| Oppdage data og datakilder
+| Data discovery
 a| Engelsk: Data discovery is the collection and analysis of data from various sources to gain insight from hidden patterns and trends. It is the first step in fully harnessing an organization's data to inform critical business decisions.
 
-| Innhente data
+| Data capture
 a| Evnen til å innhente data fra en annen aktør.
 
-| Prosessere data
-a| 
-
-| Dokumentere etterlevelse
+| Compliance documentation
 a| 
 
 | Unntakshåndtering
 a| 
 
-| Opprette og endre datasett
+| Data creation and updating
 a| 
 
-| Dokumentere dataproviniens
+| Data provenance documentation
 a| 
 
-| Avgi utgående hendelser
+| Event  Notification of known parties
 a| 
 
-| Notifisere kjente samhandlingsparter
+| Replying to requests
 a| 
 
-| Svare på forespørsler
+| Event Notification by publishing
 a| 
 
-| Publisere notifikasjoner
+| Event streaming
 a| 
 
-| Strømme hendelser
+| Provisioning of event related evidence on requests
 a| 
 
-| Svare på forespørsler om datagrunnlag og etterlevelse
+| Provisioning of compliance evidence on request
 a| 
 
-| Redegjøre for datagrunnlag
-a| 
-
-| Redegjøre for etterlevelse
-a| 
-
-| Redegjøre for dataproviniens
+| Provisioning of data provenance information on request
 a| 
 
 | Redegjøre for  juridisk grunnlag
 a| 
 
-| Tverrrgående kapabiliteter
+| Cross-cutting capabilities
 a| 
 
-| Sørge for informasjonssikkerhet, tilllit og personvern
+| Information Security, Trust and Privacy
 a| 
 
 | Ha "orden i eget hus "
@@ -148,10 +133,10 @@ a|
 | Utveksle data
 a| 
 
-| Dele data
+| Data Sharing
 a| 
 
-| Lagre og arkivere data
+| Data storage, versioning and preservation
 a| 
 
 | ...
@@ -160,16 +145,16 @@ a|
 | Interoperabilitet i samhandlingsprosesser
 a| 
 
-| Innebygget arkiv
+| Minimal need for copies of data
 a| 
 
-| Innebygget dokumentasjon av etterlevelse
+| End-to-end process transparency and insight
 a| 
 
 | Krav ved anskaffelser og plattformutvikling
 a| 
 
-| Innebygget data proviniens
+| Innebygget dataproveniens
 a| 
 
 | Sammenhengende tjenester

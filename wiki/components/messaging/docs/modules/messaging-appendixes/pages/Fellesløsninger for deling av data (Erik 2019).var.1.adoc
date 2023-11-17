@@ -116,7 +116,7 @@ a| ID-porten gir teknisk samhandlingsevne den gjør det mulig for brukere å log
 Mer om ID-porten:
 https://www.digdir.no/digitale-felleslosninger/id-porten/864
 
-| Altinn autorisasjon
+| Altinn Authorization
 a| [Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.

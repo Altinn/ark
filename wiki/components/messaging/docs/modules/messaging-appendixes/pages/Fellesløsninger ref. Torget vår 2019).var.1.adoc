@@ -36,7 +36,7 @@ a|
 | Altinn styring av tilgang
 a| Med denne løsningen styrer du hvem som kan bruke en digital tjeneste. Du kan bruke den til å styre tilganger for privatpersoner og til å gi tilganger basert på rettigheter en person har på vegne av en virksomhet.
 
-| Altinn varsling
+| Altinn Notification
 a| NB: Altinn varsling og ny KRR klar for Altinn 3.0? Ikke foreløpig prioritert å lage. Dyrt - hver varslings koster, derfor foretrekkes push via Altinn Events.
 
 KRR for personer

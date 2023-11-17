@@ -27,11 +27,11 @@ TIP: Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette v
 | Element
 | Beskrivelse
 
-| Altinn Formidling 2.0
+| Altinn 2 Formidling
 a| 
 
 | Broker DB
-a| Liste over alle meldinger i en stor Altinn SQL Server, 
+a| Liste over alle meldinger i database
 
 | Broker Fileshare (clustered)
 a| 
@@ -49,7 +49,7 @@ Tjenesteeier kan gjennom SRR styre to typer modus: consent og reportee.
 
 * Reportee-mode, kan brukes for alle andre tjenestetyper og regulerer hvilke aktør/avgiver som kan delegere en rettighet til andre på egne vegne (se autorisasjonsmodell for ytterligere forklaring). For disse gjøres det en opprydding av alle delegeringer som er utført av en gitt avigerreportee-en hvis SRR-regelen i etterkant fjernes.
 
-| Altinn Auth?
+| Altinn 2 Auth
 a| Bruker standard Altinn 2 felleskomponenter​
 
 «Sluttbrukersystembruker» / EndUserSystem User (EUS)​
