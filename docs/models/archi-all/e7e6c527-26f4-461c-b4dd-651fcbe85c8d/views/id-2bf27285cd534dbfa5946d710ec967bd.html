@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Kladd: Kriterier for valg av konsept (i disk. med Camilla)</title>
+	<title>Kriterier for prioritering av features og løsninger</title>
 
 	<!-- JQUERY -->
 	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>Kladd: Kriterier for valg av konsept (i disk. med Camilla)</b>
+               <b>Kriterier for prioritering av features og l&#248;sninger</b>
 
             <!-- If a View with Viewpoint -->
 			   (<span class="i18n-viewpoint-"></span>)
@@ -31,18 +31,16 @@
 
 		<div class="panel-body root-panel-body">
 		    <!-- If this is a digram model (has children and no bounds) show the image -->
-			   <img class="diagram" src="../images/id-2bf27285cd534dbfa5946d710ec967bd.png" alt="Kladd: Kriterier for valg av konsept (i disk. med Camilla)" usemap="#id-2bf27285cd534dbfa5946d710ec967bdmap"/>
+			   <img class="diagram" src="../images/id-2bf27285cd534dbfa5946d710ec967bd.png" alt="Kriterier for prioritering av features og løsninger" usemap="#id-2bf27285cd534dbfa5946d710ec967bdmap"/>
 			   <map name="id-2bf27285cd534dbfa5946d710ec967bdmap">
-				  		<area shape="rect" coords="10,454,143,525" href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html"  target="element">
-				  		<area shape="rect" coords="10,358,143,429" href="../elements/id-f1261d9bcd884d8db2661ef594b54bd3.html"  target="element">
-				  		<area shape="rect" coords="340,14,473,85" href="../elements/id-be9ac88e2518463d82b4b0ce36fb9d19.html"  target="element">
-				  		<area shape="rect" coords="10,268,143,339" href="../elements/id-72e966582ebe499f877aee97e2ca278b.html"  target="element">
-				  		<area shape="rect" coords="184,10,317,81" href="../elements/id-9881a4f5cf5a4aff86da7a98febbb531.html"  target="element">
-				  		<area shape="rect" coords="184,184,317,255" href="../elements/id-f59ad6fdc0914540b0c15ced044af04f.html"  target="element">
-				  		<area shape="rect" coords="346,184,479,255" href="../elements/id-3ddeb06c5c434c20b567c30b5a40b9d0.html"  target="element">
-				  		<area shape="rect" coords="20,184,153,255" href="../elements/id-5c076087459242bdafdc9365cc5525ac.html"  target="element">
-				  		<area shape="rect" coords="28,106,161,177" href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html"  target="element">
-				  		<area shape="rect" coords="20,14,153,85" href="../elements/id-5a41c08c31d940bc81d61a20aba57994.html"  target="element">
+				  		<area shape="rect" coords="478,214,611,285" href="../elements/id-5e85f94cbcc54f54a5d820ac1a701c95.html"  target="element">
+				  		<area shape="rect" coords="124,328,257,399" href="../elements/id-42e3678498b247b7be7a89acb9ec5853.html"  target="element">
+				  		<area shape="rect" coords="10,10,845,81" href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html"  target="element">
+				  		<area shape="rect" coords="712,328,845,399" href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html"  target="element">
+				  		<area shape="rect" coords="10,134,143,205" href="../elements/id-f1261d9bcd884d8db2661ef594b54bd3.html"  target="element">
+				  		<area shape="rect" coords="226,134,359,205" href="../elements/id-be9ac88e2518463d82b4b0ce36fb9d19.html"  target="element">
+				  		<area shape="rect" coords="322,268,455,339" href="../elements/id-72e966582ebe499f877aee97e2ca278b.html"  target="element">
+				  		<area shape="rect" coords="622,134,755,205" href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html"  target="element">
 
 			   </map>
 
@@ -54,6 +52,8 @@
 
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
 
 						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
 						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
@@ -77,6 +77,32 @@
 							</tbody>
 						</table>
 					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
 						<div role="tabpanel" class="tab-pane" id="elements">
 							<table class="table table-striped table-hover table-condensed">
 								<thead>
@@ -87,62 +113,50 @@
 								</thead>
 								<tbody>
 											<tr>
-											    <td> <a href="../elements/id-5a41c08c31d940bc81d61a20aba57994.html" target="element"> Behovsdekning </a> </td>
-											    <td> <a href="../elements/id-5a41c08c31d940bc81d61a20aba57994.html" target="element" class="i18n-elementtype-Constraint">
-											    </a> </td>
-											</tr>
-
-											<tr>
-											    <td> <a href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html" target="element"> Gjennomf&#248;rbarhet </a> </td>
+											    <td> <a href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html" target="element"> Er gjennomf&#248;rbart (tid, kost, ressurser) </a> </td>
 											    <td> <a href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html" target="element" class="i18n-elementtype-Constraint">
 											    </a> </td>
 											</tr>
 
 											<tr>
-											    <td> <a href="../elements/id-5c076087459242bdafdc9365cc5525ac.html" target="element"> Kost/nytte </a> </td>
-											    <td> <a href="../elements/id-5c076087459242bdafdc9365cc5525ac.html" target="element" class="i18n-elementtype-Constraint">
-											    </a> </td>
-											</tr>
-
-											<tr>
-											    <td> <a href="../elements/id-3ddeb06c5c434c20b567c30b5a40b9d0.html" target="element"> Tid </a> </td>
-											    <td> <a href="../elements/id-3ddeb06c5c434c20b567c30b5a40b9d0.html" target="element" class="i18n-elementtype-Constraint">
-											    </a> </td>
-											</tr>
-
-											<tr>
-											    <td> <a href="../elements/id-f59ad6fdc0914540b0c15ced044af04f.html" target="element"> Ressurser </a> </td>
-											    <td> <a href="../elements/id-f59ad6fdc0914540b0c15ced044af04f.html" target="element" class="i18n-elementtype-Constraint">
-											    </a> </td>
-											</tr>
-
-											<tr>
-											    <td> <a href="../elements/id-9881a4f5cf5a4aff86da7a98febbb531.html" target="element"> Ikke-funksjonelle krav </a> </td>
-											    <td> <a href="../elements/id-9881a4f5cf5a4aff86da7a98febbb531.html" target="element" class="i18n-elementtype-Constraint">
-											    </a> </td>
-											</tr>
-
-											<tr>
-											    <td> <a href="../elements/id-72e966582ebe499f877aee97e2ca278b.html" target="element"> Kvalitet </a> </td>
+											    <td> <a href="../elements/id-72e966582ebe499f877aee97e2ca278b.html" target="element"> Gir &#248;nsket tjenestekvalitet </a> </td>
 											    <td> <a href="../elements/id-72e966582ebe499f877aee97e2ca278b.html" target="element" class="i18n-elementtype-Constraint">
 											    </a> </td>
 											</tr>
 
 											<tr>
-											    <td> <a href="../elements/id-be9ac88e2518463d82b4b0ce36fb9d19.html" target="element"> Sikkerhet </a> </td>
+											    <td> <a href="../elements/id-be9ac88e2518463d82b4b0ce36fb9d19.html" target="element"> Gir n&#248;dvendig informasjonssikkerhet </a> </td>
 											    <td> <a href="../elements/id-be9ac88e2518463d82b4b0ce36fb9d19.html" target="element" class="i18n-elementtype-Constraint">
 											    </a> </td>
 											</tr>
 
 											<tr>
-											    <td> <a href="../elements/id-f1261d9bcd884d8db2661ef594b54bd3.html" target="element"> Del av dagens funksjonalitet </a> </td>
+											    <td> <a href="../elements/id-f1261d9bcd884d8db2661ef594b54bd3.html" target="element"> Er del av dagens funksjonalitet </a> </td>
 											    <td> <a href="../elements/id-f1261d9bcd884d8db2661ef594b54bd3.html" target="element" class="i18n-elementtype-Constraint">
 											    </a> </td>
 											</tr>
 
 											<tr>
-											    <td> <a href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html" target="element"> Fremtidsrettet </a> </td>
+											    <td> <a href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html" target="element"> Fremtidsrettet l&#248;sning </a> </td>
 											    <td> <a href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html" target="element" class="i18n-elementtype-Constraint">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+											    <td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-42e3678498b247b7be7a89acb9ec5853.html" target="element"> Dekker nye brukerbehov </a> </td>
+											    <td> <a href="../elements/id-42e3678498b247b7be7a89acb9ec5853.html" target="element" class="i18n-elementtype-Constraint">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5e85f94cbcc54f54a5d820ac1a701c95.html" target="element"> Har &#248;konomisk  gevinstpotensiale </a> </td>
+											    <td> <a href="../elements/id-5e85f94cbcc54f54a5d820ac1a701c95.html" target="element" class="i18n-elementtype-Constraint">
 											    </a> </td>
 											</tr>
 
@@ -161,6 +175,84 @@
 									</tr>
 								</thead>
 								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-528e650d748746b68e7d2fa0ff78dbdf.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-528e650d748746b68e7d2fa0ff78dbdf.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html" target="element"> Er gjennomf&#248;rbart (tid, kost, ressurser) </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-713b4798e45542a4860189c266f6da53.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-713b4798e45542a4860189c266f6da53.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-72e966582ebe499f877aee97e2ca278b.html" target="element"> Gir &#248;nsket tjenestekvalitet </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-42fb7dda787e4fdca159166d3f7d837a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-42fb7dda787e4fdca159166d3f7d837a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-72e966582ebe499f877aee97e2ca278b.html" target="element"> Gir &#248;nsket tjenestekvalitet </a> </td>
+																		<td> <a href="../elements/id-5e85f94cbcc54f54a5d820ac1a701c95.html" target="element"> Har &#248;konomisk  gevinstpotensiale </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-d1ab6e42b5fe4e69a617dbf26f36ac2a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d1ab6e42b5fe4e69a617dbf26f36ac2a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-be9ac88e2518463d82b4b0ce36fb9d19.html" target="element"> Gir n&#248;dvendig informasjonssikkerhet </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-449259da080649bbbc19eb95506b5742.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-449259da080649bbbc19eb95506b5742.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f1261d9bcd884d8db2661ef594b54bd3.html" target="element"> Er del av dagens funksjonalitet </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-34d5c7a449cc427cb01bad02bbf681e8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-34d5c7a449cc427cb01bad02bbf681e8.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html" target="element"> Fremtidsrettet l&#248;sning </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-81eb70cd11a6414c8eb2ff2cd8963c9d.html" target="element"> valg av l&#248;sning p&#229;virker gjennomf&#248;rbarhet </a> </td>
+																		<td> <a href="../elements/id-81eb70cd11a6414c8eb2ff2cd8963c9d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-911a18707da74f92b9e56345bfdd45e9.html" target="element"> Fremtidsrettet l&#248;sning </a> </td>
+																		<td> <a href="../elements/id-b3ed74a38be64b199d9c75d096a0e00b.html" target="element"> Er gjennomf&#248;rbart (tid, kost, ressurser) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-68db82d2face4b00bed9887365752201.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-68db82d2face4b00bed9887365752201.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-42e3678498b247b7be7a89acb9ec5853.html" target="element"> Dekker nye brukerbehov </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9e2b677853c6496a8a0181c9dc3fa720.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9e2b677853c6496a8a0181c9dc3fa720.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-42e3678498b247b7be7a89acb9ec5853.html" target="element"> Dekker nye brukerbehov </a> </td>
+																		<td> <a href="../elements/id-5e85f94cbcc54f54a5d820ac1a701c95.html" target="element"> Har &#248;konomisk  gevinstpotensiale </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-61e96b69a11c4662afd5a26b1f69017d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-61e96b69a11c4662afd5a26b1f69017d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5e85f94cbcc54f54a5d820ac1a701c95.html" target="element"> Har &#248;konomisk  gevinstpotensiale </a> </td>
+																		<td> <a href="../elements/id-6d5903f1a09c4c38882ff19b10c60dbc.html" target="element"> Prioritering av features og valg av l&#248;sninger for migrering av Altinn melding og Formidling 2023-2025 </a> </td>
+																	</tr>
+
+
 								</tbody>
 							</table>
 						</div>

@@ -40,6 +40,9 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
 				</ul>
 
 				<!-- Tab panes -->
@@ -56,6 +59,48 @@
 								</tr>
 							</thead>
 							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-07d8cdb410ca4bda9d2a15c59fe0275b">
+																	<td><a href="../views/id-07d8cdb410ca4bda9d2a15c59fe0275b.html" target="view" title="Altinn formidling 2.0 - applikasjonstjenester og API-er"> Altinn formidling 2.0 - applikasjonstjenester og API-er </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-1ca2a2124a804d2b921d1fffcfb1c688.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssignmentRelationship" /></td>
+											<td><a href="../elements/id-50ac531d4f3d462ead9a24ed72079104.html" target="element"> GET https://www.altinn.no/api/{who}/brokerservice/inbox/{FileReference}/receipt</a></td>
+											<td><a href="../elements/id-3a0c42665b1042bd8045ec5b7ac238e1.html" target="element"> Get receipt confirmation</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-a87e3ab3537943cc8b22bd260468175a.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c75097a7fba44e00a3cb542d56492184.html" target="element"> Altinn Formidling REST API</a></td>
+											<td><a href="../elements/id-50ac531d4f3d462ead9a24ed72079104.html" target="element"> GET https://www.altinn.no/api/{who}/brokerservice/inbox/{FileReference}/receipt</a></td>
+										</tr>
 							</tbody>
 						</table>
 					</div>

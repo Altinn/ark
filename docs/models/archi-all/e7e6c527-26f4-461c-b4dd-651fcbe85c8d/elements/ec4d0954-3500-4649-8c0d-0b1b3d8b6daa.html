@@ -40,6 +40,9 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
 				</ul>
 
 				<!-- Tab panes -->
@@ -57,6 +60,66 @@
 							</thead>
 							<tbody>
 								<tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">archi:business-process</td></tr><tr><td>difi:namespace</td><td class="convertlinks no-margin" style="white-space:pre-wrap">-</td></tr><tr><td>difi:language</td><td class="convertlinks no-margin" style="white-space:pre-wrap">no</td></tr><tr><td>difi:name_no</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Registrer adresser</td></tr><tr><td>difi:name_en</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>difi:description_no</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Med adresse menes n&#248;dvendig informasjon for &#229; f&#229; tilgang til tjenester fra tilbyder eller for &#229; sende melding til mottaker av meldinger. </td></tr><tr><td>difi:description_en</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>label</td><td class="convertlinks no-margin" style="white-space:pre-wrap">${name}</td></tr><tr><td>difi:metaLevel</td><td class="convertlinks no-margin" style="white-space:pre-wrap">undefined</td></tr><tr><td>difi:abstractionLevel</td><td class="convertlinks no-margin" style="white-space:pre-wrap">undefined</td></tr><tr><td>difi:notes</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-ce3f707b-ed03-4707-aaa1-aa05a2a4ac60">
+																	<td><a href="../views/ce3f707b-ed03-4707-aaa1-aa05a2a4ac60.html" target="view" title="Klargj&#248;r for melding (arkitekturm&#248;nster)"> Klargj&#248;r for melding (arkitekturm&#248;nster) </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-c2845ded-b5ac-4d3f-b7b4-b6a40c45accd">
+																	<td><a href="../views/c2845ded-b5ac-4d3f-b7b4-b6a40c45accd.html" target="view" title="Klargj&#248;r for eMelding (l&#248;sningsm&#248;nster)"> Klargj&#248;r for eMelding (l&#248;sningsm&#248;nster) </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/029b954b-b2f0-4b03-adb1-d119bdf27105.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/ec4d0954-3500-4649-8c0d-0b1b3d8b6daa.html" target="element"> Registrer adresser</a></td>
+											<td><a href="../elements/4bb8940f-fe14-4870-bd2d-6ff3f556e4b2.html" target="element"> Mottakeradresse</a></td>
+										</tr><tr>
+											<td><a href="../elements/63417815-689f-4df6-96c4-18743c39d018.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-TriggeringRelationship" /></td>
+											<td><a href="../elements/ec4d0954-3500-4649-8c0d-0b1b3d8b6daa.html" target="element"> Registrer adresser</a></td>
+											<td><a href="../elements/38c26831-71ce-49c0-9fbd-85bf86b0c94f.html" target="element"> Registrer sertifikater</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/7ce0254b-91e1-4f9b-960d-e92ef941b3b0.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/5367d8fa-b719-4837-9485-e88ae6b4bb41.html" target="element"> Klargj&#248;r for melding</a></td>
+											<td><a href="../elements/ec4d0954-3500-4649-8c0d-0b1b3d8b6daa.html" target="element"> Registrer adresser</a></td>
+										</tr><tr>
+											<td><a href="../elements/2d1fe021-8a19-4d38-bd8d-b5b074d2358e.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/a3a8c51d-2f44-4733-8dab-e85aa79f1f00.html" target="element"> Adresseregistrering</a></td>
+											<td><a href="../elements/ec4d0954-3500-4649-8c0d-0b1b3d8b6daa.html" target="element"> Registrer adresser</a></td>
+										</tr><tr>
+											<td><a href="../elements/8e9f03dd-c7f6-48cd-9fe9-dd673e96d703.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-TriggeringRelationship" /></td>
+											<td><a href="../elements/4f322af7-3e68-4889-9b63-ed79342da9f4.html" target="element"> Registrer kapabiliteter</a></td>
+											<td><a href="../elements/ec4d0954-3500-4649-8c0d-0b1b3d8b6daa.html" target="element"> Registrer adresser</a></td>
+										</tr>
 							</tbody>
 						</table>
 					</div>
