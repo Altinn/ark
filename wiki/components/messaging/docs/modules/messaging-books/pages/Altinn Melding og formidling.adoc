@@ -16,7 +16,7 @@ endif::[]
 image:{imagepath}messaging-front-cover.png[]
 
 ----
-Thu Nov 23 2023 12:23:50 GMT+0100 (CET)
+Thu Nov 23 2023 12:55:16 GMT+0100 (CET)
 Erik Hagen 	erik.hagen@digdir.no
 ----
 
