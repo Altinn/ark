@@ -59,10 +59,10 @@ a| Hent ut kvittering knyttet til filen basert på FileReference, per mottaker o
 | Altinn 2 Formidling
 a| 
 
-| Recepient's End User System
+| Consumert's End User System
 a| 
 
-| Sender's End User System
+| Provider's End User System
 a| 
 
 | Initiate message transfer
@@ -79,7 +79,7 @@ Autoriserer, strømmer opp fil til sharet, oppdaterer manifest, utfører virusko
 Returnerer Receipt.
 
 
-| Sender's End User System
+| Provider's End User System
 a| 
 
 | Avsenders prosess for  å sende melding og vedlegg
@@ -88,7 +88,7 @@ a|
 | Sender's monitoring process (polling)
 a| 
 
-| Recepient's End User System
+| Consumert's End User System
 a| 
 
 | Recepient's download process (polling)
