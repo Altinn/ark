@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Broker Metadata Storage</title>
+	<title>Broker Metadata Store</title>
 
 	<!-- JQUERY -->
 	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>Broker Metadata Storage</b>
+               <b>Broker Metadata Store</b>
 
             <!-- If a View with Viewpoint -->
 			   (<span class="i18n-elementtype-ApplicationComponent"></span>)
@@ -48,7 +48,93 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Metadata for a file transfer:
+
+* correlationId: Correlation ID for the transfer, e.g. as part of a case
+
+* uploadProtocol
+
+
+"FileStatusDetails": {
+            "type": "object",
+            "properties": {
+                "fileId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "nullable": false
+                },
+                "fileName": {
+                    "type": "string",
+                    "nullable": false
+                },
+                "sendersFileReference": {
+                    "type": "string",
+                    "nullable": true
+                },
+                "checksum": {
+                    "type": "string",
+                    "nullable": true
+                },
+                "filesize": {
+                    "type": "integer",
+                    "format": "int64",
+                    "nullable": true
+                }
+                "fileStatus": {
+                    "$ref": "#/components/schemas/FileStatus"
+                },
+                "fileStatusText": {
+                    "type": "string",
+                    "nullable": false
+                },
+                "fileStatusChanged": {
+                    "type": "string",
+                    "format": "date-time",
+                    "nullable": false
+                },
+                "created": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "expiryTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "sender": {
+                    "type": "string",
+                    "nullable": false
+                },
+                "recipients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/components/schemas/RecipientFileStatusEvent"
+                    },
+                    "nullable": false
+                },
+                "metadata": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "nullable": true
+                },
+                "fileStatusHistory": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/components/schemas/FileStatusEvent"
+                    },
+                    "nullable": false
+                },
+                "recipientFileStatusHistory": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/components/schemas/RecipientFileStatusEvent"
+                    },
+                    "nullable": false
+                }
+            },
+            "additionalProperties": false
+        },</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -72,14 +158,14 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-99d2d646ffa64b92922e186696761845">
+								<tr id="used-in-views-id-4b744a251c8941428605a7457ac78d97">
+																	<td><a href="../views/id-4b744a251c8941428605a7457ac78d97.html" target="view" title="Altinn 3 Broker Solution Overview Standalone"> Altinn 3 Broker Solution Overview Standalone </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-99d2d646ffa64b92922e186696761845">
 																	<td><a href="../views/id-99d2d646ffa64b92922e186696761845.html" target="view" title="Altinn 3 Broker Security"> Altinn 3 Broker Security </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-fcf0e0727e9240938088da79b6fa8aad">
-																	<td><a href="../views/id-fcf0e0727e9240938088da79b6fa8aad.html" target="view" title="Altinn 3 Broker High Level Solution  Overview "> Altinn 3 Broker High Level Solution  Overview  </a></td>
-																	<td><span class="i18n-viewpoint-" /></td>
-																</tr><tr id="used-in-views-id-4b744a251c8941428605a7457ac78d97">
-																	<td><a href="../views/id-4b744a251c8941428605a7457ac78d97.html" target="view" title="Altinn 3 Broker Solution Overview Standlone"> Altinn 3 Broker Solution Overview Standlone </a></td>
+																	<td><a href="../views/id-fcf0e0727e9240938088da79b6fa8aad.html" target="view" title="Altinn 3 Broker High Level Solution Overview "> Altinn 3 Broker High Level Solution Overview  </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr>
 							</tbody>
@@ -98,19 +184,19 @@
 									<tr>
 											<td><a href="../elements/id-fc83a8f077b14836acf26f3a5ae28dc2.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-FlowRelationship" /></td>
-											<td><a href="../elements/id-3c56b32c6148458eba9d56c39dda91e6.html" target="element"> Broker Metadata Storage</a></td>
-											<td><a href="../elements/id-abef7d7038054948b26f400ddea16d3b.html" target="element"> API for mottak av meldinger</a></td>
+											<td><a href="../elements/id-3c56b32c6148458eba9d56c39dda91e6.html" target="element"> Broker Metadata Store</a></td>
+											<td><a href="../elements/id-abef7d7038054948b26f400ddea16d3b.html" target="element"> API for mottak av filer</a></td>
 										</tr>
 									<tr>
 											<td><a href="../elements/id-301fb2da1cc741f081f1c215304065fa.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-FlowRelationship" /></td>
-											<td><a href="../elements/id-a9335843d446483b8c3fab92fb47170d.html" target="element"> API for &#229; sende melding (copy)</a></td>
-											<td><a href="../elements/id-3c56b32c6148458eba9d56c39dda91e6.html" target="element"> Broker Metadata Storage</a></td>
+											<td><a href="../elements/id-a9335843d446483b8c3fab92fb47170d.html" target="element"> API for &#229; initialisere filoverf&#248;ring</a></td>
+											<td><a href="../elements/id-3c56b32c6148458eba9d56c39dda91e6.html" target="element"> Broker Metadata Store</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-d66e4593bd354b17a611e778c4869dc3.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
 											<td><a href="../elements/id-c3da36122e7a4ff59ab3968be6a55682.html" target="element"> Altinn 3 Broker</a></td>
-											<td><a href="../elements/id-3c56b32c6148458eba9d56c39dda91e6.html" target="element"> Broker Metadata Storage</a></td>
+											<td><a href="../elements/id-3c56b32c6148458eba9d56c39dda91e6.html" target="element"> Broker Metadata Store</a></td>
 										</tr>
 							</tbody>
 						</table>
